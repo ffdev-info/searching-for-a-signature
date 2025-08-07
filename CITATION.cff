@@ -1,11 +1,11 @@
 # This template CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to replace its contents
 # with information about your lesson.
-# Remember to update this file periodically, 
+# Remember to update this file periodically,
 # ensuring that the author list and other fields remain accurate.
 
 cff-version: 1.2.0
-title: FIXME
+title: Searching for a signature: A file format identification workshop
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +13,21 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: David
+    family-names: Clipsham
+  - given-names: Tyler
+    family-names: Thorsted
+  - given-names: Sonia
+    family-names: Ranade
+  - given-names: Ross
+    family-names: Spencer
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  File format identification is generally accepted as a key digital
+  preservation activity as it enables preservation practitioners to
+  understand, manage, and mitigate format-related risks and challenges.
+  This foundational workshop will explore the concepts and practical
+  approaches to file format identification. The workshop assumes no
+  prior knowledge or experience of file format identification, and aims
+  to cater to different learning styles with a selection of interactive
+  activities.
 license: CC-BY-4.0

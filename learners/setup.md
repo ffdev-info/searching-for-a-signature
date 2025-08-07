@@ -2,53 +2,49 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+## Room setup
 
-## Data Sets
+Before we get started, organize yourself in the room so that you are able
+to split into groups of three or more. This will make the final part of
+the workshop easier.
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
+## Tools
+
+* [hexed.it](https://hexed.it/)
+* [ffdev.info](https://ffdev.info/) (bundles Roy and Siegfried)
+
+## Workshop files
+
+<!-- NB: place any data you want learners to use in `episodes/files` and then
+     use a relative link ( [data zip file](data/lesson-data.zip) ) to provide
+     a link to it, replacing the example.com link.
 -->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
 
-## Software Setup
+Workshop files will be highlighted inline. You can inspect them below as well.
 
-::::::::::::::::::::::::::::::::::::::: discussion
+* [Hello World!.txt](./files/Hello%20World!.txt).
+* [Sample QOI file 1](./files/edgecase.qoi).
+* [Sample QOI file 2](./files/kodim10.qoi).
+* [Sample QOI file 3](./files/kodim23.qoi).
+* [Sample QOI file 4](./files/qoi_logo.qoi).
+* [Sample QOI file 5](./files/testcard.qoi).
+* [Sample mock file 1](./files/ffid-exercise-1.file).
+* [Sample mock file 2](./files/ffid-exercise-2.file).
+* [Sample mock file 3](./files/ffid-exercise-3.file).
+* [QOI Specification](./files/qoi-specification.pdf).
 
-### Details
+## Pre-reading
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
+If you’d like to get a head start or refresh your knowledge, the following
+resources may help you feel more confident and prepared:
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::
+* [PRONOM Starter Pack](https://github.com/digital-preservation/PRONOM_Research/blob/main/Resources/Starter_Pack.md).
+* [PRONOM - How to research and develop signatures for file format identification](https://cdn.nationalarchives.gov.uk/documents/information-management/pronom-file-signature-research.pdf).
+* [PRONOM in Practice](https://osf.io/2jbpe/overview).
 
-:::::::::::::::: spoiler
+## Supplementary resources
 
-### Windows
+Here are a few additional tools and references that may be useful during or after the workshop:
 
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
-
+* [User-friendly PRONOM syntax guide](https://github.com/digital-preservation/droid/blob/main/Signature%20syntax.md).
+* [Automatic Format Identification Using PRONOM and DROID](https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf) (the original design document).

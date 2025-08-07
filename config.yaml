@@ -8,33 +8,36 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-# 
+#
 # This option supports custom types so lessons can be branded
 # and themed with your own logo and alt-text (see `carpentry_description`)
 # See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
 carpentry: 'incubator'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description'
+carpentry_description: 'An introduction lesson to PRONOM and file format identification'
+
+# Organisation.
+organization_name: "Preservica, BYU, TNA, FFDev.info"
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'Searching for a signature: A file format identification workshop' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: ~ # FIXME
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries' # FIXME
+keywords: 'PRONOM, DROID, Siegfried, FIDO, Format Identification, Digipres, Lesson'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha' # FIXME
+life_cycle: 'beta' # FIXME
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/carpentries/workbench-template-md' # FIXME
+source: 'https://github.com/ffdev-info/searching-for-a-signature' # FIXME
 
 # Default branch of your lesson
 branch: 'main'
@@ -65,21 +68,39 @@ contact: 'team@carpentries.org' # FIXME
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- introduction.md
+episodes:
+- 001-introduction.md
+- 002-hexadecimal.md
+- 003-using-a-hex-editor.md
+- 004-looking-for-patterns.md
+- 005-pronom-syntax.md
+- 006-reversing-pronom.syntax.md
+- 007-creating-signature-files.md
+- 008-plugging-it-in.md
+- 009-doing-it-for-yourself.md
+- 010-teaching-us-how.md
+- 011-advanced.md
+- 012-final-thoughts.md
 
-# Information for Learners
-learners: 
+# Information for Learners. The pages here will land in the introductory
+# sections.
+learners:
+- faq.md
+- glossary.md
+- additional.md
 
-# Information for Instructors
-instructors: 
+# Information for Instructors. The pages here will be included in the
+# instructor notes section.
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
+- learner-profiles.md
+- instructor-profiles.md
 
 # Customisation ---------------------------------------------
 #
 # This space below is where custom yaml items (e.g. pinning
 # sandpaper and varnish versions) should live
 
-
+url: https://ffdev-info.github.io/searching-for-a-signature/

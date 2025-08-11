@@ -1,54 +1,35 @@
 ---
-title: Setup
+title: SetupXXX
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+## Room setup
 
-## Data Sets
+Before we get started, organize yourself in the room so that you are able
+to split into groups of three or more. This will make the final part of
+the workshop easier.
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
+## Tools
+
+### Hex editor
+
+* [hexed.it](https://hexed.it/)
+* [binvis.io](https://binvis.io/#/)
+
+### DROID or Siegfried
+
+* Link to DROID
+* Link to Siegfried
+
+### Other tools
+
+* [signature development utility](https://ffdev.info/)
+* tool 2.
+
+## Workshop files
+
+<!-- NB: place any data you want learners to use in `episodes/data` and then
+     use a relative link ( [data zip file](data/lesson-data.zip) ) to provide
+     a link to it, replacing the example.com link.
 -->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
 
-## Software Setup
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
-
+Suggest we have some workshop files in the `data/` folder TBD...

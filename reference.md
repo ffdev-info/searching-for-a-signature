@@ -1,8 +1,11 @@
 ---
-title: 'Reference'
+title: Reference
 ---
 
 ## Glossary
 
-This is a placeholder file. Please add content here. 
+BOF
+: definition goes here...
 
+EOF
+: definition goes here...

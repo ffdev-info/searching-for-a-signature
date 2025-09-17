@@ -72,6 +72,7 @@ episodes:
 - introduction.md
 - hexadecimal.md
 - using-a-hex-editor.md
+- patterns.md
 - pronom-syntax.md
 - reversing-pronom-syntax.md
 - creating-signature-files.md

@@ -1,33 +1,110 @@
 ---
 title: "Hexadecimal"
-teaching: 5    # teaching time in minutes
-exercises: 1    # exercise time in minutes
+teaching: 0    # teaching time in minutes
+exercises: 0    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-- What is hexadecimal?
-- Why is it important?
-- What are the basics of hexadecimal we need to understand?
+* What is hexadecimal?
+* Why is it important?
+* What are the basics of hexadecimal we need to understand?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Learn what hexadecimal is.
-- Learn how to construct a hexadecimal sequence with arbitrary meaning.
+* Learn what hexadecimal is.
+* Learn how to construct a hexadecimal sequence with arbitrary meaning.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction to hexadecimal
 
-* A way of representing numbers.
-* Decimal is Base10, hexadecimal is just Base16.
-* 1 = 0x01
-* 10 = 0x0A
-* 255 = 0xFF
-* Use primarily to abbreviate actual binary:
-* 0b11111111 == 255 == 0xFF
+* Hexadecimal is a way of representing numbers.
+* Just as decimal is Base10, hexadecimal is just Base16.
+
+|      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| DEC  | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   | 13   | 14   | 15   |
+| HEX  | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | A    | B    | C    | D    | E    | F    |
+| DEX  | 16   | 17   | 18   | 19   | 20   | 21   | 22   | 23   | 24   | 25   | 26   | 27   | 28   | 29   | 30   | 31   |
+| HEX  | 10   | 11   | 12   | 13   | 14   | 15   | 16   | 17   | 18   | 19   | 1A   | 1B   | 1C   | 1D   | 1E   | 1F   |
+
+<br>
+
+* While you can learn to convert decimal to hexadecimal, you are more likely
+to convert hexadecimal to decimal.
+
+```text
+0x00 = (16 x 0 = 0) + (1 x 0 = 1) = 0
+0x01 = (16 x 0 = 0) + (1 x 1 = 1) = 1
+0x0A = (16 x 0 = 0) + (1 x 10 = 10) = 10
+0xFF = (16 x 15 = 240) + (1 x 15 = 15) = 255
+```
+
+<br>
+
+:::: callout
+
+### Zero to hero!
+
+Zero is an important number in computer science and we will see it often
+when we analyse digital records.
+
+::::
+
+:::: callout
+
+### What does 0x mean?
+
+We use the `0x` prefix to signify hexadecimal. When we document hex
+sequences like above `0xE4 0xB8 0x96` is also equivalent to `0xE4B896`. How
+you choose write this information depends on context.
+
+::::
+
+* A single hexadecimal number is a convenient representation of 1-byte,
+i.e. 8 bits of binary which is the smallest and most convenient unit of
+data used in computer memory.
+
+:::: callout
+
+### Binary
+
+We won’t go into binary here, but if you ever want to look at the binary
+representation of a number, modern search engines can do the conversion
+for you if you ask: 255 in binary (just as you can ask: 255 in hexadecimal.
+
+* 0 (b00000000) is the smallest number you can represent in binary in a
+single byte,
+* 255 (b11111111) is the largest possible value.
+
+::::
+
+### ASCII table
+
+* That might feel like a lot, but before we have to convert numbers every
+which way, we have another tool at our disposal, a lookup table which is
+still relevant in our research.
+
+* In the lookup table below (the ASCII table) you can see how bytes take on
+more meaning to a computer, e.g. as control symbols, punctuation symbols,
+numbers, and letters.
+
+* For the numbers and letters, this is just one encoding. We will talk about
+the importance of that below but first let’s look at the table for a second.
+
+:::: discussion
+
+### question
+
+When you look at the table, think about your favorite (decimal) number.
+
+* What symbol does it represent?
+* What’s your favourite (hexadecimal) number, what symbol does it represent?
+
+::::
 
 <br>
 
@@ -68,17 +145,18 @@ exercises: 1    # exercise time in minutes
 
 ## Encodings
 
-* In a file format, they translate to some information that a computer can
-understand, e.g. numbers 0x30 to 0x39 are (universally) the numbers 0 - 9.
-* In the olden days software devs only thought about english, and so character
-encodings started life there, and then became more inclusive – today we have
-unicode
+* In a file format, they translate to some information that a computer
+can understand, e.g. numbers 0x30 to 0x39 are (universally)
+the numbers 0 - 9.
+* In the olden days software devs only thought about english, and so
+character encodings started life there, and then became more
+inclusive – today we have unicode
 * Looking at files from the early days can be tricky when doing digital
 forensics but file format signature development asks two things:
 
-    1. That we understand the samples we have are the same format.
-    1. That we can find patterns in these files, even if we don’t always
-    know what those patterns mean.
+1. That we understand the samples we have are the same format.
+2. That we can find patterns in these files, even if we don’t always
+know what those patterns mean.
 
 <br>
 
@@ -106,6 +184,8 @@ forensics but file format signature development asks two things:
 
 `0xC5 0xAA` = Ū
 
+<br>
+
 ### World in Japanese in UTF-8
 
 <br>
@@ -124,15 +204,6 @@ forensics but file format signature development asks two things:
 
 `0xE7 0x95 0x8C` = 界
 
-<br>
-
-:::: callout
-
-We use the `0x` prefix to signify hexadecimal. When we document hex
-sequences like above `0xE4 0xB8 0x96` is also equivalent to `0xE4B896`. How
-you choose write this information depends on context.
-
-::::
 
 <!-- NB. I found this site useful: https://www.compart.com/en/unicode/ for
      whatever reason it has a lot of info.
@@ -193,6 +264,7 @@ Write down the hexadecimal sequence for "Hello world".
 ::::
 
 
+
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -201,13 +273,12 @@ Write down the hexadecimal sequence for "Hello world".
 
 <br>
 
-:::: keypoints
+::::::::::::::::::::::::::::::::::::: keypoints
 
-- Hexadecimal is a number system.
-- Hexadecimal makes it easier to understand "binary".
-- Hexadecimal is mapped to signals and characters that have meaning to a
-computer.
-- Hexadecimal can take on arbitrary meaning through "encodings".
-- Hexadecimal is the foundation for a PRONOM signature!
+* Hexadecimal is a number system.
+* Hexadecimal makes it easier to understand “binary”.
+* Hexadecimal is mapped to signals and characters that have meaning to a computer.
+* Hexadecimal can take on arbitrary meaning through “encodings”.
+* Hexadecimal is the foundation for a PRONOM signature!
 
-::::
+::::::::::::::::::::::::::::::::::::::::::::::::

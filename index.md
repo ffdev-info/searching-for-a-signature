@@ -30,3 +30,23 @@ for the class. Some ideas:
 - if you were a file format, what would it be?
 
 ::::
+
+## Website layout
+
+This website is created to enable in-person teaching as well as offline
+self-teaching. Lessons are listed as "Episodes". As you work through the
+sections you may also be interested in:
+
+* The Glossary: link
+* The FAQ: link
+* Additional resources.
+
+You can keep these tabs open as you work through the other pages.
+
+## Open source
+
+The FFID resource is open source, and you are welcome to contribute
+changes and suggestions based on what has worked for you, or what might
+work better. If you have feedback we are happy to hear it, and if you
+have used this resource to teach a class, let us know, and feel free to
+share recordings or other resources associated with your teaching!

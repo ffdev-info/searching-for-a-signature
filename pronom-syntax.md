@@ -1,7 +1,7 @@
 ---
 title: "PRONOM syntax"
-teaching: 5    # teaching time in minutes
-exercises: 1    # exercise time in minutes
+teaching: 10    # teaching time in minutes
+exercises: 0    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
@@ -9,6 +9,7 @@ exercises: 1    # exercise time in minutes
 - Why does PRONOM need syntax?
 - What syntax exists?
 - What does the syntax enable us to do?
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -19,32 +20,68 @@ exercises: 1    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## PRONOM syntax
+:::: callout
+
+### PRONOM in Practice
+
+The team at The National Archives have worked hard to create good resources
+for PRONOM research and development. The PRONOM in Practice guide is an
+important set of documents to follow up on after this tutorial.
+
+* [PRONOM in Practice documents](https://osf.io/2jbpe/files/osfstorage)
+
+::::
+
+## PRONOM terms, basic syntax and data model
+
+BOF
+: Beginning of File
+
+EOF
+: End of File
+
+Var
+: Variable (anywhere in the file)
+
+Offset/Max Offset
+: Exact or positional range in which a signature starts
+
+## Wildcards
 
 ??
-: wildcard matching any pair of hexadecimal values (i.e. a single byte).
+: single wildcard byte, e.g. AB??C3
 
 *
-: wildcard matching any number of bytes (0 or more).
+: 0-many wildcard bytes, e.g BC*D4
 
 {n}
-: wildcard matching n bytes, where n is an integer.
+: specific number of wildcard bytes, e.g. A2{5}F3
 
-{m-n}
-: wildcard matching between m-n bytes inclusive, where m and n are integers or ‘*’.
+{n-n}
+: range of wildcard bytes, e.g. 4D{0-12}E4
 
-(a|b)
-: wildcard matching one from a list of values (e.g. a or b), where each value is a hexadecimal byte sequence of arbitrary length
+## Byte range
 
-[a:b]
-: wildcard matching any sequence of bytes which lies lexicographically between a and b
+[hh:hh]
+: single byte value between range, e.g [00:FA]
 
-[!a]
-: wildcard matching any sequence of bytes other than a itself (where a is a byte sequence containing no wildcards).
+## Either/or
 
-[!a:b]
-: wildcard matching any sequence of bytes which does not lie lexicographically between a and b
+(hhhh|hhhh|hh)
+: either/any or these byte values, e.g. (0D|0A|0D0A)
 
+## Not
+
+[!hh]:
+anything except this byte value, e.g. ABCD[!01]E1
+
+:::: callout
+
+### PRONOM's specificaton
+
+* [Automatic Signature Identification at The National Archives](https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf)
+
+::::
 
 :::: challenge
 
@@ -146,6 +183,7 @@ _ _ _ _ 66 74 79 70 33 67 65 36 00 00 01 00 A0 61 75 74 68 6F 72 3A 20 6C 2E * F
 
 ::::
 
+
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -159,5 +197,6 @@ _ _ _ _ 66 74 79 70 33 67 65 36 00 00 01 00 A0 61 75 74 68 6F 72 3A 20 6C 2E * F
 - PRONOM syntax is a regular expression (regex).
 - PRONOM syntax can be combined in multiple ways.
 - Sometimes there is more than one way to write a signature.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

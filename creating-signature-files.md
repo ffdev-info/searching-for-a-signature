@@ -1,12 +1,12 @@
 ---
 title: "Creating signature files"
-teaching: 5    # teaching time in minutes
-exercises: 1    # exercise time in minutes
+teaching: 10    # teaching time in minutes
+exercises: 0    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-- What's a signature file?
+- What’s a signature file?
 - How do we create one?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -18,6 +18,54 @@ exercises: 1    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Making it work with DROID and Siegfried
+
+You now have a sequence you think will work with your format and
+understand the syntax needed. How do we get that sequence into something
+DROID or Sigfried can use?
+
+## What is a signature file?
+
+A signature file is a representation of the byte sequence, written in a
+way tools like DROID or Siegfried can use to match the byte sequence within
+a file or group of files. This pattern is written to an XML structure which
+records the sequence, offsets, and descriptive information about the file.
+
+!!TODO:SCREENSHOT
+
+A Signature file consists of two parts, the byte signature and the file
+format information. The signature will have an ID which is then referenced
+in the file format information tag, connecting the two.
+
+This file can be created from scratch using any text editor, but nobody
+wants to do that, let’s look at the
+[amazing tool Ross Spencer wrote](https://ffdev.info/) to help with
+signature creation.
+
+!!TODO:SCREENSHOT
+
+## Signature development utility
+
+The signature development utility will take the sequence you want
+to use and generate the XML needed by tools like DROID to use. Use a name
+which is specific to the format. If you know the version of the format the
+sequence describes, you can add it as well, but if you are unsure, leave
+it blank. The form has a place for the extension, and if there is more
+than one, we can add that later in the XML directly. Many formats have a
+mime-type, some official, others not so official, add the type here if
+it is commonly used.
+<br><br>
+Add your sequence and anchor it at the beginning of the file or end
+of file, then add any offsets if needed. You can always add additional
+sequences to add more accuracy to the signature.
+<br><br>
+Pressing the “Create Signature” button will generate an XML file
+based on your information and immediately download to your computer.
+This can then be moved to your .droid6 folder or imported in the
+DROID Application.
+
+!!TODO:SCREENSHOT
+
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -28,6 +76,6 @@ exercises: 1    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- A signature file is...
+- A signature file is…
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

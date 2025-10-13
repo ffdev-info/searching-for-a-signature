@@ -72,6 +72,7 @@ episodes:
 - introduction.md
 - hexadecimal.md
 - using-a-hex-editor.md
+- looking-for-patterns.md
 - pronom-syntax.md
 - reversing-pronom-syntax.md
 - creating-signature-files.md
@@ -79,6 +80,7 @@ episodes:
 - doing-it-for-yourself.md
 - teaching-us-how.md
 - advanced.md
+- final-thoughts.md
 
 # Information for Learners. The pages here will land in the introductory
 # sections.

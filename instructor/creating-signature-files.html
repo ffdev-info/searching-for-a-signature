@@ -118,11 +118,11 @@
   Searching for a signature: A file format identification workshop
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 27%" class="percentage">
-    27%
+<aside class="col-md-12 lesson-progress"><div style="width: 31%" class="percentage">
+    31%
   </div>
   <div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 27%" aria-valuenow="27" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar incubator" role="progressbar" style="width: 31%" aria-valuenow="31" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -206,7 +206,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Introductions</a>
+        <a href="introduction.html">1. Introduction</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -233,7 +233,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="pronom-syntax.html">4. PRONOM syntax</a>
+        <a href="looking-for-patterns.html">4. Looking for patterns</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -242,7 +242,16 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="reversing-pronom-syntax.html">5. Reversing PRONOM syntax</a>
+        <a href="pronom-syntax.html">5. PRONOM syntax</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="reversing-pronom-syntax.html">6. Reversing PRONOM syntax</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -251,21 +260,21 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        6. Creating signature files
+        7. Creating signature files
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
 
-  </div><!--/div.accordion-item-->
-</div><!--/div.accordion-flush-->
-
-<div class="accordion accordion-flush" id="accordionFlush8">
-  <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading8">
-        <a href="plugging-it-in.html">7. Plugging it in</a>
-    </div><!--/div.accordion-header-->
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#making-it-work-with-droid-and-siegfried">Making it work with DROID and Siegfried</a></li>
+<li><a href="#what-is-a-signature-file">What is a signature file?</a></li>
+<li><a href="#signature-development-utility">Signature development utility</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -273,7 +282,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="doing-it-for-yourself.html">8. Doing it for yourself</a>
+        <a href="plugging-it-in.html">8. Plugging it in</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -282,7 +291,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="teaching-us-how.html">9. Teaching us how to do it!</a>
+        <a href="doing-it-for-yourself.html">9. Doing it for yourself</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -291,7 +300,25 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="advanced.html">10. Advanced PRONOM</a>
+        <a href="teaching-us-how.html">10. Teaching us how to do it!</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush12">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading12">
+        <a href="advanced.html">11. Advanced PRONOM</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush13">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading13">
+        <a href="final-thoughts.html">12. Final thoughts</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -355,13 +382,13 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Creating signature files</h1>
-        <p>Last updated on 2025-08-11 |
+        <p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/creating-signature-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -392,6 +419,40 @@
 </div>
 </div>
 </div>
+<section><h2 class="section-heading" id="making-it-work-with-droid-and-siegfried">Making it work with DROID and Siegfried<a class="anchor" aria-label="anchor" href="#making-it-work-with-droid-and-siegfried"></a></h2>
+<hr class="half-width"><p>You now have a sequence you think will work with your format and
+understand the syntax needed. How do we get that sequence into something
+DROID or Sigfried can use?</p>
+</section><section><h2 class="section-heading" id="what-is-a-signature-file">What is a signature file?<a class="anchor" aria-label="anchor" href="#what-is-a-signature-file"></a></h2>
+<hr class="half-width"><p>A signature file is a representation of the byte sequence, written in
+a way tools like DROID or Siegfried can use to match the byte sequence
+within a file or group of files. This pattern is written to an XML
+structure which records the sequence, offsets, and descriptive
+information about the file.</p>
+<p>!!TODO:SCREENSHOT</p>
+<p>A Signature file consists of two parts, the byte signature and the
+file format information. The signature will have an ID which is then
+referenced in the file format information tag, connecting the two.</p>
+<p>This file can be created from scratch using any text editor, but
+nobody wants to do that, let’s look at the <a href="https://ffdev.info/" class="external-link">amazing tool Ross Spencer wrote</a> to help
+with signature creation.</p>
+<p>!!TODO:SCREENSHOT</p>
+</section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a></h2>
+<hr class="half-width"><p>The signature development utility will take the sequence you want to
+use and generate the XML needed by tools like DROID to use. Use a name
+which is specific to the format. If you know the version of the format
+the sequence describes, you can add it as well, but if you are unsure,
+leave it blank. The form has a place for the extension, and if there is
+more than one, we can add that later in the XML directly. Many formats
+have a mime-type, some official, others not so official, add the type
+here if it is commonly used. <br><br> Add your sequence and anchor it at
+the beginning of the file or end of file, then add any offsets if
+needed. You can always add additional sequences to add more accuracy to
+the signature. <br><br> Pressing the “Create Signature” button will
+generate an XML file based on your information and immediately download
+to your computer. This can then be moved to your .droid6 folder or
+imported in the DROID Application.</p>
+<p>!!TODO:SCREENSHOT</p>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -413,10 +474,7 @@
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/reversing-pronom-syntax.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/plugging-it-in.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -473,9 +531,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "http://example.com/instructor/creating-signature-files.html",
   "identifier": "http://example.com/instructor/creating-signature-files.html",
-  "dateCreated": "2025-08-11",
-  "dateModified": "2025-08-11",
-  "datePublished": "2025-10-07"
+  "dateCreated": "2025-10-13",
+  "dateModified": "2025-10-13",
+  "datePublished": "2025-10-13"
 }
 
   </script><script>

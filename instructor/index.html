@@ -197,12 +197,20 @@
                   <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         Welcome!
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#website-layout">Website layout</a></li>
+<li><a href="#open-source">Open source</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -210,7 +218,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Introductions</a>
+        <a href="introduction.html">1. Introduction</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -237,7 +245,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="pronom-syntax.html">4. PRONOM syntax</a>
+        <a href="looking-for-patterns.html">4. Looking for patterns</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -246,7 +254,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="reversing-pronom-syntax.html">5. Reversing PRONOM syntax</a>
+        <a href="pronom-syntax.html">5. PRONOM syntax</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -255,7 +263,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="creating-signature-files.html">6. Creating signature files</a>
+        <a href="reversing-pronom-syntax.html">6. Reversing PRONOM syntax</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -264,7 +272,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="plugging-it-in.html">7. Plugging it in</a>
+        <a href="creating-signature-files.html">7. Creating signature files</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -273,7 +281,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="doing-it-for-yourself.html">8. Doing it for yourself</a>
+        <a href="plugging-it-in.html">8. Plugging it in</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -282,7 +290,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="teaching-us-how.html">9. Teaching us how to do it!</a>
+        <a href="doing-it-for-yourself.html">9. Doing it for yourself</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -291,7 +299,25 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="advanced.html">10. Advanced PRONOM</a>
+        <a href="teaching-us-how.html">10. Teaching us how to do it!</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush12">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading12">
+        <a href="advanced.html">11. Advanced PRONOM</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush13">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading13">
+        <a href="final-thoughts.html">12. Final thoughts</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -343,7 +369,7 @@
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link float-end" href="../instructor/introduction.html" rel="next">Next: Introductions... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/introduction.html" rel="next">Next: Introduction... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Welcome!</h1>
       
@@ -386,24 +412,36 @@ for the class. Some ideas:</p>
 </div>
 </div>
 </div>
+<section><h2 class="section-heading" id="website-layout">Website layout<a class="anchor" aria-label="anchor" href="#website-layout"></a></h2>
+<hr class="half-width"><p>This website is created to enable in-person teaching as well as
+offline self-teaching. Lessons are listed as “Episodes”. As you work
+through the sections you may also be interested in:</p>
+<ul><li>The Glossary: link</li>
+<li>The FAQ: link</li>
+<li>Additional resources.</li>
+</ul><p>You can keep these tabs open as you work through the other pages.</p>
+</section><section><h2 class="section-heading" id="open-source">Open source<a class="anchor" aria-label="anchor" href="#open-source"></a></h2>
+<hr class="half-width"><p>The FFID resource is open source, and you are welcome to contribute
+changes and suggestions based on what has worked for you, or what might
+work better. If you have feedback we are happy to hear it, and if you
+have used this resource to teach a class, let us know, and feel free to
+share recordings or other resources associated with your teaching!</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-      <section id="schedule"><table class="table table schedule table-striped" role="presentation"><tbody><tr><td></td><td><a href="#setup">Setup Instructions</a></td><td> Download files required for the lesson</td>
+</section><section id="schedule"><table class="table table schedule table-striped" role="presentation"><tbody><tr><td></td><td><a href="#setup">Setup Instructions</a></td><td> Download files required for the lesson</td>
           </tr><tr><td>
 <span class="visually-hidden">Duration: </span>00h 00m
 </td>
 <td>
- 1. <a href="introduction.html">Introductions</a>
+ 1. <a href="introduction.html">Introduction</a>
 </td>
 <td>
-What is PRONOM?<br>Why signature development?
+Why signature development?<br>What is PRONOM?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 05m
+<span class="visually-hidden">Duration: </span>00h 10m
 </td>
 <td>
  2. <a href="hexadecimal.html">Hexadecimal</a>
@@ -413,81 +451,104 @@ What is hexadecimal?<br>Why is it important?<br>What are the basics of
 hexadecimal we need to understand?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 11m
+<span class="visually-hidden">Duration: </span>00h 10m
 </td>
 <td>
  3. <a href="using-a-hex-editor.html">Using a hex editor</a>
 </td>
 <td>
-TODO…
+Introducing the Hex Editor<br>What is a Hex Editor?<br>Why use a Hex
+Editor?<br>How do I understand the layout<br>How can I keep my data
+safe when using a hex editor<br>How do I use a Hex Editor?<br>Can I
+use a hex editor now?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 21m
+<span class="visually-hidden">Duration: </span>00h 20m
 </td>
 <td>
- 4. <a href="pronom-syntax.html">PRONOM syntax</a>
+ 4. <a href="looking-for-patterns.html">Looking for patterns</a>
+</td>
+<td>
+Do my samples have the same “magic” numbers?<br>What version do these
+files represent?<br>Do I need more samples to draw conclusions?<br>Do
+I have access to a format specification?
+</td>
+</tr><tr><td>
+<span class="visually-hidden">Duration: </span>00h 30m
+</td>
+<td>
+ 5. <a href="pronom-syntax.html">PRONOM syntax</a>
 </td>
 <td>
 Why does PRONOM need syntax?<br>What syntax exists?<br>What does the
 syntax enable us to do?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 27m
+<span class="visually-hidden">Duration: </span>00h 40m
 </td>
 <td>
- 5. <a href="reversing-pronom-syntax.html">Reversing PRONOM syntax</a>
+ 6. <a href="reversing-pronom-syntax.html">Reversing PRONOM syntax</a>
 </td>
 <td>
 How do I understand if something should match a PRONOM
 signature?<br>How do I translate syntax into a file?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 33m
+<span class="visually-hidden">Duration: </span>00h 50m
 </td>
 <td>
- 6. <a href="creating-signature-files.html">Creating signature files</a>
+ 7. <a href="creating-signature-files.html">Creating signature files</a>
 </td>
 <td>
 What’s a signature file?<br>How do we create one?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 39m
+<span class="visually-hidden">Duration: </span>01h 00m
 </td>
 <td>
- 7. <a href="plugging-it-in.html">Plugging it in</a>
+ 8. <a href="plugging-it-in.html">Plugging it in</a>
 </td>
 <td>
 How do we use a signature file?<br>Should I use DROID or Siegfried?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 45m
+<span class="visually-hidden">Duration: </span>01h 10m
 </td>
 <td>
- 8. <a href="doing-it-for-yourself.html">Doing it for yourself</a>
+ 9. <a href="doing-it-for-yourself.html">Doing it for yourself</a>
 </td>
 <td>
 Can you apply what you’ve learned?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>01h 20m
+<span class="visually-hidden">Duration: </span>01h 45m
 </td>
 <td>
- 9. <a href="teaching-us-how.html">Teaching us how to do it!</a>
+10. <a href="teaching-us-how.html">Teaching us how to do it!</a>
 </td>
 <td>
 TODO…
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>01h 55m
+<span class="visually-hidden">Duration: </span>02h 20m
 </td>
 <td>
-10. <a href="advanced.html">Advanced PRONOM</a>
+11. <a href="advanced.html">Advanced PRONOM</a>
 </td>
 <td>
-TODO
+What’s the ‘correct’ length for a quality identification signature?
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>02h 01m
+<span class="visually-hidden">Duration: </span>02h 30m
+</td>
+<td>
+12. <a href="final-thoughts.html">Final thoughts</a>
+</td>
+<td>
+Take aways?
+</td>
+</tr><tr><td>
+<span class="visually-hidden">Duration: </span>02h 40m
 </td>
 <td>
 Finish
@@ -535,7 +596,7 @@ any links that you are not going to use.
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link float-end" href="../instructor/introduction.html" rel="next">Next: Introductions... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/introduction.html" rel="next">Next: Introduction... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div>
 <!-- END  : inst/pkgdown/templates/content-syllabus.html -->
@@ -578,9 +639,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "http://example.com/instructor/index.html",
   "identifier": "http://example.com/instructor/index.html",
-  "dateCreated": "2025-08-11",
-  "dateModified": "2025-10-07",
-  "datePublished": "2025-10-07"
+  "dateCreated": "2025-10-13",
+  "dateModified": "2025-10-13",
+  "datePublished": "2025-10-13"
 }
 
   </script><script>

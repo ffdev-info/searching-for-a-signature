@@ -245,7 +245,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Introductions</a>
+        <a href="introduction.html">1. Introduction</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -281,7 +281,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="pronom-syntax.html">4. PRONOM syntax</a>
+        <a href="looking-for-patterns.html">4. Looking for patterns</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -293,7 +293,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="reversing-pronom-syntax.html">5. Reversing PRONOM syntax</a>
+        <a href="pronom-syntax.html">5. PRONOM syntax</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -305,7 +305,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="creating-signature-files.html">6. Creating signature files</a>
+        <a href="reversing-pronom-syntax.html">6. Reversing PRONOM syntax</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -317,7 +317,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="plugging-it-in.html">7. Plugging it in</a>
+        <a href="creating-signature-files.html">7. Creating signature files</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -329,7 +329,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="doing-it-for-yourself.html">8. Doing it for yourself</a>
+        <a href="plugging-it-in.html">8. Plugging it in</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -341,7 +341,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="teaching-us-how.html">9. Teaching us how to do it!</a>
+        <a href="doing-it-for-yourself.html">9. Doing it for yourself</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -353,7 +353,31 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="advanced.html">10. Advanced PRONOM</a>
+        <a href="teaching-us-how.html">10. Teaching us how to do it!</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush12">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading12">
+        <a href="advanced.html">11. Advanced PRONOM</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush13">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading13">
+        <a href="final-thoughts.html">12. Final thoughts</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -418,12 +442,12 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Introductions</a></p>
+<section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -435,8 +459,8 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What is PRONOM?</li>
 <li>Why signature development?</li>
+<li>What is PRONOM?</li>
 </ul>
 </div>
 </div>
@@ -446,6 +470,7 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
+<li>Understand why we care about signatures</li>
 <li>Gain an overview of PRONOM and its benefits.</li>
 </ul>
 </div>
@@ -453,28 +478,145 @@
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<ul>
+<li>Welcome, housekeeping.</li>
+<li>Introduce the presenters.</li>
+<li>Brief intro for audience members e.g.
+<ul>
+<li>show of hands re interests</li>
+<li>prior experience</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>everyone will be interested in FFID to some extent.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="know-what-youve-got-why-are-we-interested-in-identifying-file-formats">Know what you’ve got (Why are we interested in identifying file
+formats?)<a class="anchor" aria-label="anchor" href="#know-what-youve-got-why-are-we-interested-in-identifying-file-formats"></a>
 </h2>
 <hr class="half-width">
-<p>PRONOM is…</p>
-</section><section><h2 class="section-heading" id="why-pronom">Why PRONOM?<a class="anchor" aria-label="anchor" href="#why-pronom"></a>
+<ul>
+<li>Knowing what you’ve got is a basic first step for managing digital
+information - whether that’s records management, managing digital
+continuity or Digital Preservation</li>
+<li>Our aim is to keep our digital information useful and usable.</li>
+<li>For ‘useful’ we usually think about managing the provenance and
+context of digital information - where it came from, what it’s for, what
+it means…. This work is often done by records managers or
+cataloguers.</li>
+<li>To keep digital information usable, we need to understand its
+technical characteristics. Identifying file formats with confidence is a
+first step in planning to keep those records usable - ensuring access to
+tools or services that make the records possible to open, render or
+search in the future. This is at the heart of digital preservation.</li>
+<li>This is detailed work. The precise format (e.g. what version of Word
+or PDF do we have?) can be important.</li>
+</ul></section><section><h2 class="section-heading" id="how-can-we-identify-file-formats">How can we identify file formats?<a class="anchor" aria-label="anchor" href="#how-can-we-identify-file-formats"></a>
 </h2>
 <hr class="half-width">
-<p>Know what you’ve got…</p>
-</section><section><h2 class="section-heading" id="beyond-pronom">Beyond PRONOM<a class="anchor" aria-label="anchor" href="#beyond-pronom"></a>
+<ul>
+<li>There’s not one single method</li>
+</ul>
+<div class="section level3">
+<h3 id="what-tool-was-used">What tool was used?<a class="anchor" aria-label="anchor" href="#what-tool-was-used"></a>
+</h3>
+<ul>
+<li>You may simply know what tools or software were used to create your
+digital records (e.g. you know what camera was used by a project or what
+word processor was available at the time). But usually we don’t know
+this with any confidence, particularly if the records were created a
+long time ago or came from outside the organisation.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="file-extensions">File extensions<a class="anchor" aria-label="anchor" href="#file-extensions"></a>
+</h3>
+<ul>
+<li>File extensions can be very helpful. But they can be changed and
+they don’t usually tell us about specific versions.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="looking-inside-the-files">Looking inside the files<a class="anchor" aria-label="anchor" href="#looking-inside-the-files"></a>
+</h3>
+<ul>
+<li>We need to look inside the digital files, at the precise sequence of
+codes in the file. Sometimes the file format is plainly stated inside
+the file. More often we will be looking for characteristic patterns that
+point us towards an identification. These patterns are known as file
+format signatures. The starts and ends of files are good places to look
+for these patterns.</li>
+<li>Some file formats have a formal specification - like a set of rules
+detailing how these files should be constructed. Only files that conform
+to the specification are ‘valid’ examples of that file format. If we
+have access to the specification, it can help us with signature
+development. The specification will define patterns that we can look
+for. But reality is more complicated than this: the software products
+used to create the files may not implement the specification correctly.
+We may see examples of files that seem to work just fine (i.e. they can
+be opened, viewed, edited using the relevant software) but if our
+identification relies on just the rules in the specification, we won’t
+get a match. It can help us to know whether or not a file is a valid
+example of the format - because invalid files may be at greater risk of
+being unusable in the future, if a new generation of the software is
+stricter.</li>
+<li>So, when creating signatures, we should review the specification if
+it’s available. But we usually want to look beyond the specification.
+Ideally, we should also look at examples of real files, from different
+sources if possible.</li>
+<li>Because of this variation, file format research is both an art and a
+science. Looking for patterns in files is a fairly structured activity.
+Making a judgment about how strict to be or when to be flexible is more
+of an art. If we make the signature too strict, we’ll fail to identify
+some real examples. If we make it too flexible, we’ll generate false
+identifications.</li>
+</ul>
+</div>
+</section><section><h2 class="section-heading" id="pronom">PRONOM<a class="anchor" aria-label="anchor" href="#pronom"></a>
 </h2>
 <hr class="half-width">
-<p>The skills here will benefit you when looking at digital collections
-in general. PRONOM research is very much like an entry point to digital
-forensics. You can soon pick up the skills to understand files more
-deeply, and even start to look at what it takes to maintain and repair
-them, at least, spot problems with them when they go wrong.</p>
+<ul>
+<li>These file format signatures are useful to all of us. We have a
+central registry of signatures - this is PRONOM.</li>
+<li>PRONOM is hosted and managed by The UK National Archives for the
+benefit of the whole digital preservation community. It’s free to
+use.</li>
+<li>PRONOM is used by people and also by software tools to help us
+identify the file formats in our digital collections.</li>
+<li>The National Archives didn’t research or create all the signatures
+in PRONOM. Since the start of the digital age, there have been a huge
+number of file formats in use. No one institution could possibly
+research them all. The file format signatures in PRONOM have been
+contributed by researchers from across the global digital preservation
+community. It’s a shared resource, created by the community for the
+community.</li>
+<li>PRONOM is not comprehensive, far from it. Although the most common
+file formats are covered, at some point in your digital preservation
+work you will encounter a file format that doesn’t have a signature in
+PRONOM. Or you may find that a signature exists, but it doesn’t work
+well for the files in your collection.</li>
+<li>This is when you will embark on researching and creating a new
+signature - which is what we’re going to look at in the following
+sections.</li>
+<li>Once you’ve created a new file format signature, please contribute
+it to PRONOM!</li>
+</ul>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
--->
-<p><br></p>
+--><p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -484,6 +626,8 @@ them, at least, spot problems with them when they go wrong.</p>
 <div class="callout-content">
 <ul>
 <li>Know what you’ve got…</li>
+<li>How we try to identify file formats.</li>
+<li>Use and contribute to PRONOM!</li>
 <li>It isn’t just the beginning of your PRONOM journey, it’s the
 beginning of your digital forensics journey!</li>
 <li>Enjoy!</li>
@@ -497,10 +641,10 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-hexadecimal"><p>Content from <a href="hexadecimal.html">Hexadecimal</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/hexadecimal.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -537,17 +681,226 @@ meaning.</li>
 </h2>
 <hr class="half-width">
 <ul>
-<li>A way of representing numbers.</li>
-<li>Decimal is Base10, hexadecimal is just Base16.</li>
-<li>1 = 0x01</li>
-<li>10 = 0x0A</li>
-<li>255 = 0xFF</li>
-<li>Use primarily to abbreviate actual binary:</li>
-<li>0b11111111 == 255 == 0xFF</li>
+<li>Hexadecimal is a way of representing numbers.</li>
+<li>Just as decimal is Base10, hexadecimal is just Base16.</li>
 </ul>
+<table class="table">
+<colgroup>
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+<col width="5%">
+</colgroup>
+<thead><tr class="header">
+<th>    </th>
+<th> </th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>DEC</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td>HEX</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+<td>E</td>
+<td>F</td>
+</tr>
+<tr class="odd">
+<td>DEX</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+<td>29</td>
+<td>30</td>
+<td>31</td>
+</tr>
+<tr class="even">
+<td>HEX</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>1A</td>
+<td>1B</td>
+<td>1C</td>
+<td>1D</td>
+<td>1E</td>
+<td>1F</td>
+</tr>
+</tbody>
+</table>
 <p><br></p>
+<ul>
+<li>While you can learn to convert decimal to hexadecimal, you are more
+likely to convert hexadecimal to decimal.</li>
+</ul>
+<pre class="text"><code>0x00 = (16 x 0 = 0) + (1 x 0 = 1) = 0
+0x01 = (16 x 0 = 0) + (1 x 1 = 1) = 1
+0x0A = (16 x 0 = 0) + (1 x 10 = 10) = 10
+0xFF = (16 x 15 = 240) + (1 x 15 = 15) = 255</code></pre>
+<p><br></p>
+<div id="zero-to-hero" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="zero-to-hero" class="callout-inner">
+<h3 class="callout-title">Zero to hero!</h3>
+<div class="callout-content">
+<p>Zero is an important number in computer science and we will see it
+often when we analyse digital records.</p>
+</div>
+</div>
+</div>
+<div id="what-does-0x-mean" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="what-does-0x-mean" class="callout-inner">
+<h3 class="callout-title">What does 0x mean?</h3>
+<div class="callout-content">
+<p>We use the <code>0x</code> prefix to signify hexadecimal. When we
+document hex sequences like above <code>0xE4 0xB8 0x96</code> is also
+equivalent to <code>0xE4B896</code>. How you choose write this
+information depends on context.</p>
+</div>
+</div>
+</div>
+<ul>
+<li>A single hexadecimal number is a convenient representation of
+1-byte, i.e. 8 bits of binary which is the smallest and most convenient
+unit of data used in computer memory.</li>
+</ul>
+<div id="binary" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="binary" class="callout-inner">
+<h3 class="callout-title">Binary</h3>
+<div class="callout-content">
+<p>We won’t go into binary here, but if you ever want to look at the
+binary representation of a number, modern search engines can do the
+conversion for you if you ask: 255 in binary (just as you can ask: 255
+in hexadecimal.</p>
+<ul>
+<li>0 (b00000000) is the smallest number you can represent in binary in
+a single byte,</li>
+<li>255 (b11111111) is the largest possible value.</li>
+</ul>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="ascii-table">ASCII table<a class="anchor" aria-label="anchor" href="#ascii-table"></a>
+</h3>
+<ul>
+<li><p>That might feel like a lot, but before we have to convert numbers
+every which way, we have another tool at our disposal, a lookup table
+which is still relevant in our research.</p></li>
+<li><p>In the lookup table below (the ASCII table) you can see how bytes
+take on more meaning to a computer, e.g. as control symbols, punctuation
+symbols, numbers, and letters.</p></li>
+<li><p>For the numbers and letters, this is just one encoding. We will
+talk about the importance of that below but first let’s look at the
+table for a second.</p></li>
+</ul>
+<div id="question" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="question" class="callout-inner">
+<h3 class="callout-title">question</h3>
+<div class="callout-content">
+<p>When you look at the table, think about your favorite (decimal)
+number.</p>
+<ul>
+<li>What symbol does it represent?</li>
+<li>What’s your favourite (hexadecimal) number, what symbol does it
+represent?</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br></p>
+</div>
+<div class="section level3">
+<h3 id="ascii-table-1">ASCII table<a class="anchor" aria-label="anchor" href="#ascii-table-1"></a>
 </h3>
 <table style="width:100%;" class="table">
 <colgroup>
@@ -1037,23 +1390,21 @@ meaning.</li>
 </h2>
 <hr class="half-width">
 <ul>
-<li><p>In a file format, they translate to some information that a
-computer can understand, e.g. numbers 0x30 to 0x39 are (universally) the
-numbers 0 - 9.</p></li>
-<li><p>In the olden days software devs only thought about english, and
-so character encodings started life there, and then became more
-inclusive – today we have unicode</p></li>
-<li>
-<p>Looking at files from the early days can be tricky when doing
+<li>In a file format, they translate to some information that a computer
+can understand, e.g. numbers 0x30 to 0x39 are (universally) the numbers
+0 - 9.</li>
+<li>In the olden days software devs only thought about english, and so
+character encodings started life there, and then became more inclusive –
+today we have unicode</li>
+<li>Looking at files from the early days can be tricky when doing
 digital forensics but file format signature development asks two
-things:</p>
+things:</li>
+</ul>
 <ol style="list-style-type: decimal">
 <li>That we understand the samples we have are the same format.</li>
 <li>That we can find patterns in these files, even if we don’t always
 know what those patterns mean.</li>
 </ol>
-</li>
-</ul>
 <p><br></p>
 <div class="section level3">
 <h3 id="example-māori-macrons-in-utf-8">Example Māori macrons in UTF-8<a class="anchor" aria-label="anchor" href="#example-m%C4%81ori-macrons-in-utf-8"></a>
@@ -1069,6 +1420,7 @@ know what those patterns mean.</li>
 <p><code>0xC4 0xAA</code> = Ī</p>
 <p><code>0xC5 0x8C</code> = Ō</p>
 <p><code>0xC5 0xAA</code> = Ū</p>
+<p><br></p>
 </div>
 <div class="section level3">
 <h3 id="world-in-japanese-in-utf-8">World in Japanese in UTF-8<a class="anchor" aria-label="anchor" href="#world-in-japanese-in-utf-8"></a>
@@ -1081,21 +1433,6 @@ know what those patterns mean.</li>
 <p><code>0xE3 0x81 0xAF</code> = は</p>
 <p><code>0xE4 0xB8 0x96</code> = 世</p>
 <p><code>0xE7 0x95 0x8C</code> = 界</p>
-<p><br></p>
-<div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>We use the <code>0x</code> prefix to signify hexadecimal. When we
-document hex sequences like above <code>0xE4 0xB8 0x96</code> is also
-equivalent to <code>0xE4B896</code>. How you choose write this
-information depends on context.</p>
-</div>
-</div>
-</div>
 <!-- NB. I found this site useful: https://www.compart.com/en/unicode/ for
      whatever reason it has a lot of info.
 -->
@@ -1115,7 +1452,7 @@ information depends on context.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Optional quiz </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>You can ask the room if they know what these byte sequences might
 be.</p>
@@ -1128,7 +1465,7 @@ be.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do you recognize them? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>Microsoft Office</li>
@@ -1176,7 +1513,7 @@ research!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre class="binary"><code>48 65 6C 6C 6F 20 77 6F 72 6C 64</code></pre>
 </div>
@@ -1213,7 +1550,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-using-a-hex-editor"><p>Content from <a href="using-a-hex-editor.html">Using a hex editor</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/using-a-hex-editor.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -1228,7 +1565,13 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>TODO…</li>
+<li>Introducing the Hex Editor</li>
+<li>What is a Hex Editor?</li>
+<li>Why use a Hex Editor?</li>
+<li>How do I understand the layout</li>
+<li>How can I keep my data safe when using a hex editor</li>
+<li>How do I use a Hex Editor?</li>
+<li>Can I use a hex editor now?</li>
 </ul>
 </div>
 </div>
@@ -1238,23 +1581,108 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>TODO…</li>
+<li>Get everybody onto a Hex Editor</li>
+<li>Understand how they work</li>
+<li>Understand what they’re used for</li>
+<li>Understand what I’m seeing</li>
+<li>Highlight and reinforce good, safe practice</li>
+<li>Hands-on demo</li>
+<li>Reinforce by doing</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="using-a-hex-editor">Using a hex editor<a class="anchor" aria-label="anchor" href="#using-a-hex-editor"></a>
+<section><h2 class="section-heading" id="introducing-hexed-it">Introducing HexEd.it<a class="anchor" aria-label="anchor" href="#introducing-hexed-it"></a>
 </h2>
 <hr class="half-width">
-<p>TODO…</p>
+<p><a href="https://HexEd.it" class="external-link">HexEd.it</a></p>
+<p>!!TODO:SCREENSHOT</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>leave link URL on screen throughout this section on hex editors.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="what-is-a-hex-editor">What is a Hex Editor?<a class="anchor" aria-label="anchor" href="#what-is-a-hex-editor"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Bytecode representation of digital file</li>
+<li>Typically displays Hexadecimal, and ASCII/ANSI representations of
+data</li>
+<li>Enables direct editing of data values</li>
+</ul></section><section><h2 class="section-heading" id="why-use-a-hex-editor">Why use a Hex Editor?<a class="anchor" aria-label="anchor" href="#why-use-a-hex-editor"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>File forensics</li>
+<li>Reverse engineering</li>
+<li><strong>Understanding file formats at a low-level</strong></li>
+<li>Cheating in video games!</li>
+</ul></section><section><h2 class="section-heading" id="how-do-i-understand-the-layout">How do I understand the layout?<a class="anchor" aria-label="anchor" href="#how-do-i-understand-the-layout"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Offset values show the position of data within the file</li>
+<li>Offsets also use hexadecimal notation, and start at offset 0 (or
+0x00)</li>
+<li>The byte at Offset 0x00 is the first byte; Offset 0x0A is the 11th
+byte; Offset 0x4000 is the 16,385th byte!</li>
+<li>Hexadecimal view shows binary data represented as bytes (8 bits per
+byte)</li>
+<li>ASCII view shows text interpretation of data</li>
+<li>Text on ASCII side may appear ‘scrambled’ - this suggests binary
+encoded data</li>
+<li>Some Hex Editors (like this one) can suggest different
+interpretations of blocks of data</li>
+<li>Some Hex Editors allow for text interpretations (character sets)
+other than ASCII, such as EBCDIC</li>
+</ul></section><section><h2 class="section-heading" id="safety-first">SAFETY FIRST!<a class="anchor" aria-label="anchor" href="#safety-first"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>A Hex Editor allows for the direct manipulation of data within
+digital files (note, this isn’t really any different from Notepad in
+this regard)</li>
+<li>Possible to make mistakes and accidentally save over your data</li>
+<li>Therefore: Always work on a copy of your data, never the original
+data</li>
+</ul></section><section><h2 class="section-heading" id="using-the-hex-editor">Using the Hex Editor<a class="anchor" aria-label="anchor" href="#using-the-hex-editor"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Demoing ‘Hello World!’ text file.</li>
+</ul>
+<p>!!TODO:SCREENSHOT !!TODO:SCREENSHOT</p>
+<ul>
+<li>Demoing PDF.</li>
+</ul>
+<p>!!TODO:SCREENSHOT</p>
+</section><section><h2 class="section-heading" id="your-turn">Your turn!<a class="anchor" aria-label="anchor" href="#your-turn"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Drag a file of your choosing into your Hex Editor</li>
+<li>Tell us what you’ve observed!</li>
+</ul>
+<p>Files used in this section:</p>
+<ul>
+<li>automatic_format_identification.pdf</li>
+<li>Hello World!.txt</li>
+</ul>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
--->
-<p><br></p>
+--><p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1263,7 +1691,147 @@ any links that you are not going to use.
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>A hex editor is a key tool in our work!</li>
+<li>Recommend HexEd.it as an online tool for the session. Mention HxD,
+others</li>
+<li>‘Bytecode’ representation of file - both Hexadecimal and ‘ASCII’,
+with 0x00-1F control characters usually represented as periods (dots) or
+spaces</li>
+<li>File Forensics, reverse engineering, understanding file formats at a
+low-level. My first exposure to Hex Editors was editing the save files
+of video games to give me extra lives or gold!</li>
+<li>Understanding offsets, Hex-view, limitations of ASCII view</li>
+<li>Encourage ‘Saftey First’ - it’s called an ‘editor’ for a reason, so
+to avoid the risk of corrupting your own originals, always work with a
+copy of your original files</li>
+<li>Drag a Plain text file everybody has access to to demonstrate ASCII
+representation. Drag a further file (PDF?) to demonstrate mixture of
+binary and ASCII data- with reference to PRONOM, highlight magic number,
+reinforcement of offset meaning. Demonstrate how easy it is to change
+data, to reinforce safety first aspects!</li>
+<li>Drag a file of your choosing into the hex editor - raise your hand
+if you’d like to share any observations</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-looking-for-patterns"><p>Content from <a href="looking-for-patterns.html">Looking for patterns</a></p>
+<hr>
+<p>Last updated on 2025-10-13 |
+
+        <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/looking-for-patterns.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Do my samples have the same “magic” numbers?</li>
+<li>What version do these files represent?</li>
+<li>Do I need more samples to draw conclusions?</li>
+<li>Do I have access to a format specification?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Recognize patterns in sample files.</li>
+<li>Have more confidence in deciding which values to use in a
+signature.</li>
+<li>Read a format specification and draw conclusions.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="exploring-file-types">Exploring file types<a class="anchor" aria-label="anchor" href="#exploring-file-types"></a>
+</h2>
+<hr class="half-width">
+<p>With a hex editor you can now explore all file types regardless of
+format. This comes in handy when exploring files which don’t seem to be
+identify with existing tools. You can quickly open the file to view the
+hex byte sequences and start to understand the format of the file.
+<br><br> Opening a single file in a hex editor can be illuminating or
+seem like you just entered the Matrix.</p>
+<p>!!TODO:SCREENSHOT</p>
+<p>In this example we don’t really know much about the file as the
+extension is not known and there is no human readable text to help. So
+by itself this file is hard to identify.</p>
+</section><section><h2 class="section-heading" id="searching-for-the-bytes">Searching for the bytes<a class="anchor" aria-label="anchor" href="#searching-for-the-bytes"></a>
+</h2>
+<hr class="half-width">
+<p>We can take some of the byte sequences and use search engines to try
+and find references to the sequences as one solution or if you have
+additional files with the same extension you can use them to
+compare.</p>
+<p>!!TODO:SCREENSHOT</p>
+</section><section><h2 class="section-heading" id="comparing-samples">Comparing samples<a class="anchor" aria-label="anchor" href="#comparing-samples"></a>
+</h2>
+<hr class="half-width">
+<p>With a second file we can start to see differences and similarities
+between them. The most noticeable is the first two bytes “FF D8”. This
+second example also has a bit of human readable text which can also help
+in identification. The more samples you have the more confident you can
+be in choosing a byte sequence to use for a signature. <br><br> You may
+find patterns that work with some of your samples but not with others,
+Choosing a byte sequence too short may clash with other file formats,
+but sequences too long may be too strict. Your sample files may
+represent files saved with different versions of the same software which
+can alter their structure. This can be helpful if you want to identify a
+file down to the version of the software which created it.</p>
+</section><section><h2 class="section-heading" id="creating-samples">Creating samples<a class="anchor" aria-label="anchor" href="#creating-samples"></a>
+</h2>
+<hr class="half-width">
+<p>Being able to create sample files using original software or finding
+samples specific to a certain version of software is a big help in
+determining identification. Look for tutorials, sample files on
+installer disks, or create your own using trial versions of the
+software. <br><br> Having a file format specification can be the most
+helpful in understanding a file format, but isn’t always available. In
+the case of the example files above, we can see in the <a href="https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36" class="external-link">T.81
+specification for compressed images</a>, the “FF D8” sequence is used as
+the start of image bytes for a JPEG file. The specification also gives
+us what should be at the end of the file as well, “FF D9”.</p>
+<p>!!TODO:SCREENSHOT</p>
+</section><section><h2 class="section-heading" id="resources-for-finding-sample-files">Resources for finding Sample files<a class="anchor" aria-label="anchor" href="#resources-for-finding-sample-files"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>
+<a href="https://github.com/thorsted/fileformat" class="external-link">Resources for
+finding Sample files</a>.</li>
+</ul>
+<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+     it looks like it's better with an additional newline so adding that
+     here and using this comment as a separator to make it easy to read
+     content.
+--><p><br></p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>The more samples from different versions of the format can ensure
+better identification.</li>
+<li>Not all formats have available specifications</li>
+<li>The more variations in samples, patterns emerge.</li>
 </ul>
 </div>
 </div>
@@ -1274,10 +1842,10 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-pronom-syntax"><p>Content from <a href="pronom-syntax.html">PRONOM syntax</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/pronom-syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1309,48 +1877,99 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="pronom-syntax">PRONOM syntax<a class="anchor" aria-label="anchor" href="#pronom-syntax"></a>
+<div id="pronom-in-practice" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="pronom-in-practice" class="callout-inner">
+<h3 class="callout-title">PRONOM in Practice</h3>
+<div class="callout-content">
+<p>The team at The National Archives have worked hard to create good
+resources for PRONOM research and development. The PRONOM in Practice
+guide is an important set of documents to follow up on after this
+tutorial.</p>
+<ul>
+<li><a href="https://osf.io/2jbpe/files/osfstorage" class="external-link">PRONOM in Practice
+documents</a></li>
+</ul>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="pronom-terms-basic-syntax-and-data-model">PRONOM terms, basic syntax and data model<a class="anchor" aria-label="anchor" href="#pronom-terms-basic-syntax-and-data-model"></a>
+</h2>
+<hr class="half-width">
+<dl>
+<dt>BOF</dt>
+<dd>
+Beginning of File
+</dd>
+<dt>EOF</dt>
+<dd>
+End of File
+</dd>
+<dt>Var</dt>
+<dd>
+Variable (anywhere in the file)
+</dd>
+<dt>Offset/Max Offset</dt>
+<dd>
+Exact or positional range in which a signature starts
+</dd>
+</dl></section><section><h2 class="section-heading" id="wildcards">Wildcards<a class="anchor" aria-label="anchor" href="#wildcards"></a>
 </h2>
 <hr class="half-width">
 <dl>
 <dt>??</dt>
 <dd>
-wildcard matching any pair of hexadecimal values (i.e. a single byte).
+single wildcard byte, e.g. AB??C3
 </dd>
 <dt>*</dt>
 <dd>
-wildcard matching any number of bytes (0 or more).
+0-many wildcard bytes, e.g BC*D4
 </dd>
 <dt>{n}</dt>
 <dd>
-wildcard matching n bytes, where n is an integer.
+specific number of wildcard bytes, e.g. A2{5}F3
 </dd>
-<dt>{m-n}</dt>
+<dt>{n-n}</dt>
 <dd>
-wildcard matching between m-n bytes inclusive, where m and n are
-integers or ’*’.
+range of wildcard bytes, e.g. 4D{0-12}E4
 </dd>
-<dt>(a|b)</dt>
+</dl></section><section><h2 class="section-heading" id="byte-range">Byte range<a class="anchor" aria-label="anchor" href="#byte-range"></a>
+</h2>
+<hr class="half-width">
+<dl>
+<dt>[hh:hh]</dt>
 <dd>
-wildcard matching one from a list of values (e.g. a or b), where each
-value is a hexadecimal byte sequence of arbitrary length
+single byte value between range, e.g [00:FA]
 </dd>
-<dt>[a:b]</dt>
+</dl></section><section><h2 class="section-heading" id="eitheror">Either/or<a class="anchor" aria-label="anchor" href="#eitheror"></a>
+</h2>
+<hr class="half-width">
+<dl>
+<dt>(hhhh|hhhh|hh)</dt>
 <dd>
-wildcard matching any sequence of bytes which lies lexicographically
-between a and b
+either/any or these byte values, e.g. (0D|0A|0D0A)
 </dd>
-<dt>[!a]</dt>
-<dd>
-wildcard matching any sequence of bytes other than a itself (where a is
-a byte sequence containing no wildcards).
-</dd>
-<dt>[!a:b]</dt>
-<dd>
-wildcard matching any sequence of bytes which does not lie
-lexicographically between a and b
-</dd>
-</dl>
+</dl></section><section><h2 class="section-heading" id="not">Not<a class="anchor" aria-label="anchor" href="#not"></a>
+</h2>
+<hr class="half-width">
+<div id="pronoms-specificaton" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="pronoms-specificaton" class="callout-inner">
+<h3 class="callout-title">PRONOM’s specificaton</h3>
+<div class="callout-content">
+<ul>
+<li><a href="https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf" class="external-link">Automatic
+Signature Identification at The National Archives</a></li>
+</ul>
+</div>
+</div>
+</div>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1518,10 +2137,10 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-reversing-pronom-syntax"><p>Content from <a href="reversing-pronom-syntax.html">Reversing PRONOM syntax</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/reversing-pronom-syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1555,8 +2174,14 @@ signature?</li>
 <section><h2 class="section-heading" id="reversing-pronom-syntax">Reversing PRONOM syntax<a class="anchor" aria-label="anchor" href="#reversing-pronom-syntax"></a>
 </h2>
 <hr class="half-width">
-<p>It can be useful to work backwards from a PRONOM signature,
-e.g. skeleton files that test the mechanism works as expected.</p>
+<ul>
+<li><p>As you write more signatures you begin to develop a need to debug
+yours, and existing signatures.</p></li>
+<li><p>It can be useful to work backwards from a PRONOM signature to
+create an outline digital file that triggers a signature’s
+patterns.</p></li>
+<li><p>These outline digital files are called skeleton files.</p></li>
+</ul>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1574,9 +2199,7 @@ e.g. skeleton files that test the mechanism works as expected.</p>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  One possible solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
@@ -1588,9 +2211,7 @@ e.g. skeleton files that test the mechanism works as expected.</p>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Another possible solution
-  </h4>
+  <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
@@ -1599,6 +2220,135 @@ e.g. skeleton files that test the mechanism works as expected.</p>
 </div>
 </div>
 </div>
+<ul>
+<li><p>You can jot down byte-sequences in any notepad application you
+have available to you (even google docs!).</p></li>
+<li><p>Byte sequences must have an even number of characters, i.e. one
+byte is always two characters.</p></li>
+<li><p>You can copy and paste the bytes into a hex editor. As we’ve
+seen, these are usually split into two panes, one for bytes and one for
+a representation of bytes in ASCII or another encoding.</p></li>
+</ul>
+<div id="try-it" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="try-it" class="callout-inner">
+<h3 class="callout-title">Try it!</h3>
+<div class="callout-content">
+<p>Try it on <a href="https://hexed.it/" class="external-link">https://hexed.it/</a> if you
+have a moment.</p>
+<ol style="list-style-type: decimal">
+<li>Take one of the solutions above and copy it into your
+clipboard.</li>
+<li>Click anywhere in the editor pane and press ctrl-v.</li>
+<li>Select “create new file” and specify how the data should be
+interpreted as “hexadecimal values”.</li>
+<li>You will see the bytes from the solution in the left hand side of
+the window and its ASCII interpretation on the right.</li>
+<li>You can then elect to download and name the file via ‘Save As’.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="challenge2" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Create a skeleton file using the bytes
+<code>5A5854617065211A01</code> and run it against DROID, FIDO, or
+Siegfried, what PUID do you get?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>fmt/1000 ZX Tape Format</p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><p>There are no concrete rules for how to convert a PRONOM signature
+into a skeleton file.</p></li>
+<li><p>A good rule of thumb is to always convert wildcards and unknown
+values ( *, ??, {n}, {n-m} ) to zero bytes as they will help make it
+easier to see how the file is spaced out.</p></li>
+<li><p>For sequences described by PRONOM as optional or belonging to one
+out of a set of values ( (aa|bb), (aa|bb|cccc), (aaaa|ffff) ) you only
+need to select one byte or set of bytes..</p></li>
+<li><p>It’s a good idea to create some space between sets of sequences,
+for example between BOF and EOF sequences. Pick a number between 1 and
+20 bytes (or as many bytes as you like) and enter that many null bytes
+between sequences.</p></li>
+<li><p>Observe the way the skeleton file (bytes) below is spaced where
+zeros are used to replace wildcards in the signature.</p></li>
+</ul>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Skeleton file</td>
+<td align="left"><code>41 75 74 6F 43 41 44 20 42 69 6E 61 72 79 20 44 58 46 0D 0A 1A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 53 45 43 54 49 4F 4E 00 02 48 45 41 44 45 52 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 24 41 43 41 44 56 45 52 00 01 41 43 31 30 31 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 45 4E 44 53 45 43 00 00 45 4F 46 00</code></td>
+</tr>
+<tr class="even">
+<td align="left">BOF</td>
+<td align="left">4175746F4341442042696E617279204458460D0A1A00<strong>*</strong>0053454354494F4E0002<strong>{0-1}</strong>48454144455200<strong>*</strong>09<strong>{0-1}</strong>24414341445645520001<strong>{0-1}</strong>41433130313200<strong>*</strong>00454E4453454300</td>
+</tr>
+<tr class="odd">
+<td align="left">EOF</td>
+<td align="left">00454F4600</td>
+</tr>
+<tr class="even">
+<td align="left">Format</td>
+<td align="left">fmt/82: Drawing Interchange File Format (Binary):
+R13</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>You can always measure your success in creating a skeleton file
+against the signature itself. Once you’ve created a good skeleton file
+it will match the signature that you are investigating.</li>
+</ul>
+<div id="making-use-of-skeleton-files" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="making-use-of-skeleton-files" class="callout-inner">
+<h3 class="callout-title">Making use of skeleton files</h3>
+<div class="callout-content">
+<p>Skeleton files have different uses. They enable us to:</p>
+<ul>
+<li>Test signatures.</li>
+<li>Identify false positives and multiple-identifications.</li>
+<li>Test the different format identification implementations.</li>
+<li>Share our work with the PRONOM team in lieu of sample files (or in
+support of).</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="your-resource-for-skeleton-files">Your resource for skeleton files<a class="anchor" aria-label="anchor" href="#your-resource-for-skeleton-files"></a>
+</h2>
+<hr class="half-width">
+<p>Siegfried’s build process uses a set of skeleton files and stores
+them in a repository called builder. You can download and inspect these
+from: <a href="https://github.com/richardlehane/builder/releases" class="external-link">https://github.com/richardlehane/builder/releases</a></p>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -1613,7 +2363,7 @@ e.g. skeleton files that test the mechanism works as expected.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>You can reverse engineer PRONOM signautres to debug existing
+<li>You can reverse engineer PRONOM signatures to debug existing
 files.</li>
 <li>Reversing PRONOM syntax has other implications, e.g. skeleton
 files.</li>
@@ -1627,10 +2377,10 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-creating-signature-files"><p>Content from <a href="creating-signature-files.html">Creating signature files</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/creating-signature-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1661,6 +2411,51 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
+<section><h2 class="section-heading" id="making-it-work-with-droid-and-siegfried">Making it work with DROID and Siegfried<a class="anchor" aria-label="anchor" href="#making-it-work-with-droid-and-siegfried"></a>
+</h2>
+<hr class="half-width">
+<p>You now have a sequence you think will work with your format and
+understand the syntax needed. How do we get that sequence into something
+DROID or Sigfried can use?</p>
+</section><section><h2 class="section-heading" id="what-is-a-signature-file">What is a signature file?<a class="anchor" aria-label="anchor" href="#what-is-a-signature-file"></a>
+</h2>
+<hr class="half-width">
+<p>A signature file is a representation of the byte sequence, written in
+a way tools like DROID or Siegfried can use to match the byte sequence
+within a file or group of files. This pattern is written to an XML
+structure which records the sequence, offsets, and descriptive
+information about the file.</p>
+<p>!!TODO:SCREENSHOT</p>
+<p>A Signature file consists of two parts, the byte signature and the
+file format information. The signature will have an ID which is then
+referenced in the file format information tag, connecting the two.</p>
+<p>This file can be created from scratch using any text editor, but
+nobody wants to do that, let’s look at the <a href="https://ffdev.info/" class="external-link">amazing tool Ross Spencer wrote</a> to help
+with signature creation.</p>
+<p>!!TODO:SCREENSHOT</p>
+</section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a>
+</h2>
+<hr class="half-width">
+<p>The signature development utility will take the sequence you want to
+use and generate the XML needed by tools like DROID to use. Use a name
+which is specific to the format. If you know the version of the format
+the sequence describes, you can add it as well, but if you are unsure,
+leave it blank. The form has a place for the extension, and if there is
+more than one, we can add that later in the XML directly. Many formats
+have a mime-type, some official, others not so official, add the type
+here if it is commonly used. <br><br> Add your sequence and anchor it at
+the beginning of the file or end of file, then add any offsets if
+needed. You can always add additional sequences to add more accuracy to
+the signature. <br><br> Pressing the “Create Signature” button will
+generate an XML file based on your information and immediately download
+to your computer. This can then be moved to your .droid6 folder or
+imported in the DROID Application.</p>
+<p>!!TODO:SCREENSHOT</p>
+<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+     it looks like it's better with an additional newline so adding that
+     here and using this comment as a separator to make it easy to read
+     content.
+-->
 <p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -1674,12 +2469,17 @@ any links that you are not going to use.
 </ul>
 </div>
 </div>
-</div></section><section id="aio-plugging-it-in"><p>Content from <a href="plugging-it-in.html">Plugging it in</a></p>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-plugging-it-in"><p>Content from <a href="plugging-it-in.html">Plugging it in</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/plugging-it-in.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1709,12 +2509,162 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="plugging-it-in">Plugging it in<a class="anchor" aria-label="anchor" href="#plugging-it-in"></a>
+<section><h2 class="section-heading" id="plugging-it-in-the-easy-way">Plugging it in – the easy way!<a class="anchor" aria-label="anchor" href="#plugging-it-in-the-easy-way"></a>
 </h2>
 <hr class="half-width">
+<p>Once you have created a signature file you will want to plug it into
+your preferred tool to test it against your files.</p>
+<p>For this workshop we have developed a method of doing this through
+your web-browser using Siegfried.</p>
+<div id="wasm" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="wasm" class="callout-inner">
+<h3 class="callout-title">WASM</h3>
+<div class="callout-content">
+<p>This online version of Siegfried uses Web Assembly (WASM) which means
+everything is loaded locally in your browser. With Siegfried running
+locally in your browser data is not transferred over the network to any
+other computer, it is sandboxed and kept local to your machine.</p>
+</div>
+</div>
+</div>
 <ol style="list-style-type: decimal">
-<li>Instructions for DROID and Siegried.</li>
-<li>Questions.</li>
+<li>Go to ffdev.info and look at the Siegfried tab.</li>
+<li>Select “roy: load signature’ and navigate to a signature file on
+your hard disk. The signature file will be loaded into memory alongside
+Siegfried’s default signature.</li>
+<li>Now click “Siegfried: File ID” and select your test files (or
+signature file) and click okay.</li>
+<li>Siegfried will attempt to identify your file and should display a
+result matching your signature file’s metadata.</li>
+<li>Congratulations, you’ve managed to create your first signature file
+and successfully identified your files using Siegfried.</li>
+</ol>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>Trainers can skip or summarize the next section which runs through
+doing the same locally, i.e. for a locally installed DROID or
+Siegfried.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="doing-it-locally">Doing it locally<a class="anchor" aria-label="anchor" href="#doing-it-locally"></a>
+</h2>
+<hr class="half-width">
+<p>You may want to avail yourself on how to do this using your local
+tools. We go into this in detail below for DROID and Siegfried.</p>
+<div id="prereq1" class="callout prereq">
+<div class="callout-square">
+<i class="callout-icon" data-feather="check"></i>
+</div>
+<span class="callout-header">Prerequisite</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>the following assumes that you have either DROID or Siegfried
+installed locally.</li>
+<li>the instructions assume some familiarity with running both tools and
+getting forrmat identifications out of them.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="droid">DROID<a class="anchor" aria-label="anchor" href="#droid"></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li>With DROID installed you will find its configuration folder in
+<code>%userprofile%/.droid6/</code> on Windows and
+<code>~/.droid6</code> on Linux.</li>
+<li>Signature files are stored in a folder called signature_files.</li>
+<li>Given your signature file created above, copy and paste it into this
+directory.</li>
+</ol>
+<div id="naming-conventions" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="naming-conventions" class="callout-inner">
+<h3 class="callout-title">Naming conventions</h3>
+<div class="callout-content">
+<p>At time of writing there are no known limitations on the filename you
+use here.</p>
+</div>
+</div>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Once you have done this, launch DROID locally as you would
+normally.</li>
+<li>Once DROID has loaded, navigate to <code>tools</code> -&gt;
+<code>preferences</code>.</li>
+<li>From the binary signatures drop-down look for your signature
+filename (it will be minus the xml suffix).</li>
+<li>Click ok to accept the changes.</li>
+<li>While DROID opens a profile when it first loads, your new signature
+file is not yet loaded into memory and so will not function in the
+currently open profile.</li>
+<li>Open a new profile by pressing ‘New’ it should open as Untitled-2 if
+you have no other existing profiles.</li>
+<li>You can now add files using ‘Add’ and attempt to identify these
+files against your new signature file.</li>
+<li>You can read move via DROID’s github: <a href="https://github.com/digital-preservation/droid" class="external-link uri">https://github.com/digital-preservation/droid</a>
+</li>
+</ol>
+</div>
+<div class="section level3">
+<h3 id="siegfried">Siegfried<a class="anchor" aria-label="anchor" href="#siegfried"></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li>Run sf -update to ensure that a siegfried configuration folder has
+been created.</li>
+<li>Attempt to run roy build -nocontainer -noreports. If this fails,
+download the latest DROID signature file into the folder described in
+the error message by roy, e.g. <code>%userprofile%/siegfried/</code> on
+Windows or <code>~/.local/share/siegfried/</code> on Linux
+(configurations may vary).</li>
+<li>You can download the latest signature file from The National
+Archives: <a href="https://www.nationalarchives.gov.uk/aboutapps/pronom/droid-signature-files.htm" class="external-link">DROID
+signature files</a>
+</li>
+</ol>
+<div id="keeping-it-simple" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="keeping-it-simple" class="callout-inner">
+<h3 class="callout-title">Keeping it simple</h3>
+<div class="callout-content">
+<p>Because it gets more complicated and this method allows us to test
+out signatures we’re focusing on building a signature file using just
+the DROID signature file here but it is possible to build a more
+comprehensive signature with roy using a PRONOM download by using ./roy
+harvest and then by downloading the most recent container file to the
+same siegfried folder above. See the siegfried documentation for more
+information on building signatures.</p>
+</div>
+</div>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>Once you have verified you can build a signature with roy, you need
+to add your own signature file to the collection, you can do this as
+follows:
+<code>./roy build -extend &lt;/path/to/your/signature/file.xml&gt;</code>.</li>
+<li>Given no errors you can now run siegfried against your own files and
+they should identify against your new signature file!</li>
+<li>For more information on building signatures with siegfried and roy,
+check out siegfried’s wiki: <a href="https://github.com/richardlehane/siegfried/wiki/Inspect-and-Debug" class="external-link">roy:
+inspect and debug</a>.</li>
 </ol>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
@@ -1739,6 +2689,7 @@ any links that you are not going to use.
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></section><section id="aio-doing-it-for-yourself"><p>Content from <a href="doing-it-for-yourself.html">Doing it for yourself</a></p>
 <hr>
 <p>Last updated on 2025-08-11 |
@@ -1829,7 +2780,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-teaching-us-how"><p>Content from <a href="teaching-us-how.html">Teaching us how to do it!</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/teaching-us-how.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 35 minutes</p>
@@ -1861,6 +2812,22 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Note from David - Might I suggest we, as the workshop group, go
+through a process of creating and submitting a signature - I recommend
+Quite Ok Image Format - <a href="https://qoiformat.org/qoi-specification.pdf" class="external-link uri">https://qoiformat.org/qoi-specification.pdf</a> - BOF is
+‘qoif’, EOF is 0x0000000000000001 - its not yet in PRONOM and we can ask
+the group to call out signature suggestions based on the spec &amp; file
+example, e.g. dice.qoi from the test images zip available here: <a href="https://qoiformat.org" class="external-link uri">https://qoiformat.org</a></p>
+</div>
+</div>
+</div>
 <section><h2 class="section-heading" id="teach-one">Teach one<a class="anchor" aria-label="anchor" href="#teach-one"></a>
 </h2>
 <hr class="half-width">
@@ -1873,7 +2840,7 @@ any links that you are not going to use.
 <li>Two groups to share their results at the end of the session…
 Questions…</li>
 </ol>
-<div id="callout1" class="callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1911,10 +2878,10 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-advanced"><p>Content from <a href="advanced.html">Advanced PRONOM</a></p>
 <hr>
-<p>Last updated on 2025-08-11 |
+<p>Last updated on 2025-10-13 |
 
         <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 6 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1926,7 +2893,8 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>TODO</li>
+<li>What’s the ‘correct’ length for a quality identification
+signature?</li>
 </ul>
 </div>
 </div>
@@ -1936,7 +2904,8 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>TODO</li>
+<li>Understand what a good signature looks like. What makes it
+‘good’?</li>
 </ul>
 </div>
 </div>
@@ -1949,13 +2918,75 @@ any links that you are not going to use.
 <p>Additional syntax and turning these into published signatures</p>
 <p>Possible headings…</p>
 <ul>
-<li>Using EOF sequences</li>
+<li>A signature == byte sequence + metadata + priority.</li>
+<li>We use a priority because some identifications need to build on
+another, e.g. variants of XML, PDF, JPEG… at the foundation is a common
+marker and its specificity is provided by something somewhere else in
+the bytestream.</li>
+<li>Using EOF sequences – they’re like BOF sequences, but EOF…</li>
 <li>Additional syntax, new byteseek syntax</li>
 <li>Using priorities</li>
 <li>Advanced research techniques</li>
 <li>Advanced recording of progress</li>
 <li>Submitting to PRONOM</li>
 </ul>
+<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+     it looks like it's better with an additional newline so adding that
+     here and using this comment as a separator to make it easy to read
+     content.
+--><p><br></p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Key Points</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Ideally minimally 4 bytes, but plain words by themselves are more
+likely to cause clashes.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-final-thoughts"><p>Content from <a href="final-thoughts.html">Final thoughts</a></p>
+<hr>
+<p>Last updated on 2025-10-13 |
+
+        <a href="https://github.com/ross-spencer/testing-notes/edit/main/episodes/final-thoughts.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Take aways?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Go ahead and look at hex!</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div id="questions" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -1971,11 +3002,6 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
-     it looks like it's better with an additional newline so adding that
-     here and using this comment as a separator to make it easy to read
-     content.
--->
 <p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -1985,18 +3011,14 @@ any links that you are not going to use.
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>TODO…</li>
-<li>There’s help out there!</li>
+<li>It might look scary at first, but take your time, explore, and
+enjoy!</li>
+<li>There’s help out there.</li>
 <li>Keep in touch!</li>
 </ul>
 </div>
 </div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section>
+</div></section>
 </div>
     </main>
 </div>
@@ -2043,9 +3065,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "http://example.com/instructor/aio.html",
   "identifier": "http://example.com/instructor/aio.html",
-  "dateCreated": "2025-08-11",
-  "dateModified": "2025-10-07",
-  "datePublished": "2025-10-07"
+  "dateCreated": "2025-10-13",
+  "dateModified": "2025-10-13",
+  "datePublished": "2025-10-13"
 }
 
   </script><script>

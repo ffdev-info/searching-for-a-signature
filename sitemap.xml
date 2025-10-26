@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/001-introduction.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/002-hexadecimal.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/003-using-a-hex-editor.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/004-looking-for-patterns.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/005-pronom-syntax.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/006-reversing-pronom.syntax.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/007-creating-signature-files.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/008-plugging-it-in.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/009-doing-it-for-yourself.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/010-teaching-us-how.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/011-advanced.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/012-final-thoughts.html</loc>
+  </url>
+  <url>
     <loc>http://example.com/404.html</loc>
   </url>
   <url>
@@ -25,7 +61,13 @@
     <loc>http://example.com/doing-it-for-yourself.html</loc>
   </url>
   <url>
+    <loc>http://example.com/faq.html</loc>
+  </url>
+  <url>
     <loc>http://example.com/final-thoughts.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/glossary.html</loc>
   </url>
   <url>
     <loc>http://example.com/hexadecimal.html</loc>
@@ -35,6 +77,42 @@
   </url>
   <url>
     <loc>http://example.com/index.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/001-introduction.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/002-hexadecimal.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/003-using-a-hex-editor.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/004-looking-for-patterns.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/005-pronom-syntax.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/006-reversing-pronom.syntax.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/007-creating-signature-files.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/008-plugging-it-in.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/009-doing-it-for-yourself.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/010-teaching-us-how.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/011-advanced.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/012-final-thoughts.html</loc>
   </url>
   <url>
     <loc>http://example.com/instructor/404.html</loc>
@@ -61,7 +139,13 @@
     <loc>http://example.com/instructor/doing-it-for-yourself.html</loc>
   </url>
   <url>
+    <loc>http://example.com/instructor/faq.html</loc>
+  </url>
+  <url>
     <loc>http://example.com/instructor/final-thoughts.html</loc>
+  </url>
+  <url>
+    <loc>http://example.com/instructor/glossary.html</loc>
   </url>
   <url>
     <loc>http://example.com/instructor/hexadecimal.html</loc>

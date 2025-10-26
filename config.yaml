@@ -69,23 +69,24 @@ contact: 'team@carpentries.org' # FIXME
 
 # Order of episodes in your lesson
 episodes:
-- introduction.md
-- hexadecimal.md
-- using-a-hex-editor.md
-- looking-for-patterns.md
-- pronom-syntax.md
-- reversing-pronom-syntax.md
-- creating-signature-files.md
-- plugging-it-in.md
-- doing-it-for-yourself.md
-- teaching-us-how.md
-- advanced.md
-- final-thoughts.md
+- 001-introduction.md
+- 002-hexadecimal.md
+- 003-using-a-hex-editor.md
+- 004-looking-for-patterns.md
+- 005-pronom-syntax.md
+- 006-reversing-pronom.syntax.md
+- 007-creating-signature-files.md
+- 008-plugging-it-in.md
+- 009-doing-it-for-yourself.md
+- 010-teaching-us-how.md
+- 011-advanced.md
+- 012-final-thoughts.md
 
 # Information for Learners. The pages here will land in the introductory
 # sections.
 learners:
-- reference.md
+- faq.md
+- glossary.md
 - additional.md
 
 # Information for Instructors. The pages here will be included in the

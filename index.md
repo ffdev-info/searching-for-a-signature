@@ -37,9 +37,9 @@ This website is created to enable in-person teaching as well as offline
 self-teaching. Lessons are listed as "Episodes". As you work through the
 sections you may also be interested in:
 
-* The Glossary: link
-* The FAQ: link
-* Additional resources.
+* [FAQ](/faq.html).
+* [Glossary](/glossary.html).
+* [Additional resources](/additional.html).
 
 You can keep these tabs open as you work through the other pages.
 

@@ -31,7 +31,7 @@ sequences and start to understand the format of the file.
 Opening a single file in a hex editor can be illuminating or seem like
 you just entered the Matrix.
 
-!!TODO:SCREENSHOT
+![What would Trinity do?](./fig/05-matrix.png){alt='image shows the hexadecimal representation of a JPEG file in a hex editor\'s user interface.'}
 
 In this example we don’t really know much about the file as the
 extension is not known and there is no human readable text to help. So by
@@ -43,9 +43,9 @@ We can take some of the byte sequences and use search engines to try and
 find references to the sequences as one solution or if you have additional
 files with the same extension you can use them to compare.
 
-!!TODO:SCREENSHOT
-
 ## Comparing samples
+
+![Another JPEG for comparison.](./fig/06-example3.png){alt='image shows the hexadecimal representation of another JPEG file in a hex editor allowing us to identify differences in patterns.'}
 
 With a second file we can start to see differences and similarities
 between them. The most noticeable is the first two bytes “FF D8”. This
@@ -66,7 +66,9 @@ Being able to create sample files using original software or finding
 samples specific to a certain version of software is a big help in
 determining identification. Look for tutorials, sample files on installer
 disks, or create your own using trial versions of the software.
-<br><br>
+
+## Referencing the specification
+
 Having a file format specification can be the most helpful in
 understanding a file format, but isn’t always available. In the case of the
 example files above, we can see in the
@@ -75,11 +77,43 @@ the “FF D8” sequence is used as the start of image bytes for a JPEG file.
 The specification also gives us what should be at the end of the
 file as well, “FF D9”.
 
-!!TODO:SCREENSHOT
+<!--
+
+![Markers showing in the JPEG specification.](./fig/07-spec.png){alt='image shows the descriptions given to different markers in the JPEG specification. These act like keys we can use to make file format signatures consistent.'}
+
+-->
+
+|  |  |  |
+| --- | --- | --- |
+| 0xFFDA | SOI | Start of image |
+| 0xFFD9 | EOI | End of image |
+| 0xFFDA | SOS | Start of scan |
+| 0xFFDB | DQT | Define quantization table(s) |
+| 0xFFDC | DNL | Define number of lines |
+| 0xFFDD | DRI | Define restart interval |
+| 0xFFDE | DHP | Define hierarchical progression |
+| 0xFFDF | EXP | Expand reference component(s) |
+| 0xFFE0 through 0xFFEF | APP | Reserved for application segments |
+| 0xFFF0 through 0xFFFD | JPG | Reserved for JPEG extensions |
+| 0xFFFE | COM | Comment |
+
+## 0xFFD9
+
+As you progress further into this research, you will want to find sample
+files. There may be some samples known to you. Finding samples from
+heterogeneous sources can help to remove biases in signatures and ensure
+that your work is globally applicable and not just local.
+
+:::: callout
 
 ## Resources for finding Sample files
 
+Tyler has developed a resource for helping to find sample files for format
+identification research.
+
 * [Resources for finding Sample files](https://github.com/thorsted/fileformat).
+
+::::
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

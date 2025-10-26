@@ -6,33 +6,70 @@ exercises: 0    # exercise time in minutes
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-- What’s the ‘correct’ length for a quality identification signature?
+- What's left to learn?
+- What other considerations are there when making file format signatures?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Understand what a good signature looks like. What makes it ‘good’?
+- Identify next steps.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Advanced PRONOM
+## The complete picture
 
-Additional syntax and turning these into published signatures
+When you've completed your efforts a complete PRONOM record is a combination
+of byte sequence & metadata & priority.
 
-Possible headings...
+When you submit a new sigature to PRONOM you get a good feel for the
+information they're looking for when you do.
 
-* A signature == byte sequence + metadata + priority.
-* We use a priority because some identifications need to build on
-another, e.g. variants of XML, PDF, JPEG… at the foundation is a common
-marker and its specificity is provided by something somewhere else in
-the bytestream.
-* Using EOF sequences -- they're like BOF sequences, but EOF...
-* Additional syntax, new byteseek syntax
-* Using priorities
-* Advanced research techniques
-* Advanced recording of progress
-* Submitting to PRONOM
+:::: callout
+
+### Information to submit to PRONOM
+
+* Format name
+* Version number
+* Extensions
+* MIME/Media Type
+* Description
+* Format type
+* Vendor
+* File format identification signatures
+* Relevant links, documentation, extra information
+* Credit
+
+::::
+
+## Priorities
+
+Some signatures will also makes use of a priority over another file format
+which allows tools using PRONOM to enforce a single identification for a
+file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has a priority
+over XML to prevent SVG being identified as XML when it can be identified
+more specifically.
+
+To that end, you will often see priorities over core file formats such as
+HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file format variants will
+be written on top of those.
+
+## Recording your progress
+
+The [PRONOM Research](https://github.com/digital-preservation/PRONOM_Research)
+repository is a great place to have discussions about file forrmats you are
+working on, as well as request new entries or updated ones.
+
+Some researchers, such as Tyler, maintain their own GitHub repositories for
+file format research. This is useful as it provides them with a way to:
+
+* record inforamation,
+* store sample signature files,
+* store sample files.
+
+It provides something to point to, and a way to keep track of your own efforts.
+
+<!-- TODO: new byteseek format... -->
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
@@ -44,6 +81,6 @@ the bytestream.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- Ideally minimally 4 bytes, but plain words by themselves are more likely to cause clashes.
+- 80% of the work is writing a signature but 20% is calibration, documentation, and testing.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

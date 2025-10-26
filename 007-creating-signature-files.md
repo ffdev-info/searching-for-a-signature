@@ -31,7 +31,7 @@ way tools like DROID or Siegfried can use to match the byte sequence within
 a file or group of files. This pattern is written to an XML structure which
 records the sequence, offsets, and descriptive information about the file.
 
-!!TODO:SCREENSHOT
+![A look at the XML used in a DROID signature file.](./fig/08-xml.png){alt='image shows the XML used to define a signature file used by DROID. It contains a lot of information used by previous DROIDs to optimize pattern matching.'}
 
 A Signature file consists of two parts, the byte signature and the file
 format information. The signature will have an ID which is then referenced
@@ -42,7 +42,8 @@ wants to do that, let’s look at the
 [amazing tool Ross Spencer wrote](https://ffdev.info/) to help with
 signature creation.
 
-!!TODO:SCREENSHOT
+![The Signature Development Utility.](./fig/09-sigdev.pngg){alt='image shows the user interface of the signature development utility.'}
+
 
 ## Signature development utility
 
@@ -64,7 +65,7 @@ based on your information and immediately download to your computer.
 This can then be moved to your .droid6 folder or imported in the
 DROID Application.
 
-!!TODO:SCREENSHOT
+![You're ready to run your signature file against real files!](./fig/10-droid.png){alt='image shows DROID user interface and where you would navigate to so that you can upload a new signature file.'}
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
@@ -76,6 +77,10 @@ DROID Application.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- A signature file is…
+- A signature file is a set of instructions for DROID.
+- You can create signature files using the Signature Development Utility.
+- A signature file is separated into sections.
+- One section is used for metadata about identification results.
+- Another section is used to store the instructions for identification.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

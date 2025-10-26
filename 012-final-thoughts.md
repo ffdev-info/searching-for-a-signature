@@ -6,7 +6,7 @@ exercises: 0    # exercise time in minutes
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-* Take aways
+* What are the key take-aways?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -25,7 +25,7 @@ of file format researchers!!!
 * You can even use this template and build on it to tailor yours
 and your colleague's experiences.
 
-:::: callout
+:::: testimonial
 
 ## Survey
 
@@ -39,7 +39,7 @@ Help us to improve this content and future tutorials and workshops.
 
 ### Questions
 
-1. Questions?
+1. What questions do you have?
 1. What formats might you go away and work on?
 
 ::::

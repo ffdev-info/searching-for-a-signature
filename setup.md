@@ -10,26 +10,25 @@ the workshop easier.
 
 ## Tools
 
-### Hex editor
-
 * [hexed.it](https://hexed.it/)
-* [binvis.io](https://binvis.io/#/)
-
-### DROID or Siegfried
-
-* Link to DROID
-* Link to Siegfried
-
-### Other tools
-
-* [signature development utility](https://ffdev.info/)
-* tool 2.
+* [https://ffdev.info/](https://ffdev.info/) (bundles Roy and Siegfried)
 
 ## Workshop files
 
-<!-- NB: place any data you want learners to use in `episodes/data` and then
+<!-- NB: place any data you want learners to use in `episodes/files` and then
      use a relative link ( [data zip file](data/lesson-data.zip) ) to provide
      a link to it, replacing the example.com link.
 -->
 
-Suggest we have some workshop files in the `data/` folder TBD...
+Workshop files will be highlighted inline. You can inspect them below as well.
+
+* [Hello World!.txt](./files/Hello%20World!.txt).
+* [Sample QOI file 1](./files/edgecase.qoi).
+* [Sample QOI file 2](./files/kodim10.qoi).
+* [Sample QOI file 3](./files/kodim23.qoi).
+* [Sample QOI file 4](./files/qoi_logo.qoi).
+* [Sample QOI file 5](./files/testcard.qoi).
+* [Sample mock file 1](./files/ffid-exercise-1.file).
+* [Sample mock file 2](./files/ffid-exercise-2.file).
+* [Sample mock file 3](./files/ffid-exercise-3.file).
+* [QOI Specification](./files/qoi-specification.pdf).

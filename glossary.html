@@ -380,22 +380,494 @@
         </div>
 
         
-<section><h2 class="section-heading" id="glossary">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a></h2>
-<hr class="half-width"><dl><dt>BOF</dt>
-<dd>
-definition goes here…
-</dd>
-<dt>EOF</dt>
-<dd>
-definition goes here…
-</dd>
-</dl><p>Source:</p>
-<p><a href="https://docs.google.com/spreadsheets/d/1GKK6kyrpKDJTyVToUBQN7QSKwkXGJcgYnJ9hmEcxG8I/edit" class="external-link uri">https://docs.google.com/spreadsheets/d/1GKK6kyrpKDJTyVToUBQN7QSKwkXGJcgYnJ9hmEcxG8I/edit</a></p>
 <!--
+
+Very cool site helped me convert this: https://tabletomarkdown.com/
+
+NB. if it looks terrible on your screen, turn wordwrap off. If we need to
+revisit this we can. We might not have time before the workshop.
+
+Source: https://docs.google.com/spreadsheets/d/1GKK6kyrpKDJTyVToUBQN7QSKwkXGJcgYnJ9hmEcxG8I/edit
+
+-->
+<table class="table"><colgroup><col width="1%"><col width="93%"><col width="2%"><col width="1%"></colgroup><thead><tr class="header"><th>Term</th>
+<th>Definition</th>
+<th>Alternative Title(s)</th>
+<th>See also</th>
+</tr></thead><tbody><tr class="odd"><td>Application</td>
+<td>A software utility that has been created to perform specific tasks
+for an end user. An application typically provides an interface for a
+user to interact with. Examples include word processors, image viewers
+and manipulation software, video renders, video games etc.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>ASCII</td>
+<td>Acronym for American Standard Code for Information Interchange, a
+legacy character encoding that was adopted by most of the western
+computing industry. ASCII encodes control characters and printable
+characters consistently promoting the exchange of information between
+computers, and other electronic mediums.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Binary</td>
+<td>Data stored in binary encoding—that is, as sequences of bytes rather
+than human-readable text. These bytes represent values, instructions, or
+structured data that are interpreted by software according to the
+format’s specification.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Binary Signature</td>
+<td>The definition of an identification pattern used by file format
+identification tools. A Binary Signature can have 1 or more Binary
+Signature Patterns, and all patterns for a given signature must match to
+return a hit and receive positive identification. A PRONOM file format
+entry can have 0 or more Binary Signatures, and if any of these
+signiatures match they will return a hit and receive positive
+identification.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Binary Signature File</td>
+<td>A file used by the file format identification tool, that stores all
+of its Binary Signature definitions and their associations with PRONOM
+file format entries.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Binary Signature Pattern</td>
+<td>A single pattern, associated with any one of the BOF, EOF, or
+Variable positions within a file, that must be present to return a hit.
+A Binary Signature can have 1 or more Binary Signature Patterns, and all
+patterns for a given signature must match to return a hit and receive
+positive identification.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Bit</td>
+<td>A unit of digital information representing</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>BOF</td>
+<td>An acronym that describes the Beginning of File. BOF is used to
+describe an offset from the beginning of file for a PRONOM signature or
+magic number.</td>
+<td></td>
+<td>Offset, EOF, VAR</td>
+</tr><tr class="odd"><td>Byte</td>
+<td>A unit of digital information representing 8 bits of data. A single
+byte may have one of 256 possible values, that can be simply expressed
+using a Hexadecimal pair.</td>
+<td></td>
+<td>Bit</td>
+</tr><tr class="even"><td>Bytecode</td>
+<td>The raw, unprocessed data within a file as stored. A Hex Editor will
+display the Bytecode of a file instance without attempting to process or
+interpret it.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Byte-order</td>
+<td>Byte order, or endianness, is a computer system’s convention for how
+multi-byte data like integers are stored in computer memory or
+transmitted over a network. The two main types are big-endian, which
+places the most significant byte first, and little-endian, which places
+the least significant byte first.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Character Sets</td>
+<td>A defined collection of characters, i.e. letters, numbers, symbols
+and control codes, that a computer can store, display, and manipulate.
+Popular character sets include ASCII (American Standard Code for
+Information Interchange), a simple character set covering English
+letters, digits and punctuation, Unicode (e.g. UTF-8, UTF-16), an
+extended character set covering virtually all written languages, symbols
+and emojis, ANSI (American National Standards Institute) refers to a
+family of extended character sets that have different character
+mappings, or ‘Code Pages’ for different regions, e.g. Windows-1252
+covers western European languages. Windows-1251 covers Cyrillic
+languages</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Characters</td>
+<td>A byte or set of bytes that compose a printable character, for
+example the letter ‘A’. Characacters combine to make a string (a string
+of bytes).</td>
+<td></td>
+<td>Bytes</td>
+</tr><tr class="even"><td>Classification</td>
+<td>A type definition given to a file format in the PRONOM database that
+describes the overall content of the file, e.g. video, structured text,
+image, and so on.</td>
+<td>File format classification</td>
+<td></td>
+</tr><tr class="odd"><td>Container</td>
+<td>A file format that allows multiple data streams to be embedded into
+a single file, often inside a ZIP or OLE archive.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Container Signature</td>
+<td>An alternative definition of an identification pattern used by file
+format identification tools, used when files are themselves Containers,
+based on ZIP or OLE, that under-the-hood contain multiple files that
+could be individually interrogated and processed.<br><br>A Container
+Signature can have 1 or more Container Signature Patterns, and all
+patterns for a given signature must match to return a hit and receive
+positive identification. A PRONOM file format entry can have 0 or more
+Container Signatures, and if any of these signiatures match they will
+return a hit and receive positive identification.<br><br>Usually a
+PRONOM format entry will only be associated with Binary Signatures, OR
+Container Signatures (i.e. not both), however some older PRONOM format
+entries are still associated with both.<br><br>A Container Signature has
+two additional elements beyond a Binary Signature: 1) A Container Type
+(currently either ZIP or OLE) that means that if a file format
+identification tool encounters a matching Binary Signature pattern for
+the Container Type then the Container Signature File will be assessed
+for matches. 2) A Path, which is a filepath internal to the container
+that must be present for a hit to occur. A Path may also be associated
+with additional Signature Patterns associated with the BOF, EOF, or
+Variably within the subfile referenced by the Path, that must all match
+for a hit to occur. In the absence of any Signature Patterns being
+defined for a given Path, the existence of the Path is enough to return
+a hit.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Container Signature File</td>
+<td>A file used by the file format identification tool, that stores all
+of its Container Signature definitions and their associations with
+PRONOM file format entries.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Container Type</td>
+<td>The file format that a Binary Signature must first match before the
+Container Signature File is assessed for further matches. Currently the
+two Container Types are OLE (fmt/111), and ZIP (either x-fmt/263 or
+fmt/189, which is a ZIP file that precisely conforms to the Microsoft
+OOXML standard)</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Control Character</td>
+<td>A special byte value that may be interpreted as a computer as an
+instruction to perform a specific action, rather than to interpret the
+byte value as an alphanumeric character.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Data structure</td>
+<td>A particular way of organizing, managing, and storing data in a
+computer so that it can be efficiently accessed and modified.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Decimal</td>
+<td>The system of numbers most of us use throughout our day-to-day
+lives, where each digit has a range from 0-9. This system is also known
+as Base 10.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Digital Forensics</td>
+<td>A branch of forensic science focused on recovering, preserving, and
+analyzing digital data from computers, mobile devices, and other
+electronic media.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>DROID</td>
+<td>A file format identification tool developed by The National Archives
+that uses PRONOM signatures.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Encodings</td>
+<td>A method of converting data into a particular form, especially for
+representing characters in digital files (e.g., UTF-8, ASCII).</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>EOF</td>
+<td>A position marker indicating the end of a file, also used in PRONOM
+signatures.</td>
+<td></td>
+<td>Offset</td>
+</tr><tr class="even"><td>Extension</td>
+<td>A suffix of a filename, separated by a period, that indicates to the
+Operating System, the file’s type and format.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>External Signature</td>
+<td>An externally visible mechanism for identifying a file, specifically
+the file format extension, which can be used to assume the file format
+of a given file instance, however this is easily changed and may not be
+unique to a given software application.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>FDD</td>
+<td>The Library of Congress ‘Format Description Document’ reference.
+This is a file format registry hosted by Library of Congress that
+typically describes file formats in much more detail than is usually
+found within PRONOM.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>FIDO</td>
+<td>A file format identification tool developed by the Open Preservation
+Foundation that also uses PRONOM data</td>
+<td>Format Identification for Digital Objects</td>
+<td></td>
+</tr><tr class="even"><td>File</td>
+<td>An object in computed storage that contains data.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>File Format</td>
+<td>A standardized way of storing data within a file, defining how the
+data is structured and stored as such that it can be interpreted and
+processed by a software application</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>File format specification</td>
+<td>A formal definition of a file format’s structure. If a full file
+format specification is published openly, then this allows 3rd party
+software vendors to create their own implementations of software that
+can interpret and process a given file format.</td>
+<td>Specification; Standard</td>
+<td></td>
+</tr><tr class="odd"><td>FileFormatMapping</td>
+<td>The internal relationship between a PRONOM entry and a File Format
+Signature</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Footer</td>
+<td>A defined section within a file format that typically includes data
+that will give information to a processing software application. This is
+not as common as a Header. In some cases, certain software vendors have
+unofficially extended formal file format definitions, by adding their
+own data to the end of a given file.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Format identification</td>
+<td>The process of identifying a file’s file format from certain
+external (i.e. file extension), or internal (i.e. file format
+signatures) characteristics</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Header</td>
+<td>A defined section within a file format that typically includes data
+that will give information to a processing software application. This
+may include a Magic Number for rapid format identification, defined
+peoperties of the file, and much more. Some file formats do not have
+defined Headers</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Hexadecimal</td>
+<td>A base-16 number system (0–9 and A–F) used to represent binary data
+in a more human-readable format.</td>
+<td>Hex</td>
+<td>Byte/s</td>
+</tr><tr class="even"><td>Hex Editor</td>
+<td>A software tool that displays a file’s internal byte-code in a
+simplified form based on Hexadecimal notation. As an ‘editor’ it also
+allows files to be easily edited, so handle with care!</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Identification</td>
+<td>The process of determining a file instance’s file format based on
+external or internal characteristics.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>InternalSignature</td>
+<td>An internal mechanism for identifying a file based upon byte
+matching patterns within a given file’s bytecode.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>JHOVE</td>
+<td>An open source, extensible software framework for identification,
+validation, and characterisation.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Magic</td>
+<td>A distinctive sequence of bytes at a specific location in a file
+that uniquely identifies the file format.</td>
+<td>Magic number</td>
+<td></td>
+</tr><tr class="odd"><td>Magic number</td>
+<td>A unique byte sequence usually near the beginning of a file that is
+unique to its format (e.g., FF D8 for JPEG).</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Max-byte scan</td>
+<td>A setting which allows you to configure how far from the beginning
+or end of the file DROID will scan to match a signature
+pattern.<br>before it stops trying to identify the file.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Metadata</td>
+<td>Data about an asset, such as key technical characteristics. For
+digital information metadata may be found embedded within a given file,
+may be found within a separate ‘sidecar’ file, or may be found as a
+property stored by the software platform or operating system.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>MIMEInfo</td>
+<td>A string that identifies the format of a file to a browser or email
+client, telling it how to display or process the content</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Multipart</td>
+<td>A digital asset that consists of multiple files. e.g. a single
+rendered web page may consist of an HTML document, separate CSS and
+JavaScript files, separate images etc.</td>
+<td>Multi-file</td>
+<td></td>
+</tr><tr class="even"><td>Offset</td>
+<td>The position (in bytes) from the start or end of a file where a
+signature sequence begins.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Partial entry</td>
+<td>A PRONOM entry that may contain some information, perhaps even an
+identification signature, but is missing key information such as a
+description.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Pattern matching</td>
+<td>The process of checking that a sequence of data matches a defined
+pattern.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Patterns</td>
+<td>A pattern defines the expected structure or form that data should
+follow, that we can use to create file format signatures</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>PDF</td>
+<td>Portable Document Format, a popular file format originally created
+by Adobe but now maintained as an ISO Standard, that was originally
+intended as a format for document interchange, particularly for the
+printing industry.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Preservation</td>
+<td>The set of processes and actions aimed at maintaining and protecting
+records and artifacts (physical or digital) to ensure their continued
+accessibility, usablilty, integrity, and authenticity over time.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Priority</td>
+<td>The expression that one file format should be considered as more
+specific than another, therefore if a file contains more that one
+matching File Format Signature, then the higher priority format must
+take precedence.<br><br>This is most commonly used when a given file
+format is explicitly based on another, e.g. SVG is an XML file
+containing elements specific to SVG, therefore SVG has priority over
+XML.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>PRONOM</td>
+<td>A central registry of file format signatures maintained by The UK
+National Archives. Used for digital preservation and file format
+identification.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>PUID</td>
+<td>A unique identifier assigned by the PRONOM registry associated with
+a specific file format</td>
+<td>PRONOM unique identifier</td>
+<td></td>
+</tr><tr class="odd"><td>Regex</td>
+<td>A regular expression is a sequence of characters that defines a
+search pattern for matching strings.</td>
+<td>Regular expression</td>
+<td>PRONOM regex; Pattern matching</td>
+</tr><tr class="even"><td>Reverse-engineering</td>
+<td>An approach to understanding the internal structure of a given file
+without reference to the formal file format specification, typically
+based on experimentation and inference, possibly utilizing specilaized
+tools.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Sample</td>
+<td>An example file instance of a given file format. It is usually
+beneficial to have several sample files available, ideally from diverse
+sources, before attempting to determine potential byte sequences for
+file format identification.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Sequence</td>
+<td>A specific pattern of bytes or potential byte values as described
+using PRONOM syntax</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Siegfried</td>
+<td>Another file format identification tool that uses PRONOM signatures
+and supports custom signature files.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Signature</td>
+<td>A specific sequence of bytes used to identify a file format. Often
+found at the beginning (BOF) or end (EOF) of a file.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Signature development utility</td>
+<td>A tool, created by Ross Spencer, that enables the generation of File
+Format Signature Files that can then be used by a file format
+identification tool for testing a potential File format Signature</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Skeleton</td>
+<td>A synthetic, artificially created file that contains only the
+minimal data required for a file to hit a match against a give file
+format signature. Since these files do not contain ‘real’ data, they
+will typically cause error messages to be thrown if attempting to open
+them in the file format’s associated software application</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Specification</td>
+<td>A formal document that defines the structure and encoding rules of a
+file format.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>Syntax</td>
+<td>The formal set of rules that determine how code, commands, or data
+must be written so a computer can understand and process them correctly.
+PRONOM syntax is a specific language for expressing file format
+identification patterns, that file format identification software
+applications such as DROID and Seigfried have been programmed to be able
+to process.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Trigger</td>
+<td>A Container Type that will result in the Container Signature File
+being assessed for a further match, based on the subfiles found within
+the Containing file format.</td>
+<td>Trigger PUID; ContainerType</td>
+<td></td>
+</tr><tr class="even"><td>Versions</td>
+<td>A specific form or release of a given object, concept, or software
+that may change over time.<br><br>In the context of a PRONOM entry, the
+version is intended to refer to the version of a file format rather than
+its associated software, however in practice a given file format version
+is often explicitly tied either to a specific software application
+version or range of versions, so the distinction is not often easy to
+determine or to cleanly define.</td>
+<td></td>
+<td></td>
+</tr><tr class="odd"><td>Wildcard</td>
+<td>A placeholder in a signature that can match any byte or range of
+bytes.</td>
+<td></td>
+<td></td>
+</tr><tr class="even"><td>XML</td>
+<td>eXtensible Markup Language, a popular file format created and
+maintained by the W3C Consortium, intended as a both human-, and
+machine-readable format for representing structured data</td>
+<td></td>
+<td></td>
+</tr></tbody></table><!--
+
+Alternative glossary formatting;
+
+BOF
+: definition goes here...
+
+EOF
+: definition goes here...
+
+Other concept
+: definition goes here...
+
+--><!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</section></div> <!-- / div.lesson-content -->
+ --></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>

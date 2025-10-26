@@ -485,7 +485,7 @@
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <ul>
 <li>Welcome, housekeeping.</li>
@@ -1454,7 +1454,7 @@ know what those patterns mean.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Optional quiz </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You can ask the room if they know what these byte sequences might
 be.</p>
@@ -1467,7 +1467,7 @@ be.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do you recognize them? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>Microsoft Office</li>
@@ -1515,7 +1515,7 @@ research!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre class="binary"><code>48 65 6C 6C 6F 20 77 6F 72 6C 64</code></pre>
 </div>
@@ -1605,7 +1605,7 @@ useful in your future signature development adventures!</p>
 <li>Find it at: <a href="https://HexEd.it" class="external-link">HexEd.it</a>
 </li>
 </ul>
-<figure><img src=".././fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser" class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface</div>
+<figure><img src=".././fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser." class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface.</div>
 </figure><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
@@ -1613,7 +1613,7 @@ useful in your future signature development adventures!</p>
 </button>
 <div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
-<p>Make a not to participants that keeping a separate HexEd.it tab open
+<p>Make a note to participants that keeping a separate HexEd.it tab open
 will be beneficial throughout the remainder of this workshop.</p>
 </div>
 </div>
@@ -1653,9 +1653,16 @@ encoded data</li>
 interpretations of blocks of data</li>
 <li>Some Hex Editors allow for text interpretations (character sets)
 other than ASCII, such as EBCDIC</li>
-</ul></section><section><h2 class="section-heading" id="safety-first">SAFETY FIRST!<a class="anchor" aria-label="anchor" href="#safety-first"></a>
-</h2>
-<hr class="half-width">
+</ul>
+<p><br></p>
+<div id="safety-first" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div id="safety-first" class="callout-inner">
+<h3 class="callout-title">Safety first!</h3>
+<div class="callout-content">
 <ul>
 <li>A Hex Editor allows for the direct manipulation of data within
 digital files (note, this isn’t really any different from Notepad in
@@ -1663,22 +1670,43 @@ this regard)</li>
 <li>Possible to make mistakes and accidentally save over your data</li>
 <li>Therefore: Always work on a copy of your data, never the original
 data</li>
-</ul></section><section><h2 class="section-heading" id="using-the-hex-editor">Using the Hex Editor<a class="anchor" aria-label="anchor" href="#using-the-hex-editor"></a>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="using-the-hex-editor">Using the Hex Editor<a class="anchor" aria-label="anchor" href="#using-the-hex-editor"></a>
 </h2>
 <hr class="half-width">
 <div class="section level3">
 <h3 id="demoing-hello-world-text-file">Demoing ‘Hello World!’ text file<a class="anchor" aria-label="anchor" href="#demoing-hello-world-text-file"></a>
 </h3>
-<figure><img src=".././fig/02-hello.png" alt="image shows our plain-text file as it would be viewed in a standard text editor, e.g. MS Notepad." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file</div>
-</figure><figure><img src=".././fig/03-plaintext.png" alt="image shows the hexadecimal representation of a plain-text file in a hex editor's user interface" class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file in
-hexadecimal</div>
-</figure>
+<figure><img src=".././fig/02-hello.png" alt="image shows our plain-text file as it would be viewed in a standard text editor, e.g. MS Notepad." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file.</div>
+</figure><figure><img src=".././fig/03-plaintext.png" alt="image shows the hexadecimal representation of a plain-text file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file in
+hexadecimal.</div>
+</figure><div id="sample-file" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="sample-file" class="callout-inner">
+<h3 class="callout-title">Sample file</h3>
+<div class="callout-content">
+<p>You can take the sample file and view it in the hex editor for
+yourself.</p>
+<ul>
+<li>
+<a href=".././files/Hello%20World!.txt">Hello World!.txt</a> (MD5:
+<code>44d63b2ec6c79739ce994597e1d66d84</code>)</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="demoing-pdf">Demoing PDF<a class="anchor" aria-label="anchor" href="#demoing-pdf"></a>
 </h3>
-<figure><img src=".././fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface" class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
-editor</div>
+<figure><img src=".././fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
+editor.</div>
 </figure><div id="your-turn" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -1725,7 +1753,7 @@ spaces</li>
 low-level. My first exposure to Hex Editors was editing the save files
 of video games to give me extra lives or gold!</li>
 <li>Understanding offsets, Hex-view, limitations of ASCII view</li>
-<li>Encourage ‘Saftey First’ - it’s called an ‘editor’ for a reason, so
+<li>Encourage ‘Safety First’ - it’s called an ‘editor’ for a reason, so
 to avoid the risk of corrupting your own originals, always work with a
 copy of your original files</li>
 <li>Drag a Plain text file everybody has access to to demonstrate ASCII
@@ -1793,8 +1821,8 @@ identify with existing tools. You can quickly open the file to view the
 hex byte sequences and start to understand the format of the file.
 <br><br> Opening a single file in a hex editor can be illuminating or
 seem like you just entered the Matrix.</p>
-<p>!!TODO:SCREENSHOT</p>
-<p>In this example we don’t really know much about the file as the
+<figure><img src=".././fig/05-matrix.png" alt="image shows the hexadecimal representation of a JPEG file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">What would Trinity do?</div>
+</figure><p>In this example we don’t really know much about the file as the
 extension is not known and there is no human readable text to help. So
 by itself this file is hard to identify.</p>
 </section><section><h2 class="section-heading" id="searching-for-the-bytes">Searching for the bytes<a class="anchor" aria-label="anchor" href="#searching-for-the-bytes"></a>
@@ -1804,11 +1832,11 @@ by itself this file is hard to identify.</p>
 and find references to the sequences as one solution or if you have
 additional files with the same extension you can use them to
 compare.</p>
-<p>!!TODO:SCREENSHOT</p>
 </section><section><h2 class="section-heading" id="comparing-samples">Comparing samples<a class="anchor" aria-label="anchor" href="#comparing-samples"></a>
 </h2>
 <hr class="half-width">
-<p>With a second file we can start to see differences and similarities
+<figure><img src=".././fig/06-example3.png" alt="image shows the hexadecimal representation of another JPEG file in a hex editor allowing us to identify differences in patterns." class="figure mx-auto d-block"><div class="figcaption">Another JPEG for comparison.</div>
+</figure><p>With a second file we can start to see differences and similarities
 between them. The most noticeable is the first two bytes “FF D8”. This
 second example also has a bit of human readable text which can also help
 in identification. The more samples you have the more confident you can
@@ -1826,26 +1854,108 @@ file down to the version of the software which created it.</p>
 samples specific to a certain version of software is a big help in
 determining identification. Look for tutorials, sample files on
 installer disks, or create your own using trial versions of the
-software. <br><br> Having a file format specification can be the most
-helpful in understanding a file format, but isn’t always available. In
-the case of the example files above, we can see in the <a href="https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36" class="external-link">T.81
+software.</p>
+</section><section><h2 class="section-heading" id="referencing-the-specification">Referencing the specification<a class="anchor" aria-label="anchor" href="#referencing-the-specification"></a>
+</h2>
+<hr class="half-width">
+<p>Having a file format specification can be the most helpful in
+understanding a file format, but isn’t always available. In the case of
+the example files above, we can see in the <a href="https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36" class="external-link">T.81
 specification for compressed images</a>, the “FF D8” sequence is used as
 the start of image bytes for a JPEG file. The specification also gives
 us what should be at the end of the file as well, “FF D9”.</p>
-<p>!!TODO:SCREENSHOT</p>
-</section><section><h2 class="section-heading" id="resources-for-finding-sample-files">Resources for finding Sample files<a class="anchor" aria-label="anchor" href="#resources-for-finding-sample-files"></a>
+<!--
+
+![Markers showing in the JPEG specification.](./fig/07-spec.png){alt='image shows the descriptions given to different markers in the JPEG specification. These act like keys we can use to make file format signatures consistent.'}
+
+-->
+<table class="table"><tbody>
+<tr class="odd">
+<td>0xFFDA</td>
+<td>SOI</td>
+<td>Start of image</td>
+</tr>
+<tr class="even">
+<td>0xFFD9</td>
+<td>EOI</td>
+<td>End of image</td>
+</tr>
+<tr class="odd">
+<td>0xFFDA</td>
+<td>SOS</td>
+<td>Start of scan</td>
+</tr>
+<tr class="even">
+<td>0xFFDB</td>
+<td>DQT</td>
+<td>Define quantization table(s)</td>
+</tr>
+<tr class="odd">
+<td>0xFFDC</td>
+<td>DNL</td>
+<td>Define number of lines</td>
+</tr>
+<tr class="even">
+<td>0xFFDD</td>
+<td>DRI</td>
+<td>Define restart interval</td>
+</tr>
+<tr class="odd">
+<td>0xFFDE</td>
+<td>DHP</td>
+<td>Define hierarchical progression</td>
+</tr>
+<tr class="even">
+<td>0xFFDF</td>
+<td>EXP</td>
+<td>Expand reference component(s)</td>
+</tr>
+<tr class="odd">
+<td>0xFFE0 through 0xFFEF</td>
+<td>APP</td>
+<td>Reserved for application segments</td>
+</tr>
+<tr class="even">
+<td>0xFFF0 through 0xFFFD</td>
+<td>JPG</td>
+<td>Reserved for JPEG extensions</td>
+</tr>
+<tr class="odd">
+<td>0xFFFE</td>
+<td>COM</td>
+<td>Comment</td>
+</tr>
+</tbody></table></section><section><h2 class="section-heading" id="xffd9">0xFFD9<a class="anchor" aria-label="anchor" href="#xffd9"></a>
 </h2>
 <hr class="half-width">
+<p>As you progress further into this research, you will want to find
+sample files. There may be some samples known to you. Finding samples
+from heterogeneous sources can help to remove biases in signatures and
+ensure that your work is globally applicable and not just local.</p>
+<div id="resources-for-finding-sample-files" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="resources-for-finding-sample-files" class="callout-inner">
+<h3 class="callout-title">Resources for finding Sample files</h3>
+<div class="callout-content">
+<p>Tyler has developed a resource for helping to find sample files for
+format identification research.</p>
 <ul>
 <li>
 <a href="https://github.com/thorsted/fileformat" class="external-link">Resources for
 finding Sample files</a>.</li>
 </ul>
+</div>
+</div>
+</div>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
---><p><br></p>
+-->
+<p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2504,15 +2614,16 @@ a way tools like DROID or Siegfried can use to match the byte sequence
 within a file or group of files. This pattern is written to an XML
 structure which records the sequence, offsets, and descriptive
 information about the file.</p>
-<p>!!TODO:SCREENSHOT</p>
-<p>A Signature file consists of two parts, the byte signature and the
+<figure><img src=".././fig/08-xml.png" alt="image shows the XML used to define a signature file used by DROID. It contains a lot of information used by previous DROIDs to optimize pattern matching." class="figure mx-auto d-block"><div class="figcaption">A look at the XML used in a DROID signature
+file.</div>
+</figure><p>A Signature file consists of two parts, the byte signature and the
 file format information. The signature will have an ID which is then
 referenced in the file format information tag, connecting the two.</p>
 <p>This file can be created from scratch using any text editor, but
 nobody wants to do that, let’s look at the <a href="https://ffdev.info/" class="external-link">amazing tool Ross Spencer wrote</a> to help
 with signature creation.</p>
-<p>!!TODO:SCREENSHOT</p>
-</section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a>
+<figure><img src=".././fig/09-sigdev.pngg" alt="image shows the user interface of the signature development utility." class="figure mx-auto d-block"><div class="figcaption">The Signature Development Utility.</div>
+</figure></section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a>
 </h2>
 <hr class="half-width">
 <p>The signature development utility will take the sequence you want to
@@ -2529,13 +2640,13 @@ the signature. <br><br> Pressing the “Create Signature” button will
 generate an XML file based on your information and immediately download
 to your computer. This can then be moved to your .droid6 folder or
 imported in the DROID Application.</p>
-<p>!!TODO:SCREENSHOT</p>
-<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+<figure><img src=".././fig/10-droid.png" alt="image shows DROID user interface and where you would navigate to so that you can upload a new signature file." class="figure mx-auto d-block"><div class="figcaption">You’re ready to run your signature file against
+real files!</div>
+</figure><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
--->
-<p><br></p>
+--><p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2544,7 +2655,13 @@ imported in the DROID Application.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>A signature file is…</li>
+<li>A signature file is a set of instructions for DROID.</li>
+<li>You can create signature files using the Signature Development
+Utility.</li>
+<li>A signature file is separated into sections.</li>
+<li>One section is used for metadata about identification results.</li>
+<li>Another section is used to store the instructions for
+identification.</li>
 </ul>
 </div>
 </div>
@@ -2808,13 +2925,121 @@ any links that you are not going to use.
 <section><h2 class="section-heading" id="doing-it-for-yourself">Doing it for yourself<a class="anchor" aria-label="anchor" href="#doing-it-for-yourself"></a>
 </h2>
 <hr class="half-width">
-<p>Following “see one” we now have the do one section of the workshop.
-There should be time for mentoring and questions etc.</p>
-<div id="develop-a-signature-for-the-following-and-test-it-in-droid-or-siegfried" class="callout discussion">
+<p>Now that you’ve seen everything there is to know about writing file
+format signatures and plugging them in, it is time to write one!</p>
+<p>If you are doing this in a workshop environment, follow this thread.
+If you are following along at home in a tutorial, then skip to the small
+exercise below to find a task that you can complete at home.</p>
+<div class="section level3">
+<h3 id="workshop-exercise">Workshop exercise<a class="anchor" aria-label="anchor" href="#workshop-exercise"></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li>Split into groups.</li>
+<li>Work together to create a signature.</li>
+<li>Plug it into DROID/Siegfried</li>
+<li>Good luck!</li>
+</ol>
+<div id="you-can-do-it" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="you-can-do-it" class="callout-inner">
+<h3 class="callout-title">You can do it!</h3>
+<div class="callout-content">
+<p>Many of us have been developing file format signatures for years now
+and so if you’re new to this you will likely have questions. Your
+mentor’s should be around and available to help guide your efforts.
+There will also be an opportunity at the end to discuss how things
+went.</p>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>For iPRES we will look at going through the process of creating and
+submitting a signature for the Quite OK Image format as it isn’t yet in
+PRONOM.</p>
+<ul>
+<li><a href="https://qoiformat.org/qoi-specification.pdf" class="external-link uri">https://qoiformat.org/qoi-specification.pdf</a></li>
+</ul>
+<p>BOF is ‘qoif’,</p>
+<p>EOF is 0x0000000000000001 -</p>
+<p>The group can be invited to make signature suggestions based on the
+specification example files, e.g. dice.qoi from the test images zip
+available here: <a href="https://qoiformat.org" class="external-link uri">https://qoiformat.org</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="quite-ok" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
+<div id="quite-ok" class="callout-inner">
+<h3 class="callout-title">Quite ok!</h3>
+<div class="callout-content">
+<p>Your task is to find an identification for the Quite OK Image format.
+Below you will find a specification and some sample files. Take a look
+at these in any order you wish to determine what may provde to be a good
+file format signature for this new file format!</p>
+<div class="section level5">
+<h5 id="specification">Specification<a class="anchor" aria-label="anchor" href="#specification"></a>
+</h5>
+<ul>
+<li>
+<a href=".././files/qoi-specification.pdf">QOI Specification</a> also
+online <a href="https://qoiformat.org/qoi-specification.pdf" class="external-link">here</a>.</li>
+</ul>
+</div>
+<div class="section level5">
+<h5 id="sample-files">Sample files<a class="anchor" aria-label="anchor" href="#sample-files"></a>
+</h5>
+<ul>
+<li>
+<a href=".././files/edgecase.qoi">Sample file 1</a>.</li>
+<li>
+<a href=".././files/kodim10.qoi">Sample file 2</a>.</li>
+<li>
+<a href=".././files/kodim23.qoi">Sample file 3</a>.</li>
+<li>
+<a href=".././files/qoi_logo.qoi">Sample file 4</a>.</li>
+<li>
+<a href=".././files/testcard.qoi">Sample file 5</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section level4">
+<h4 id="wrapping-up">Wrapping up<a class="anchor" aria-label="anchor" href="#wrapping-up"></a>
+</h4>
+<p>If you have managed to successfully match QOI files using your own
+signature file, then start to make some notes about what you did. Think
+about what worked? What didn’t work? What questions you still have? And
+anything else that might be relevant. We will revisit this next
+section!</p>
+<hr>
+</div>
+</div>
+<div class="section level3">
+<h3 id="local-exercise">Local exercise<a class="anchor" aria-label="anchor" href="#local-exercise"></a>
+</h3>
+<p>The following challenge is simply to try and write a DROID compatible
+signature file that can be used to identify three byte sequences
+designed for this tutorial. There are sample files available, and all
+you have to do is match all three!</p>
+<div id="develop-a-signature-for-the-following-and-test-it-in-droid-or-siegfried" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
 <div id="develop-a-signature-for-the-following-and-test-it-in-droid-or-siegfried" class="callout-inner">
 <h3 class="callout-title">Develop a signature for the following and test
 it in DROID or Siegfried</h3>
@@ -2831,9 +3056,62 @@ it in DROID or Siegfried</h3>
 <p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
 00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
+<div class="section level5">
+<h5 id="sample-files-1">Sample files<a class="anchor" aria-label="anchor" href="#sample-files-1"></a>
+</h5>
+<ul>
+<li>
+<a href=".././files/ffid-exercise-1.file">Sample file 1</a>.</li>
+<li>
+<a href=".././files/ffid-exercise-2.file">Sample file 2</a>.</li>
+<li>
+<a href=".././files/ffid-exercise-3.file">Sample file 3</a>.</li>
+</ul>
 </div>
 </div>
 </div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>A solution will appear here shortly.</p>
+<!-- TODO provide a solution here that can be used to identify the three
+     bytstreams provided.
+-->
+</div>
+</div>
+</div>
+</div>
+<div id="taking-note-of-the-extension" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="taking-note-of-the-extension" class="callout-inner">
+<h3 class="callout-title">Taking note of the extension</h3>
+<div class="callout-content">
+<p>You can also record a file format extension in a signature file. If
+you correctly match the file format extension then tools like Siegfried
+and DROID will highlight that the file has the correct extension and if
+a file presents with the incorrect extension they will often warn about
+that as well.</p>
+</div>
+</div>
+</div>
+<div class="section level4">
+<h4 id="wrapping-up-1">Wrapping up!<a class="anchor" aria-label="anchor" href="#wrapping-up-1"></a>
+</h4>
+<p>If you have managed to identify the three sample files using your own
+signature file, congratulations!</p>
+<p>If you’re still wrestling with it, take a look at the solution and
+see if you can plug it into Siegfried and make it work. Take note of how
+the solution works or how you think it works and have a think about what
+wasn’t quite working in your own answer.</p>
+<p>We’ll wrap up in the next lesson.</p>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -2848,7 +3126,11 @@ it in DROID or Siegfried</h3>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>You can do it, it’s easy!</li>
+<li>You’ve all the tools needed to write file format signatures.</li>
+<li>It might not always work.</li>
+<li>It will certainly take trial and error.</li>
+<li>Persevere and keep working on it.</li>
+<li>Practice makes perfect!</li>
 </ul>
 </div>
 </div>
@@ -2857,6 +3139,8 @@ it in DROID or Siegfried</h3>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
+</div>
 </section></section><section id="aio-010-teaching-us-how"><p>Content from <a href="010-teaching-us-how.html">Teaching us how to do it!</a></p>
 <hr>
 <p>Last updated on 2025-10-26 |
@@ -2874,7 +3158,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>TODO…</li>
+<li>Can you articulate your procedure?</li>
+<li>Can you identify any changes you might make to your method?</li>
+<li>Is there anything the workshop can be clearer about?</li>
 </ul>
 </div>
 </div>
@@ -2884,47 +3170,18 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>TODO…</li>
+<li>Share your process.</li>
+<li>Enable others to learn from your experience.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
-<div class="accordion-body">
-<p>For iPRES we will look at going through the process of creating and
-submitting a signature for the Quite OK Image format as it isn’t yet in
-PRONOM.</p>
-<ul>
-<li><a href="https://qoiformat.org/qoi-specification.pdf" class="external-link uri">https://qoiformat.org/qoi-specification.pdf</a></li>
-</ul>
-<p>BOF is ‘qoif’,</p>
-<p>EOF is 0x0000000000000001 -</p>
-<p>The group can be invited to make signature suggestions based on the
-specification example files, e.g. dice.qoi from the test images zip
-available here: <a href="https://qoiformat.org" class="external-link uri">https://qoiformat.org</a>.</p>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="teach-one">Teach one<a class="anchor" aria-label="anchor" href="#teach-one"></a>
+<section><h2 class="section-heading" id="teaching-us-how-to-do-it">Teaching us how to do it<a class="anchor" aria-label="anchor" href="#teaching-us-how-to-do-it"></a>
 </h2>
 <hr class="half-width">
 <p>Now you’ve tried one, can you teach one?</p>
-<ol style="list-style-type: decimal">
-<li>Split into groups of three</li>
-<li>Pick one of the samples in the samples folder…</li>
-<li>Work together to create a signature…</li>
-<li>Plug it into DROID/Siegfried</li>
-<li>Two groups to share their results at the end of the session…
-Questions…</li>
-</ol>
 <div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -2935,15 +3192,51 @@ Questions…</li>
 <p>If you are working on this outside of a workshop don’t worry if you
 haven’t a group to share with. It is still work working through these
 steps to improve your understanding. Well done on getting this far!</p>
+<p>See below for some ideas on what you might do at this point.</p>
 </div>
 </div>
 </div>
+<div class="section level3">
+<h3 id="teach-the-workshop">Teach the workshop<a class="anchor" aria-label="anchor" href="#teach-the-workshop"></a>
+</h3>
+<p>Following your efforts in the previous exercise can you describe to
+the group what you did and what you learned?</p>
+<ol style="list-style-type: decimal">
+<li>where did you begin your research?</li>
+<li>what considerations did you have when writing a signature?</li>
+<li>are there any alternatives you might consider?</li>
+</ol>
+<p>Evaluating your efforts:</p>
+<ol style="list-style-type: decimal">
+<li>what worked well?</li>
+<li>what didn’t work?</li>
+<li>what questions you still have?</li>
+<li>is there anything else you’d like to share with the group?</li>
+</ol>
+</div>
+<div class="section level3">
+<h3 id="teach-locally">Teach locally<a class="anchor" aria-label="anchor" href="#teach-locally"></a>
+</h3>
+<p>Teaching outside of a workshop environment is no small feat! If
+you’re happy where you are, then you are welcome to wrap up this
+tutorial with the final two episodes.</p>
+<p>If you are keen, however, some ideas for you to share your efforts
+from this tutorial might be:</p>
+<ol style="list-style-type: decimal">
+<li>Write a blog for the OPF of your own organization sharing your
+thoughts, e.g like <a href="https://openpreservation.org/blogs/making-the-switch-from-user-to-user-and-contributor-my-first-file-format-signature/" class="external-link">Andrea’s
+here</a>.</li>
+<li>Visit the show-and-tell section of the workshop’s repisotory and
+share your thoughts!</li>
+<li>Organize a show-and-tell in your organization and share your
+experience with your colleagues, maybe even as a teaser for running this
+material as a workshop for yourself!</li>
+</ol>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
--->
-<p><br></p>
+--><p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2952,7 +3245,11 @@ steps to improve your understanding. Well done on getting this far!</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>TODO</li>
+<li>Seeing one, doing one, teaching one allows you to reinforce what
+you’ve learned.</li>
+<li>Teaching one helps you to exernalise and formalize your language
+around this work making it easier to articulate in future in other
+forums.</li>
 </ul>
 </div>
 </div>
@@ -2961,6 +3258,7 @@ steps to improve your understanding. Well done on getting this far!</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></section><section id="aio-011-advanced"><p>Content from <a href="011-advanced.html">Advanced PRONOM</a></p>
 <hr>
 <p>Last updated on 2025-10-26 |
@@ -2978,8 +3276,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>What’s the ‘correct’ length for a quality identification
-signature?</li>
+<li>What’s left to learn?</li>
+<li>What other considerations are there when making file format
+signatures?</li>
 </ul>
 </div>
 </div>
@@ -2989,37 +3288,78 @@ signature?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Understand what a good signature looks like. What makes it
-‘good’?</li>
+<li>Identify next steps.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="advanced-pronom">Advanced PRONOM<a class="anchor" aria-label="anchor" href="#advanced-pronom"></a>
+<section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a>
 </h2>
 <hr class="half-width">
-<p>Additional syntax and turning these into published signatures</p>
-<p>Possible headings…</p>
+<p>When you’ve completed your efforts a complete PRONOM record is a
+combination of byte sequence &amp; metadata &amp; priority.</p>
+<p>When you submit a new sigature to PRONOM you get a good feel for the
+information they’re looking for when you do.</p>
+<div id="information-to-submit-to-pronom" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="information-to-submit-to-pronom" class="callout-inner">
+<h3 class="callout-title">Information to submit to PRONOM</h3>
+<div class="callout-content">
 <ul>
-<li>A signature == byte sequence + metadata + priority.</li>
-<li>We use a priority because some identifications need to build on
-another, e.g. variants of XML, PDF, JPEG… at the foundation is a common
-marker and its specificity is provided by something somewhere else in
-the bytestream.</li>
-<li>Using EOF sequences – they’re like BOF sequences, but EOF…</li>
-<li>Additional syntax, new byteseek syntax</li>
-<li>Using priorities</li>
-<li>Advanced research techniques</li>
-<li>Advanced recording of progress</li>
-<li>Submitting to PRONOM</li>
+<li>Format name</li>
+<li>Version number</li>
+<li>Extensions</li>
+<li>MIME/Media Type</li>
+<li>Description</li>
+<li>Format type</li>
+<li>Vendor</li>
+<li>File format identification signatures</li>
+<li>Relevant links, documentation, extra information</li>
+<li>Credit</li>
 </ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="priorities">Priorities<a class="anchor" aria-label="anchor" href="#priorities"></a>
+</h2>
+<hr class="half-width">
+<p>Some signatures will also makes use of a priority over another file
+format which allows tools using PRONOM to enforce a single
+identification for a file, e.g. Scalabale Vector Graphics (SVG) (a
+format based on XML) has a priority over XML to prevent SVG being
+identified as XML when it can be identified more specifically.</p>
+<p>To that end, you will often see priorities over core file formats
+such as HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file
+format variants will be written on top of those.</p>
+</section><section><h2 class="section-heading" id="recording-your-progress">Recording your progress<a class="anchor" aria-label="anchor" href="#recording-your-progress"></a>
+</h2>
+<hr class="half-width">
+<p>The <a href="https://github.com/digital-preservation/PRONOM_Research" class="external-link">PRONOM
+Research</a> repository is a great place to have discussions about file
+forrmats you are working on, as well as request new entries or updated
+ones.</p>
+<p>Some researchers, such as Tyler, maintain their own GitHub
+repositories for file format research. This is useful as it provides
+them with a way to:</p>
+<ul>
+<li>record inforamation,</li>
+<li>store sample signature files,</li>
+<li>store sample files.</li>
+</ul>
+<p>It provides something to point to, and a way to keep track of your
+own efforts.</p>
+<!-- TODO: new byteseek format... -->
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
---><p><br></p>
+-->
+<p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -3028,8 +3368,8 @@ the bytestream.</li>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Ideally minimally 4 bytes, but plain words by themselves are more
-likely to cause clashes.</li>
+<li>80% of the work is writing a signature but 20% is calibration,
+documentation, and testing.</li>
 </ul>
 </div>
 </div>
@@ -3055,7 +3395,7 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>Take aways</li>
+<li>What are the key take-aways?</li>
 </ul>
 </div>
 </div>
@@ -3085,11 +3425,11 @@ of file format researchers!!!</li>
 <li>You can even use this template and build on it to tailor yours and
 your colleague’s experiences.</li>
 </ul>
-<div id="survey" class="callout">
+<div id="survey" class="callout testimonial">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="heart"></i>
 </div>
-<span class="callout-header">Callout</span>
+<span class="callout-header">Testimonial</span>
 <div id="survey" class="callout-inner">
 <h3 class="callout-title">Survey</h3>
 <div class="callout-content">
@@ -3112,7 +3452,7 @@ Survey</a>.</li>
 <h3 class="callout-title">Questions</h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal">
-<li>Questions?</li>
+<li>What questions do you have?</li>
 <li>What formats might you go away and work on?</li>
 </ol>
 </div>

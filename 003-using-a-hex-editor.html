@@ -238,7 +238,6 @@
 <li><a href="#what-is-a-hex-editor">What is a Hex Editor?</a></li>
 <li><a href="#why-use-a-hex-editor">Why use a Hex Editor?</a></li>
 <li><a href="#how-do-i-understand-the-layout">How do I understand the layout?</a></li>
-<li><a href="#safety-first">SAFETY FIRST!</a></li>
 <li><a href="#using-the-hex-editor">Using the Hex Editor</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -435,7 +434,7 @@
 useful in your future signature development adventures!</p>
 <ul><li>Find it at: <a href="https://HexEd.it" class="external-link">HexEd.it</a>
 </li>
-</ul><figure><img src="./fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser" class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface</div>
+</ul><figure><img src="./fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser." class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface.</div>
 </figure></section><section><h2 class="section-heading" id="what-is-a-hex-editor">What is a Hex Editor?<a class="anchor" aria-label="anchor" href="#what-is-a-hex-editor"></a></h2>
 <hr class="half-width"><ul><li>Bytecode representation of digital file</li>
 <li>Typically displays Hexadecimal, and ASCII/ANSI representations of
@@ -461,24 +460,51 @@ encoded data</li>
 interpretations of blocks of data</li>
 <li>Some Hex Editors allow for text interpretations (character sets)
 other than ASCII, such as EBCDIC</li>
-</ul></section><section><h2 class="section-heading" id="safety-first">SAFETY FIRST!<a class="anchor" aria-label="anchor" href="#safety-first"></a></h2>
-<hr class="half-width"><ul><li>A Hex Editor allows for the direct manipulation of data within
+</ul><p><br></p>
+<div id="safety-first" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div id="safety-first" class="callout-inner">
+<h3 class="callout-title">Safety first!</h3>
+<div class="callout-content">
+<ul><li>A Hex Editor allows for the direct manipulation of data within
 digital files (note, this isn’t really any different from Notepad in
 this regard)</li>
 <li>Possible to make mistakes and accidentally save over your data</li>
 <li>Therefore: Always work on a copy of your data, never the original
 data</li>
-</ul></section><section><h2 class="section-heading" id="using-the-hex-editor">Using the Hex Editor<a class="anchor" aria-label="anchor" href="#using-the-hex-editor"></a></h2>
+</ul></div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="using-the-hex-editor">Using the Hex Editor<a class="anchor" aria-label="anchor" href="#using-the-hex-editor"></a></h2>
 <hr class="half-width"><div class="section level3">
 <h3 id="demoing-hello-world-text-file">Demoing ‘Hello World!’ text file<a class="anchor" aria-label="anchor" href="#demoing-hello-world-text-file"></a></h3>
-<figure><img src="./fig/02-hello.png" alt="image shows our plain-text file as it would be viewed in a standard text editor, e.g. MS Notepad." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file</div>
-</figure><figure><img src="./fig/03-plaintext.png" alt="image shows the hexadecimal representation of a plain-text file in a hex editor's user interface" class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file in
-hexadecimal</div>
-</figure></div>
+<figure><img src="./fig/02-hello.png" alt="image shows our plain-text file as it would be viewed in a standard text editor, e.g. MS Notepad." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file.</div>
+</figure><figure><img src="./fig/03-plaintext.png" alt="image shows the hexadecimal representation of a plain-text file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file in
+hexadecimal.</div>
+</figure><div id="sample-file" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="sample-file" class="callout-inner">
+<h3 class="callout-title">Sample file</h3>
+<div class="callout-content">
+<p>You can take the sample file and view it in the hex editor for
+yourself.</p>
+<ul><li>
+<a href="./files/Hello%20World!.txt">Hello World!.txt</a> (MD5:
+<code>44d63b2ec6c79739ce994597e1d66d84</code>)</li>
+</ul></div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="demoing-pdf">Demoing PDF<a class="anchor" aria-label="anchor" href="#demoing-pdf"></a></h3>
-<figure><img src="./fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface" class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
-editor</div>
+<figure><img src="./fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
+editor.</div>
 </figure><div id="your-turn" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -522,7 +548,7 @@ spaces</li>
 low-level. My first exposure to Hex Editors was editing the save files
 of video games to give me extra lives or gold!</li>
 <li>Understanding offsets, Hex-view, limitations of ASCII view</li>
-<li>Encourage ‘Saftey First’ - it’s called an ‘editor’ for a reason, so
+<li>Encourage ‘Safety First’ - it’s called an ‘editor’ for a reason, so
 to avoid the risk of corrupting your own originals, always work with a
 copy of your original files</li>
 <li>Drag a Plain text file everybody has access to to demonstrate ASCII

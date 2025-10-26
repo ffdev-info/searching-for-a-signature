@@ -306,7 +306,9 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#advanced-pronom">Advanced PRONOM</a></li>
+        <ul><li><a href="#the-complete-picture">The complete picture</a></li>
+<li><a href="#priorities">Priorities</a></li>
+<li><a href="#recording-your-progress">Recording your progress</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -399,8 +401,9 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>What’s the ‘correct’ length for a quality identification
-signature?</li>
+<ul><li>What’s left to learn?</li>
+<li>What other considerations are there when making file format
+signatures?</li>
 </ul></div>
 </div>
 </div>
@@ -408,32 +411,67 @@ signature?</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Understand what a good signature looks like. What makes it
-‘good’?</li>
+<ul><li>Identify next steps.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="advanced-pronom">Advanced PRONOM<a class="anchor" aria-label="anchor" href="#advanced-pronom"></a></h2>
-<hr class="half-width"><p>Additional syntax and turning these into published signatures</p>
-<p>Possible headings…</p>
-<ul><li>A signature == byte sequence + metadata + priority.</li>
-<li>We use a priority because some identifications need to build on
-another, e.g. variants of XML, PDF, JPEG… at the foundation is a common
-marker and its specificity is provided by something somewhere else in
-the bytestream.</li>
-<li>Using EOF sequences – they’re like BOF sequences, but EOF…</li>
-<li>Additional syntax, new byteseek syntax</li>
-<li>Using priorities</li>
-<li>Advanced research techniques</li>
-<li>Advanced recording of progress</li>
-<li>Submitting to PRONOM</li>
-</ul><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+<section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a></h2>
+<hr class="half-width"><p>When you’ve completed your efforts a complete PRONOM record is a
+combination of byte sequence &amp; metadata &amp; priority.</p>
+<p>When you submit a new sigature to PRONOM you get a good feel for the
+information they’re looking for when you do.</p>
+<div id="information-to-submit-to-pronom" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="information-to-submit-to-pronom" class="callout-inner">
+<h3 class="callout-title">Information to submit to PRONOM</h3>
+<div class="callout-content">
+<ul><li>Format name</li>
+<li>Version number</li>
+<li>Extensions</li>
+<li>MIME/Media Type</li>
+<li>Description</li>
+<li>Format type</li>
+<li>Vendor</li>
+<li>File format identification signatures</li>
+<li>Relevant links, documentation, extra information</li>
+<li>Credit</li>
+</ul></div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="priorities">Priorities<a class="anchor" aria-label="anchor" href="#priorities"></a></h2>
+<hr class="half-width"><p>Some signatures will also makes use of a priority over another file
+format which allows tools using PRONOM to enforce a single
+identification for a file, e.g. Scalabale Vector Graphics (SVG) (a
+format based on XML) has a priority over XML to prevent SVG being
+identified as XML when it can be identified more specifically.</p>
+<p>To that end, you will often see priorities over core file formats
+such as HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file
+format variants will be written on top of those.</p>
+</section><section><h2 class="section-heading" id="recording-your-progress">Recording your progress<a class="anchor" aria-label="anchor" href="#recording-your-progress"></a></h2>
+<hr class="half-width"><p>The <a href="https://github.com/digital-preservation/PRONOM_Research" class="external-link">PRONOM
+Research</a> repository is a great place to have discussions about file
+forrmats you are working on, as well as request new entries or updated
+ones.</p>
+<p>Some researchers, such as Tyler, maintain their own GitHub
+repositories for file format research. This is useful as it provides
+them with a way to:</p>
+<ul><li>record inforamation,</li>
+<li>store sample signature files,</li>
+<li>store sample files.</li>
+</ul><p>It provides something to point to, and a way to keep track of your
+own efforts.</p>
+<!-- TODO: new byteseek format... -->
+<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
---><p><br></p>
+-->
+<p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -441,8 +479,8 @@ the bytestream.</li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>Ideally minimally 4 bytes, but plain words by themselves are more
-likely to cause clashes.</li>
+<ul><li>80% of the work is writing a signature but 20% is calibration,
+documentation, and testing.</li>
 </ul></div>
 </div>
 </div>

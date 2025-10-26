@@ -247,7 +247,8 @@
 <li><a href="#searching-for-the-bytes">Searching for the bytes</a></li>
 <li><a href="#comparing-samples">Comparing samples</a></li>
 <li><a href="#creating-samples">Creating samples</a></li>
-<li><a href="#resources-for-finding-sample-files">Resources for finding Sample files</a></li>
+<li><a href="#referencing-the-specification">Referencing the specification</a></li>
+<li><a href="#xffd9">0xFFD9</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -430,8 +431,8 @@ identify with existing tools. You can quickly open the file to view the
 hex byte sequences and start to understand the format of the file.
 <br><br> Opening a single file in a hex editor can be illuminating or
 seem like you just entered the Matrix.</p>
-<p>!!TODO:SCREENSHOT</p>
-<p>In this example we don’t really know much about the file as the
+<figure><img src="./fig/05-matrix.png" alt="image shows the hexadecimal representation of a JPEG file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">What would Trinity do?</div>
+</figure><p>In this example we don’t really know much about the file as the
 extension is not known and there is no human readable text to help. So
 by itself this file is hard to identify.</p>
 </section><section><h2 class="section-heading" id="searching-for-the-bytes">Searching for the bytes<a class="anchor" aria-label="anchor" href="#searching-for-the-bytes"></a></h2>
@@ -439,9 +440,9 @@ by itself this file is hard to identify.</p>
 and find references to the sequences as one solution or if you have
 additional files with the same extension you can use them to
 compare.</p>
-<p>!!TODO:SCREENSHOT</p>
 </section><section><h2 class="section-heading" id="comparing-samples">Comparing samples<a class="anchor" aria-label="anchor" href="#comparing-samples"></a></h2>
-<hr class="half-width"><p>With a second file we can start to see differences and similarities
+<hr class="half-width"><figure><img src="./fig/06-example3.png" alt="image shows the hexadecimal representation of another JPEG file in a hex editor allowing us to identify differences in patterns." class="figure mx-auto d-block"><div class="figcaption">Another JPEG for comparison.</div>
+</figure><p>With a second file we can start to see differences and similarities
 between them. The most noticeable is the first two bytes “FF D8”. This
 second example also has a bit of human readable text which can also help
 in identification. The more samples you have the more confident you can
@@ -457,22 +458,79 @@ file down to the version of the software which created it.</p>
 samples specific to a certain version of software is a big help in
 determining identification. Look for tutorials, sample files on
 installer disks, or create your own using trial versions of the
-software. <br><br> Having a file format specification can be the most
-helpful in understanding a file format, but isn’t always available. In
-the case of the example files above, we can see in the <a href="https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36" class="external-link">T.81
+software.</p>
+</section><section><h2 class="section-heading" id="referencing-the-specification">Referencing the specification<a class="anchor" aria-label="anchor" href="#referencing-the-specification"></a></h2>
+<hr class="half-width"><p>Having a file format specification can be the most helpful in
+understanding a file format, but isn’t always available. In the case of
+the example files above, we can see in the <a href="https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36" class="external-link">T.81
 specification for compressed images</a>, the “FF D8” sequence is used as
 the start of image bytes for a JPEG file. The specification also gives
 us what should be at the end of the file as well, “FF D9”.</p>
-<p>!!TODO:SCREENSHOT</p>
-</section><section><h2 class="section-heading" id="resources-for-finding-sample-files">Resources for finding Sample files<a class="anchor" aria-label="anchor" href="#resources-for-finding-sample-files"></a></h2>
-<hr class="half-width"><ul><li>
+<!--
+
+![Markers showing in the JPEG specification.](./fig/07-spec.png){alt='image shows the descriptions given to different markers in the JPEG specification. These act like keys we can use to make file format signatures consistent.'}
+
+-->
+<table class="table"><tbody><tr class="odd"><td>0xFFDA</td>
+<td>SOI</td>
+<td>Start of image</td>
+</tr><tr class="even"><td>0xFFD9</td>
+<td>EOI</td>
+<td>End of image</td>
+</tr><tr class="odd"><td>0xFFDA</td>
+<td>SOS</td>
+<td>Start of scan</td>
+</tr><tr class="even"><td>0xFFDB</td>
+<td>DQT</td>
+<td>Define quantization table(s)</td>
+</tr><tr class="odd"><td>0xFFDC</td>
+<td>DNL</td>
+<td>Define number of lines</td>
+</tr><tr class="even"><td>0xFFDD</td>
+<td>DRI</td>
+<td>Define restart interval</td>
+</tr><tr class="odd"><td>0xFFDE</td>
+<td>DHP</td>
+<td>Define hierarchical progression</td>
+</tr><tr class="even"><td>0xFFDF</td>
+<td>EXP</td>
+<td>Expand reference component(s)</td>
+</tr><tr class="odd"><td>0xFFE0 through 0xFFEF</td>
+<td>APP</td>
+<td>Reserved for application segments</td>
+</tr><tr class="even"><td>0xFFF0 through 0xFFFD</td>
+<td>JPG</td>
+<td>Reserved for JPEG extensions</td>
+</tr><tr class="odd"><td>0xFFFE</td>
+<td>COM</td>
+<td>Comment</td>
+</tr></tbody></table></section><section><h2 class="section-heading" id="xffd9">0xFFD9<a class="anchor" aria-label="anchor" href="#xffd9"></a></h2>
+<hr class="half-width"><p>As you progress further into this research, you will want to find
+sample files. There may be some samples known to you. Finding samples
+from heterogeneous sources can help to remove biases in signatures and
+ensure that your work is globally applicable and not just local.</p>
+<div id="resources-for-finding-sample-files" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="resources-for-finding-sample-files" class="callout-inner">
+<h3 class="callout-title">Resources for finding Sample files</h3>
+<div class="callout-content">
+<p>Tyler has developed a resource for helping to find sample files for
+format identification research.</p>
+<ul><li>
 <a href="https://github.com/thorsted/fileformat" class="external-link">Resources for
 finding Sample files</a>.</li>
-</ul><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+</ul></div>
+</div>
+</div>
+<!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
---><p><br></p>
+-->
+<p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>

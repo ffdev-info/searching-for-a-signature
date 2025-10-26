@@ -30,13 +30,17 @@ exercises: 0    # exercise time in minutes
 
 ## Introducing HexEd.it
 
-[HexEd.it](https://HexEd.it)
+HexEd.it is a web-brased hex-editor and should prove incredibly useful in
+your future signature development adventures!
 
-!!TODO:SCREENSHOT
+* Find it at: [HexEd.it](https://HexEd.it)
+
+![screenshot of hexed.it's user interface](./fig/01-hex.png){alt='image shows a screenshot of the https://hexed.it user interface in the web browser'}
 
 :::: instructor
 
-leave link URL on screen throughout this section on hex editors.
+Make a not to participants that keeping a separate HexEd.it tab open will
+be beneficial throughout the remainder of this workshop.
 
 ::::
 
@@ -77,24 +81,33 @@ files (note, this isn’t really any different from Notepad in this regard)
 
 ## Using the Hex Editor
 
-* Demoing ‘Hello World\!’ text file.
+### Demoing ‘Hello World!’ text file
 
-!!TODO:SCREENSHOT
-!!TODO:SCREENSHOT
+![Hello World\! Plain\-text file](./fig/02-hello.png){alt='image shows our plain\-text file as it would be viewed in a standard text editor, e.g. MS Notepad.'}
 
-* Demoing PDF.
+![Hello World\! Plain\-text file in hexadecimal](./fig/03-plaintext.png){alt='image shows the hexadecimal representation of a plain\-text file in a hex editor\'s user interface'}
 
-!!TODO:SCREENSHOT
+### Demoing PDF
 
-## Your turn\!
+![A small part of a PDF file shown in a hex editor](./fig/04-pdf.png){alt='image shows the hexadecimal representation of a PDF file in a hex editor\'s user interface'}
+
+:::: challenge
+
+### Your turn
 
 * Drag a file of your choosing into your Hex Editor
-* Tell us what you’ve observed\!
+* Tell us what you’ve observed!
+
+::::
+
+<!--
 
 Files used in this section:
 
 * automatic\_format\_identification.pdf
 * Hello World\!.txt
+
+-->
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

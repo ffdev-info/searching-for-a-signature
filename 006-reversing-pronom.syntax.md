@@ -135,12 +135,16 @@ Skeleton files have different uses. They enable us to:
 
 ::::
 
-## Your resource for skeleton files
+:::: callout
+
+### Your resource for skeleton files
 
 Siegfried’s build process uses a set of skeleton files and stores them
-in a repository called builder. You can download and inspect these
-from:
-[https://github.com/richardlehane/builder/releases](https://github.com/richardlehane/builder/releases)
+in a repository called builder. You can find those at the link below.
+
+* [Richard Lehane's Builder](https://github.com/richardlehane/builder/releases)
+
+::::
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

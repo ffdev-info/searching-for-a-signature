@@ -16,9 +16,21 @@ exercises: 8    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::: callout
+:::: instructor
 
-Note from David - Might I suggest we, as the workshop group, go through a process of creating and submitting a signature - I recommend Quite Ok Image Format - https://qoiformat.org/qoi-specification.pdf - BOF is ‘qoif’, EOF is 0x0000000000000001 - its not yet in PRONOM and we can ask the group to call out signature suggestions based on the spec & file example, e.g. dice.qoi from the test images zip available here: https://qoiformat.org
+For iPRES we will look at going through the process of creating and
+submitting a signature for the Quite OK Image format as it isn't yet
+in PRONOM.
+
+* https://qoiformat.org/qoi-specification.pdf
+
+BOF is ‘qoif’,
+
+EOF is 0x0000000000000001 -
+
+The group can be invited to make signature suggestions based on the
+specification example files, e.g. dice.qoi from the test images zip
+available here: https://qoiformat.org.
 
 ::::
 

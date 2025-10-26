@@ -54,6 +54,18 @@ To that end, you will often see priorities over core file formats such as
 HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file format variants will
 be written on top of those.
 
+## Container signatures
+
+Many of the techniques used for standard signatures and signature development
+can be applied to container files. Container files are formats built on top
+of technologies such as ZIP and OLE2 whose contents can be queried to
+provide more accurate identification.
+
+We will endeavor to follow up this resource with a resource containing
+all of the information from our previous workshop: PRONOM: What's in the Box?
+
+* [More information](https://linktr.ee/pronom.whats.in.the.box).
+
 ## Recording your progress
 
 The [PRONOM Research](https://github.com/digital-preservation/PRONOM_Research)

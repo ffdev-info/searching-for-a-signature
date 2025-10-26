@@ -32,3 +32,19 @@ Workshop files will be highlighted inline. You can inspect them below as well.
 * [Sample mock file 2](./files/ffid-exercise-2.file).
 * [Sample mock file 3](./files/ffid-exercise-3.file).
 * [QOI Specification](./files/qoi-specification.pdf).
+
+## Pre-reading
+
+If you’d like to get a head start or refresh your knowledge, the following
+resources may help you feel more confident and prepared:
+
+* [PRONOM Starter Pack](https://github.com/digital-preservation/PRONOM_Research/blob/main/Resources/Starter_Pack.md).
+* [PRONOM - How to research and develop signatures for file format identification](https://cdn.nationalarchives.gov.uk/documents/information-management/pronom-file-signature-research.pdf).
+* [PRONOM in Practice](https://osf.io/2jbpe/overview).
+
+## Supplementary resources
+
+Here are a few additional tools and references that may be useful during or after the workshop:
+
+* [User-friendly PRONOM syntax guide](https://github.com/digital-preservation/droid/blob/main/Signature%20syntax.md).
+* [Automatic Format Identification Using PRONOM and DROID](https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf) (the original design document).

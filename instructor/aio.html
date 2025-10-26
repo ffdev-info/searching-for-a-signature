@@ -1454,7 +1454,7 @@ know what those patterns mean.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Optional quiz </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>You can ask the room if they know what these byte sequences might
 be.</p>
@@ -1467,7 +1467,7 @@ be.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do you recognize them? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>Microsoft Office</li>
@@ -1515,7 +1515,7 @@ research!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre class="binary"><code>48 65 6C 6C 6F 20 77 6F 72 6C 64</code></pre>
 </div>
@@ -1599,16 +1599,22 @@ any links that you are not going to use.
 <section><h2 class="section-heading" id="introducing-hexed-it">Introducing HexEd.it<a class="anchor" aria-label="anchor" href="#introducing-hexed-it"></a>
 </h2>
 <hr class="half-width">
-<p><a href="https://HexEd.it" class="external-link">HexEd.it</a></p>
-<p>!!TODO:SCREENSHOT</p>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<p>HexEd.it is a web-brased hex-editor and should prove incredibly
+useful in your future signature development adventures!</p>
+<ul>
+<li>Find it at: <a href="https://HexEd.it" class="external-link">HexEd.it</a>
+</li>
+</ul>
+<figure><img src=".././fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser" class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface</div>
+</figure><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
 <div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
-<p>leave link URL on screen throughout this section on hex editors.</p>
+<p>Make a not to participants that keeping a separate HexEd.it tab open
+will be beneficial throughout the remainder of this workshop.</p>
 </div>
 </div>
 </div>
@@ -1660,31 +1666,48 @@ data</li>
 </ul></section><section><h2 class="section-heading" id="using-the-hex-editor">Using the Hex Editor<a class="anchor" aria-label="anchor" href="#using-the-hex-editor"></a>
 </h2>
 <hr class="half-width">
-<ul>
-<li>Demoing ‘Hello World!’ text file.</li>
-</ul>
-<p>!!TODO:SCREENSHOT !!TODO:SCREENSHOT</p>
-<ul>
-<li>Demoing PDF.</li>
-</ul>
-<p>!!TODO:SCREENSHOT</p>
-</section><section><h2 class="section-heading" id="your-turn">Your turn!<a class="anchor" aria-label="anchor" href="#your-turn"></a>
-</h2>
-<hr class="half-width">
+<div class="section level3">
+<h3 id="demoing-hello-world-text-file">Demoing ‘Hello World!’ text file<a class="anchor" aria-label="anchor" href="#demoing-hello-world-text-file"></a>
+</h3>
+<figure><img src=".././fig/02-hello.png" alt="image shows our plain-text file as it would be viewed in a standard text editor, e.g. MS Notepad." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file</div>
+</figure><figure><img src=".././fig/03-plaintext.png" alt="image shows the hexadecimal representation of a plain-text file in a hex editor's user interface" class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file in
+hexadecimal</div>
+</figure>
+</div>
+<div class="section level3">
+<h3 id="demoing-pdf">Demoing PDF<a class="anchor" aria-label="anchor" href="#demoing-pdf"></a>
+</h3>
+<figure><img src=".././fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface" class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
+editor</div>
+</figure><div id="your-turn" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="your-turn" class="callout-inner">
+<h3 class="callout-title">Your turn</h3>
+<div class="callout-content">
 <ul>
 <li>Drag a file of your choosing into your Hex Editor</li>
 <li>Tell us what you’ve observed!</li>
 </ul>
-<p>Files used in this section:</p>
-<ul>
-<li>automatic_format_identification.pdf</li>
-<li>Hello World!.txt</li>
-</ul>
+</div>
+</div>
+</div>
+<!--
+
+Files used in this section:
+
+* automatic\_format\_identification.pdf
+* Hello World\!.txt
+
+-->
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
---><p><br></p>
+-->
+<p><br></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1720,6 +1743,7 @@ if you’d like to share any observations</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></section><section id="aio-004-looking-for-patterns"><p>Content from <a href="004-looking-for-patterns.html">Looking for patterns</a></p>
 <hr>
 <p>Last updated on 2025-10-26 |
@@ -2244,7 +2268,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2256,7 +2280,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2314,7 +2338,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -2386,12 +2410,24 @@ support of).</li>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="your-resource-for-skeleton-files">Your resource for skeleton files<a class="anchor" aria-label="anchor" href="#your-resource-for-skeleton-files"></a>
-</h2>
-<hr class="half-width">
+<div id="your-resource-for-skeleton-files" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="your-resource-for-skeleton-files" class="callout-inner">
+<h3 class="callout-title">Your resource for skeleton files</h3>
+<div class="callout-content">
 <p>Siegfried’s build process uses a set of skeleton files and stores
-them in a repository called builder. You can download and inspect these
-from: <a href="https://github.com/richardlehane/builder/releases" class="external-link">https://github.com/richardlehane/builder/releases</a></p>
+them in a repository called builder. You can find those at the link
+below.</p>
+<ul>
+<li><a href="https://github.com/richardlehane/builder/releases" class="external-link">Richard
+Lehane’s Builder</a></li>
+</ul>
+</div>
+</div>
+</div>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -2855,19 +2891,25 @@ any links that you are not going to use.
 </div>
 </div>
 </div>
-<div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>For iPRES we will look at going through the process of creating and
+submitting a signature for the Quite OK Image format as it isn’t yet in
+PRONOM.</p>
+<ul>
+<li><a href="https://qoiformat.org/qoi-specification.pdf" class="external-link uri">https://qoiformat.org/qoi-specification.pdf</a></li>
+</ul>
+<p>BOF is ‘qoif’,</p>
+<p>EOF is 0x0000000000000001 -</p>
+<p>The group can be invited to make signature suggestions based on the
+specification example files, e.g. dice.qoi from the test images zip
+available here: <a href="https://qoiformat.org" class="external-link uri">https://qoiformat.org</a>.</p>
 </div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>Note from David - Might I suggest we, as the workshop group, go
-through a process of creating and submitting a signature - I recommend
-Quite Ok Image Format - <a href="https://qoiformat.org/qoi-specification.pdf" class="external-link uri">https://qoiformat.org/qoi-specification.pdf</a> - BOF is
-‘qoif’, EOF is 0x0000000000000001 - its not yet in PRONOM and we can ask
-the group to call out signature suggestions based on the spec &amp; file
-example, e.g. dice.qoi from the test images zip available here: <a href="https://qoiformat.org" class="external-link uri">https://qoiformat.org</a></p>
 </div>
 </div>
 </div>
@@ -2883,7 +2925,7 @@ example, e.g. dice.qoi from the test images zip available here: <a href="https:
 <li>Two groups to share their results at the end of the session…
 Questions…</li>
 </ol>
-<div id="callout2" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>

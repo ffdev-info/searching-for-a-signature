@@ -1,7 +1,7 @@
 ---
 title: "Doing it for yourself"
-teaching: 5    # teaching time in minutes
-exercises: 30    # exercise time in minutes
+teaching: 2    # teaching time in minutes
+exercises: 13    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions

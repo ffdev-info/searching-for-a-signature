@@ -1,52 +1,66 @@
 ---
-site: 'PRONOM: Searching for a signature'
+site: 'Searching for a signature: A FFID workshop'
 title: 'Welcome!'
 ---
 
-Kia ora, and welcome to Searching for a Signature: A file format identification
-workshop. This workshop follows the idea of **See one**, **do one**,
-**teach one**. While this has been designed as a workshop we hope that folks
-will use this resource as a module that can be self-taught, as well as
-a module they may choose to teach others.
+Kia ora, and welcome to Searching for a Signature: A File Format
+Identification Workshop. This workshop loosely follows the concept
+of **See one**, **Do one**, **Teach one**. Depending on how much time
+you have for your workshop the balance between teaching and student
+engagement may vary. We recommend around 1.5 hours for teaching
+(including some engagement and interaction) and an additional 45 minutes for
+more interactive workshop activities and sharing.
+
+:::: callout
+
+### Take it offline!
+
+This course has been designed as a workshop but it can also be used as
+a self-taught module and reference material.
+
+::::
 
 :::: prereq
 
-### Pre-workshop reading
+## Pre-workshop reading
 
-You should have received pre-workshop reading materials. Hopefully you have
-read these. If not, worry not, we will do our best to introduce everything
-thoroughly. Don't be afraid to ask questions!
+Hopefully yoou will have had a chance to read the pre-workshop
+reading materials (these are also available in the reference section of
+this website). If you haven't had the opportunity, don't worry, we will do
+our best to introduce everything thoroughly as we go.
+
+Please don't be afraid to ask questions!
 
 ::::
 
 :::: instructor
 
-### Icebreaker
+## Icebreaker
 
 At the end of this introduction you should introduce an icebreaker
 for the class. Some ideas:
 
-- what's your favorite file format?
+- what is your favorite file format?
 - if you were a file format, what would it be?
 
 ::::
 
 ## Website layout
 
-This website is created to enable in-person teaching as well as offline
-self-teaching. Lessons are listed as "Episodes". As you work through the
-sections you may also be interested in:
+Lessons are listed as "Episodes". As you work through the sections you may
+also be interested in:
 
 * [FAQ](/faq.html).
 * [Glossary](/glossary.html).
 * [Additional resources](/additional.html).
 
-You can keep these tabs open as you work through the other pages.
+You can keep these tabs open as you work through each episode.
 
-## Open source
+## Open source learning
 
-The FFID resource is open source, and you are welcome to contribute
-changes and suggestions based on what has worked for you, or what might
-work better. If you have feedback we are happy to hear it, and if you
-have used this resource to teach a class, let us know, and feel free to
-share recordings or other resources associated with your teaching!
+The Searching for a Signature resource is open source and you are welcome
+to contribute changes and suggestions based on what has worked for you,
+or what might work better. If you have feedback we are happy to hear it,
+and if you have used this resource to teach a class, let us know, and
+please feel free to share recordings or other resources associated with your
+teaching!

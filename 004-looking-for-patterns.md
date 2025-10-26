@@ -1,6 +1,6 @@
 ---
 title: "Looking for patterns"
-teaching: 10    # teaching time in minutes
+teaching: 5    # teaching time in minutes
 exercises: 0    # exercise time in minutes
 ---
 

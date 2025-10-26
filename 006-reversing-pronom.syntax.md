@@ -1,6 +1,6 @@
 ---
 title: "Reversing PRONOM syntax"
-teaching: 10    # teaching time in minutes
+teaching: 15    # teaching time in minutes
 exercises: 0    # exercise time in minutes
 ---
 

@@ -6,7 +6,7 @@ exercises: 0    # exercise time in minutes
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-* Take aways?
+* Take aways
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -16,12 +16,31 @@ exercises: 0    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+* Next time you have an unidentified file format:
+  1. open it up in a hex editor, and,
+  2. take a look.
+* Write a new signature and submit it to Pronom.
+* Share your knowledge with colleagues and support the next generation
+of file format researchers!!!
+* You can even use this template and build on it to tailor yours
+and your colleague's experiences.
+
+:::: callout
+
+## Survey
+
+Help us to improve this content and future tutorials and workshops.
+
+* [Post-participation Survey](https://forms.gle/f3fRDFuYLk6oj1C36).
+
+::::
+
 :::: discussion
 
 ### Questions
 
 1. Questions?
-1. What formats might you go and work on?
+1. What formats might you go away and work on?
 
 ::::
 

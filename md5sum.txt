@@ -20,6 +20,6 @@
 "learners/faq.md" "d1b79f14b6bc51914074c3a9f89bc123" "site/built/faq.md" "2025-10-26"
 "learners/glossary.md" "3e333b4585f4ee3c5e18dac3a56eb2d1" "site/built/glossary.md" "2025-10-26"
 "learners/additional.md" "44c2a8146e9acfe6d5b11b14efb19b46" "site/built/additional.md" "2025-08-11"
-"learners/setup.md" "3917ec876a23b227b4aa7a4944ed4c66" "site/built/setup.md" "2025-10-26"
+"learners/setup.md" "8d178c3091e2a9c1b26444d560d5e448" "site/built/setup.md" "2025-10-27"
 "profiles/learner-profiles.md" "5b25ee9a71634b6a0fcfcdb93b2b7f98" "site/built/learner-profiles.md" "2025-08-11"
 "profiles/instructor-profiles.md" "14adb52edcd1685c0e54194c73e44122" "site/built/instructor-profiles.md" "2025-08-11"

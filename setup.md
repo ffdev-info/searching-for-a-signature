@@ -11,7 +11,7 @@ the workshop easier.
 ## Tools
 
 * [hexed.it](https://hexed.it/)
-* [https://ffdev.info/](https://ffdev.info/) (bundles Roy and Siegfried)
+* [ffdev.info](https://ffdev.info/) (bundles Roy and Siegfried)
 
 ## Workshop files
 

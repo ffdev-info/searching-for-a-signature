@@ -42,7 +42,7 @@ wants to do that, let’s look at the
 [amazing tool Ross Spencer wrote](https://ffdev.info/) to help with
 signature creation.
 
-![The Signature Development Utility.](./fig/09-sigdev.pngg){alt='image shows the user interface of the signature development utility.'}
+![The Signature Development Utility.](./fig/09-sigdev.png){alt='image shows the user interface of the signature development utility.'}
 
 
 ## Signature development utility

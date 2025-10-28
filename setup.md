@@ -1,5 +1,5 @@
 ---
-title: SetupXXX
+title: Setup
 ---
 
 ## Room setup

@@ -72,8 +72,10 @@ Try it on [https://hexed.it/](https://hexed.it/) if you have a moment.
 
 1. Take one of the solutions above and copy it into your clipboard.
 2. Click anywhere in the editor pane and press ctrl-v.
-3. Select “create new file” and specify how the data should be interpreted as “hexadecimal values”.
-4. You will see the bytes from the solution in the left hand side of the window and its ASCII interpretation on the right.
+3. Select “create new file” and specify how the data should be interpreted
+as “hexadecimal values”.
+4. You will see the bytes from the solution in the left hand side of the
+window and its ASCII interpretation on the right.
 5. You can then elect to download and name the file via ‘Save As’.
 
 ::::

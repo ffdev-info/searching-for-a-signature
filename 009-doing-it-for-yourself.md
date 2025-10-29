@@ -77,7 +77,7 @@ signature for this new file format!
 * [QOI Specification](./files/qoi-specification.pdf) also online
 [here](https://qoiformat.org/qoi-specification.pdf).
 
-#### Sample files
+#### QOI Sample files
 
 * [Sample file 1](./files/edgecase.qoi).
 * [Sample file 2](./files/kodim10.qoi).
@@ -111,17 +111,21 @@ do is match all three!
      with longer/shorter sequences
 -->
 
-56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
+<!--markdownlint-disable-->
 
 56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
 
 56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
+
+56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
+
+<!--markdownlint-enable-->
 
 #### Sample files
 
-* [Sample file 1](./files/ffid-exercise-1.file).
-* [Sample file 2](./files/ffid-exercise-2.file).
-* [Sample file 3](./files/ffid-exercise-3.file).
+- [Sample file 1](./files/ffid-exercise-1.file).
+- [Sample file 2](./files/ffid-exercise-2.file).
+- [Sample file 3](./files/ffid-exercise-3.file).
 
 :::::: solution
 
@@ -170,9 +174,9 @@ We'll wrap up in the next lesson.
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 - You've all the tools needed to write file format signatures.
-* It might not always work.
-* It will certainly take trial and error.
-* Persevere and keep working on it.
-* Practice makes perfect!
+- It might not always work.
+- It will certainly take trial and error.
+- Persevere and keep working on it.
+- Practice makes perfect!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

@@ -38,13 +38,22 @@ Workshop files will be highlighted inline. You can inspect them below as well.
 If you’d like to get a head start or refresh your knowledge, the following
 resources may help you feel more confident and prepared:
 
+<!--markdownlint-disable-->
+
 * [PRONOM Starter Pack](https://github.com/digital-preservation/PRONOM_Research/blob/main/Resources/Starter_Pack.md).
 * [PRONOM - How to research and develop signatures for file format identification](https://cdn.nationalarchives.gov.uk/documents/information-management/pronom-file-signature-research.pdf).
 * [PRONOM in Practice](https://osf.io/2jbpe/overview).
 
+<!--markdownlint-enable-->
+
 ## Supplementary resources
 
-Here are a few additional tools and references that may be useful during or after the workshop:
+Here are a few additional tools and references that may be useful during or
+after the workshop:
+
+<!--markdownlint-disable-->
 
 * [User-friendly PRONOM syntax guide](https://github.com/digital-preservation/droid/blob/main/Signature%20syntax.md).
 * [Automatic Format Identification Using PRONOM and DROID](https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf) (the original design document).
+
+<!--markdownlint-enable-->

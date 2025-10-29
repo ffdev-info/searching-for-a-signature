@@ -46,13 +46,13 @@ information they're looking for when you do.
 
 Some signatures will also makes use of a priority over another file format
 which allows tools using PRONOM to enforce a single identification for a
-file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has a priority
-over XML to prevent SVG being identified as XML when it can be identified
-more specifically.
+file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has
+a priority over XML to prevent SVG being identified as XML when it can be
+identified more specifically.
 
 To that end, you will often see priorities over core file formats such as
-HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file format variants will
-be written on top of those.
+HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file format variants
+will be written on top of those.
 
 ## Container signatures
 
@@ -93,6 +93,7 @@ It provides something to point to, and a way to keep track of your own efforts.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- 80% of the work is writing a signature but 20% is calibration, documentation, and testing.
+- 80% of the work is writing a signature but 20% is calibration, documentation,
+and testing.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

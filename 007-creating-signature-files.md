@@ -31,7 +31,11 @@ way tools like DROID or Siegfried can use to match the byte sequence within
 a file or group of files. This pattern is written to an XML structure which
 records the sequence, offsets, and descriptive information about the file.
 
+<!--markdownlint-disable-->
+
 ![A look at the XML used in a DROID signature file.](./fig/08-xml.png){alt='image shows the XML used to define a signature file used by DROID. It contains a lot of information used by previous DROIDs to optimize pattern matching.'}
+
+<!--markdownlint-enable-->
 
 A Signature file consists of two parts, the byte signature and the file
 format information. The signature will have an ID which is then referenced
@@ -42,8 +46,11 @@ wants to do that, let’s look at the
 [amazing tool Ross Spencer wrote](https://ffdev.info/) to help with
 signature creation.
 
+<!--markdownlint-disable-->
+
 ![The Signature Development Utility.](./fig/09-sigdev.png){alt='image shows the user interface of the signature development utility.'}
 
+<!--markdownlint-enable-->
 
 ## Signature development utility
 
@@ -65,7 +72,11 @@ based on your information and immediately download to your computer.
 This can then be moved to your .droid6 folder or imported in the
 DROID Application.
 
+<!--markdownlint-disable-->
+
 ![You're ready to run your signature file against real files!](./fig/10-droid.png){alt='image shows DROID user interface and where you would navigate to so that you can upload a new signature file.'}
+
+<!--markdownlint-emable-->
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

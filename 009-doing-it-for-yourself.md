@@ -27,7 +27,7 @@ If you are doing this in a workshop environment, follow this thread. If you
 are following along at home in a tutorial, then skip to the small exercise
 below to find a task that you can complete at home.
 
-### Workshop exercise
+## Workshop exercise
 
 1. Split into groups.
 1. Work together to create a signature.
@@ -65,19 +65,19 @@ available here: https://qoiformat.org.
 
 :::: challenge
 
-#### Quite ok!
+### Quite ok!
 
 Your task is to find an identification for the Quite OK Image format. Below
 you will find a specification and some sample files. Take a look at these in
 any order you wish to determine what may provde to be a good file format
 signature for this new file format!
 
-##### Specification
+#### Specification
 
 * [QOI Specification](./files/qoi-specification.pdf) also online
 [here](https://qoiformat.org/qoi-specification.pdf).
 
-##### Sample files
+#### Sample files
 
 * [Sample file 1](./files/edgecase.qoi).
 * [Sample file 2](./files/kodim10.qoi).
@@ -87,7 +87,7 @@ signature for this new file format!
 
 ::::
 
-#### Wrapping up
+### Wrapping up
 
 If you have managed to successfully match QOI files using your own
 signature file, then start to make some notes about what you did. Think
@@ -96,7 +96,7 @@ anything else that might be relevant. We will revisit this next section!
 
 ----
 
-### Local exercise
+## Local exercise
 
 The following challenge is simply to try and write a DROID compatible
 signature file that can be used to identify three byte sequences designed
@@ -105,7 +105,7 @@ do is match all three!
 
 :::: challenge
 
-#### Develop a signature for the following and test it in DROID or Siegfried
+### Develop a signature for the following and test it in DROID or Siegfried
 
 <!-- NB. Borrowed from x-fmt/231 – 00’s need replacing and expanding, e.g.
      with longer/shorter sequences
@@ -117,7 +117,7 @@ do is match all three!
 
 56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
 
-##### Sample files
+#### Sample files
 
 * [Sample file 1](./files/ffid-exercise-1.file).
 * [Sample file 2](./files/ffid-exercise-2.file).
@@ -137,7 +137,7 @@ A solution will appear here shortly.
 
 :::: callout
 
-#### Taking note of the extension
+### Taking note of the extension
 
 You can also record a file format extension in a signature file. If you
 correctly match the file format extension then tools like Siegfried and
@@ -147,7 +147,7 @@ well.
 
 ::::
 
-#### Wrapping up!
+### Wrapping up!
 
 If you have managed to identify the three sample files using your own
 signature file, congratulations!

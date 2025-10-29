@@ -85,9 +85,6 @@ episodes:
 # Information for Learners. The pages here will land in the introductory
 # sections.
 learners:
-- faq.md
-- glossary.md
-- additional.md
 
 # Information for Instructors. The pages here will be included in the
 # instructor notes section.

@@ -33,7 +33,3 @@ An extension is simple a file label and most operating systems use the extension
 ## Can all file formats be identified through a signature?
 
 Most standard formats can be identified, but many text based files, cannot. There are also multi-part formats and formats with bytes that are not static in every file. There are also container formats with variable filenames which currently don’t work well with the PRONOM signature syntax.
-
-## Does Ross sell signed headshots?
-
-TBD!

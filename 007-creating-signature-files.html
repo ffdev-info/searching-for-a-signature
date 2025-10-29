@@ -382,7 +382,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Creating signature files</h1>
-        <p>Last updated on 2025-10-28 |
+        <p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/007-creating-signature-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -427,16 +427,18 @@ a way tools like DROID or Siegfried can use to match the byte sequence
 within a file or group of files. This pattern is written to an XML
 structure which records the sequence, offsets, and descriptive
 information about the file.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/08-xml.png" alt="image shows the XML used to define a signature file used by DROID. It contains a lot of information used by previous DROIDs to optimize pattern matching." class="figure mx-auto d-block"><div class="figcaption">A look at the XML used in a DROID signature
 file.</div>
-</figure><p>A Signature file consists of two parts, the byte signature and the
+</figure><!--markdownlint-enable--><p>A Signature file consists of two parts, the byte signature and the
 file format information. The signature will have an ID which is then
 referenced in the file format information tag, connecting the two.</p>
 <p>This file can be created from scratch using any text editor, but
 nobody wants to do that, let’s look at the <a href="https://ffdev.info/" class="external-link">amazing tool Ross Spencer wrote</a> to help
 with signature creation.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/09-sigdev.png" alt="image shows the user interface of the signature development utility." class="figure mx-auto d-block"><div class="figcaption">The Signature Development Utility.</div>
-</figure></section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a></h2>
+</figure><!--markdownlint-enable--></section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a></h2>
 <hr class="half-width"><p>The signature development utility will take the sequence you want to
 use and generate the XML needed by tools like DROID to use. Use a name
 which is specific to the format. If you know the version of the format
@@ -451,9 +453,10 @@ the signature. <br><br> Pressing the “Create Signature” button will
 generate an XML file based on your information and immediately download
 to your computer. This can then be moved to your .droid6 folder or
 imported in the DROID Application.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/10-droid.png" alt="image shows DROID user interface and where you would navigate to so that you can upload a new signature file." class="figure mx-auto d-block"><div class="figcaption">You’re ready to run your signature file against
 real files!</div>
-</figure><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+</figure><!--markdownlint-emable--><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
@@ -537,7 +540,7 @@ any links that you are not going to use.
   "url": "https://ffdev-info.github.io/searching-for-a-signature/007-creating-signature-files.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/007-creating-signature-files.html",
   "dateCreated": "2025-10-29",
-  "dateModified": "2025-10-28",
+  "dateModified": "2025-10-29",
   "datePublished": "2025-10-29"
 }
 

@@ -1511,7 +1511,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-003-using-a-hex-editor"><p>Content from <a href="003-using-a-hex-editor.html">Using a hex editor</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/003-using-a-hex-editor.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1563,8 +1563,8 @@ useful in your future signature development adventures!</p>
 <li>Find it at: <a href="https://HexEd.it" class="external-link">HexEd.it</a>
 </li>
 </ul>
-<figure><img src="./fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser." class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface.</div>
-</figure></section><section><h2 class="section-heading" id="what-is-a-hex-editor">What is a Hex Editor?<a class="anchor" aria-label="anchor" href="#what-is-a-hex-editor"></a>
+<!--markdownlint-disable--><figure><img src="./fig/01-hex.png" alt="image shows a screenshot of the https://hexed.it user interface in the web browser." class="figure mx-auto d-block"><div class="figcaption">screenshot of hexed.it’s user interface.</div>
+</figure><!--markdownlint-enable--></section><section><h2 class="section-heading" id="what-is-a-hex-editor">What is a Hex Editor?<a class="anchor" aria-label="anchor" href="#what-is-a-hex-editor"></a>
 </h2>
 <hr class="half-width">
 <ul>
@@ -1625,10 +1625,11 @@ data</li>
 <div class="section level3">
 <h3 id="demoing-hello-world-text-file">Demoing ‘Hello World!’ text file<a class="anchor" aria-label="anchor" href="#demoing-hello-world-text-file"></a>
 </h3>
+<!--markdownlint-disable-->
 <figure><img src="./fig/02-hello.png" alt="image shows our plain-text file as it would be viewed in a standard text editor, e.g. MS Notepad." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file.</div>
 </figure><figure><img src="./fig/03-plaintext.png" alt="image shows the hexadecimal representation of a plain-text file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">Hello World! Plain-text file in
 hexadecimal.</div>
-</figure><div id="sample-file" class="callout">
+</figure><!--markdownlint-enable--><div id="sample-file" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -1650,9 +1651,10 @@ yourself.</p>
 <div class="section level3">
 <h3 id="demoing-pdf">Demoing PDF<a class="anchor" aria-label="anchor" href="#demoing-pdf"></a>
 </h3>
+<!--markdownlint-disable-->
 <figure><img src="./fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
 editor.</div>
-</figure><div id="your-turn" class="callout discussion">
+</figure><!--markdownlint-enable--><div id="your-turn" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
@@ -1719,7 +1721,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-004-looking-for-patterns"><p>Content from <a href="004-looking-for-patterns.html">Looking for patterns</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/004-looking-for-patterns.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1765,8 +1767,9 @@ identify with existing tools. You can quickly open the file to view the
 hex byte sequences and start to understand the format of the file.
 <br><br> Opening a single file in a hex editor can be illuminating or
 seem like you just entered the Matrix.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/05-matrix.png" alt="image shows the hexadecimal representation of a JPEG file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">What would Trinity do?</div>
-</figure><p>In this example we don’t really know much about the file as the
+</figure><!--markdownlint-enable--><p>In this example we don’t really know much about the file as the
 extension is not known and there is no human readable text to help. So
 by itself this file is hard to identify.</p>
 </section><section><h2 class="section-heading" id="searching-for-the-bytes">Searching for the bytes<a class="anchor" aria-label="anchor" href="#searching-for-the-bytes"></a>
@@ -1779,8 +1782,8 @@ compare.</p>
 </section><section><h2 class="section-heading" id="comparing-samples">Comparing samples<a class="anchor" aria-label="anchor" href="#comparing-samples"></a>
 </h2>
 <hr class="half-width">
-<figure><img src="./fig/06-example3.png" alt="image shows the hexadecimal representation of another JPEG file in a hex editor allowing us to identify differences in patterns." class="figure mx-auto d-block"><div class="figcaption">Another JPEG for comparison.</div>
-</figure><p>With a second file we can start to see differences and similarities
+<!--markdownlint-disable--><figure><img src="./fig/06-example3.png" alt="image shows the hexadecimal representation of another JPEG file in a hex editor allowing us to identify differences in patterns." class="figure mx-auto d-block"><div class="figcaption">Another JPEG for comparison.</div>
+</figure><!--markdownlint-enable--><p>With a second file we can start to see differences and similarities
 between them. The most noticeable is the first two bytes “FF D8”. This
 second example also has a bit of human readable text which can also help
 in identification. The more samples you have the more confident you can
@@ -1808,11 +1811,11 @@ the example files above, we can see in the <a href="https://www.w3.org/Graphics/
 specification for compressed images</a>, the “FF D8” sequence is used as
 the start of image bytes for a JPEG file. The specification also gives
 us what should be at the end of the file as well, “FF D9”.</p>
+<!--markdownlint-disable-->
 <!--
-
 ![Markers showing in the JPEG specification.](./fig/07-spec.png){alt='image shows the descriptions given to different markers in the JPEG specification. These act like keys we can use to make file format signatures consistent.'}
-
 -->
+<!--markdownlint-enable-->
 <table class="table"><tbody>
 <tr class="odd">
 <td>0xFFDA</td>
@@ -1922,7 +1925,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-005-pronom-syntax"><p>Content from <a href="005-pronom-syntax.html">Introducing PRONOM syntax</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/005-pronom-syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2187,7 +2190,7 @@ e.g. <code>ABCD[!01]E1</code></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="combining-signatures-and-sequences-">Combining signatures and sequences.<a class="anchor" aria-label="anchor" href="#combining-signatures-and-sequences-"></a>
+</section><section><h2 class="section-heading" id="combining-signatures-and-sequences">Combining signatures and sequences<a class="anchor" aria-label="anchor" href="#combining-signatures-and-sequences"></a>
 </h2>
 <hr class="half-width">
 <ul>
@@ -2257,7 +2260,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-006-reversing-pronom.syntax"><p>Content from <a href="006-reversing-pronom.syntax.html">Reversing PRONOM syntax</a></p>
 <hr>
-<p>Last updated on 2025-10-27 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/006-reversing-pronom.syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2320,7 +2323,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2332,7 +2335,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2390,7 +2393,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -2508,7 +2511,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-007-creating-signature-files"><p>Content from <a href="007-creating-signature-files.html">Creating signature files</a></p>
 <hr>
-<p>Last updated on 2025-10-28 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/007-creating-signature-files.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2555,16 +2558,18 @@ a way tools like DROID or Siegfried can use to match the byte sequence
 within a file or group of files. This pattern is written to an XML
 structure which records the sequence, offsets, and descriptive
 information about the file.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/08-xml.png" alt="image shows the XML used to define a signature file used by DROID. It contains a lot of information used by previous DROIDs to optimize pattern matching." class="figure mx-auto d-block"><div class="figcaption">A look at the XML used in a DROID signature
 file.</div>
-</figure><p>A Signature file consists of two parts, the byte signature and the
+</figure><!--markdownlint-enable--><p>A Signature file consists of two parts, the byte signature and the
 file format information. The signature will have an ID which is then
 referenced in the file format information tag, connecting the two.</p>
 <p>This file can be created from scratch using any text editor, but
 nobody wants to do that, let’s look at the <a href="https://ffdev.info/" class="external-link">amazing tool Ross Spencer wrote</a> to help
 with signature creation.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/09-sigdev.png" alt="image shows the user interface of the signature development utility." class="figure mx-auto d-block"><div class="figcaption">The Signature Development Utility.</div>
-</figure></section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a>
+</figure><!--markdownlint-enable--></section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a>
 </h2>
 <hr class="half-width">
 <p>The signature development utility will take the sequence you want to
@@ -2581,9 +2586,10 @@ the signature. <br><br> Pressing the “Create Signature” button will
 generate an XML file based on your information and immediately download
 to your computer. This can then be moved to your .droid6 folder or
 imported in the DROID Application.</p>
+<!--markdownlint-disable-->
 <figure><img src="./fig/10-droid.png" alt="image shows DROID user interface and where you would navigate to so that you can upload a new signature file." class="figure mx-auto d-block"><div class="figcaption">You’re ready to run your signature file against
 real files!</div>
-</figure><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
+</figure><!--markdownlint-emable--><!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
      content.
@@ -2902,7 +2908,7 @@ online <a href="https://qoiformat.org/qoi-specification.pdf" class="external-lin
 </ul>
 </div>
 <div class="section level4">
-<h4 id="sample-files">Sample files<a class="anchor" aria-label="anchor" href="#sample-files"></a>
+<h4 id="qoi-sample-files">QOI Sample files<a class="anchor" aria-label="anchor" href="#qoi-sample-files"></a>
 </h4>
 <ul>
 <li>
@@ -2949,6 +2955,7 @@ it in DROID or Siegfried</h3>
 <!-- NB. Borrowed from x-fmt/231 – 00’s need replacing and expanding, e.g.
      with longer/shorter sequences
 -->
+<!--markdownlint-disable-->
 <p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
 00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
@@ -2958,8 +2965,9 @@ it in DROID or Siegfried</h3>
 <p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
 00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
+<!--markdownlint-enable-->
 <div class="section level4">
-<h4 id="sample-files-1">Sample files<a class="anchor" aria-label="anchor" href="#sample-files-1"></a>
+<h4 id="sample-files">Sample files<a class="anchor" aria-label="anchor" href="#sample-files"></a>
 </h4>
 <ul>
 <li>
@@ -3158,7 +3166,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-011-advanced"><p>Content from <a href="011-advanced.html">Advanced PRONOM</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/011-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">

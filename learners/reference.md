@@ -101,5 +101,3 @@ Other concept
 : definition goes here...
 
 -->
-
-## FAAQ

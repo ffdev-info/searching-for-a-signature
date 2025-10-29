@@ -97,7 +97,7 @@ It provides something to point to, and a way to keep track of your own efforts.
 
 ### FAQ and Glossary
 
-Take a look at the [FAQ](../learners/faq.md) section of this site for
+Consult the [FAQ](../learners/faq.md) section of this site for
 quick answers to some of the questions you may have going forward.
 
 We also hope the [glossary](../learners/reference.md) will be useful

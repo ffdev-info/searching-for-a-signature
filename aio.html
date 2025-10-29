@@ -1426,7 +1426,7 @@ know what those patterns mean.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do you recognize them? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>Microsoft Office</li>
@@ -1474,7 +1474,7 @@ research!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <pre class="binary"><code>48 65 6C 6C 6F 20 77 6F 72 6C 64</code></pre>
 </div>
@@ -1654,11 +1654,11 @@ yourself.</p>
 <!--markdownlint-disable-->
 <figure><img src="./fig/04-pdf.png" alt="image shows the hexadecimal representation of a PDF file in a hex editor's user interface." class="figure mx-auto d-block"><div class="figcaption">A small part of a PDF file shown in a hex
 editor.</div>
-</figure><!--markdownlint-enable--><div id="your-turn" class="callout discussion">
+</figure><!--markdownlint-enable--><div id="your-turn" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
+<span class="callout-header">Challenge</span>
 <div id="your-turn" class="callout-inner">
 <h3 class="callout-title">Your turn</h3>
 <div class="callout-content">
@@ -1666,6 +1666,18 @@ editor.</div>
 <li>Drag a file of your choosing into your Hex Editor</li>
 <li>Tell us what you’ve observed!</li>
 </ul>
+</div>
+</div>
+</div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div class="accordion-body">
+<p>Suitable workshop files can also be found on the <a href="index.html#workshop-files">front page</a> of this site.</p>
+</div>
 </div>
 </div>
 </div>
@@ -2224,7 +2236,7 @@ guide is an important set of documents to follow up on after this
 tutorial.</p>
 <ul>
 <li>
-<a href="https://osf.io/2jbpe/files/osfstorage" class="external-link">PRONOM in Practice
+<a href="https://osf.io/2jbpe/files/" class="external-link">PRONOM in Practice
 documents</a>.</li>
 <li>
 <a href="https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf" class="external-link">PRONOM
@@ -2762,7 +2774,8 @@ currently open profile.</li>
 you have no other existing profiles.</li>
 <li>You can now add files using ‘Add’ and attempt to identify these
 files against your new signature file.</li>
-<li>You can read move via DROID’s github: <a href="https://github.com/digital-preservation/droid" class="external-link">github.com/digital-preservation/droid</a>.</li>
+<li>You can read more in the <a href="https://cdn.nationalarchives.gov.uk/documents/information-management/droid-user-guide.pdf" class="external-link">DROID
+user guide</a>.</li>
 </ol>
 </div>
 <div class="section level3">
@@ -3002,7 +3015,7 @@ it in DROID or Siegfried</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A solution will appear here shortly.</p>
 <!-- TODO provide a solution here that can be used to identify the three
@@ -3219,8 +3232,11 @@ signatures?</li>
 </h2>
 <hr class="half-width">
 <p>When you’ve completed your efforts a complete PRONOM record is a
-combination of byte sequence &amp; metadata &amp; priority.</p>
-<p>When you submit a new sigature to PRONOM you get a good feel for the
+combination of signature &amp; priority &amp; metadata.</p>
+<!-- markdownlint-disable -->
+<figure><img src="./fig/md.png" alt="Image shows how a format identification is constructed in PRONOM by combining signature, priority, and metadta" class="figure mx-auto d-block"><div class="figcaption">Format identification result using PRONOM
+data.</div>
+</figure><!-- markdownlint-emable --><p>When you submit a new sigature to PRONOM you get a good feel for the
 information they’re looking for when you do.</p>
 <div id="information-to-submit-to-pronom" class="callout">
 <div class="callout-square">
@@ -3302,8 +3318,8 @@ own efforts.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>80% of the work is writing a signature but 20% is calibration,
-documentation, and testing.</li>
+<li>Much of this effort is researching files and writing a signature but
+another chunk of effort is testing, calibration, and documentation.</li>
 </ul>
 </div>
 </div>

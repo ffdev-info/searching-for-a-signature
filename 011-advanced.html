@@ -306,8 +306,8 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#the-complete-picture">The complete picture</a></li>
-<li><a href="#priorities">Priorities</a></li>
+        <ul><li><a href="#priorities">Priorities</a></li>
+<li><a href="#the-complete-picture">The complete picture</a></li>
 <li><a href="#container-signatures">Container signatures</a></li>
 <li><a href="#recording-your-progress">Recording your progress</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -418,14 +418,23 @@ signatures?</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a></h2>
+<section><h2 class="section-heading" id="priorities">Priorities<a class="anchor" aria-label="anchor" href="#priorities"></a></h2>
+<hr class="half-width"><p>Signatures will also makes use of a priority over another file format
+which allows tools using PRONOM to enforce a single identification for a
+file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has a
+priority over XML to prevent SVG being identified as XML when it can be
+identified more specifically.</p>
+<p>To that end, you will often see priorities over core file formats
+such as HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file
+format variants will be written on top of those.</p>
+</section><section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a></h2>
 <hr class="half-width"><p>When you’ve completed your efforts a complete PRONOM record is a
-combination of signature &amp; priority &amp; metadata.</p>
+combination of signature &amp; priorities &amp; metadata.</p>
 <!-- markdownlint-disable -->
 <figure><img src="./fig/md.png" alt="Image shows how a format identification is constructed in PRONOM by combining signature, priority, and metadta" class="figure mx-auto d-block"><div class="figcaption">Format identification result using PRONOM
 data.</div>
 </figure><!-- markdownlint-emable --><p>When you submit a new sigature to PRONOM you get a good feel for the
-information they’re looking for when you do.</p>
+information they are looking for when you do.</p>
 <div id="information-to-submit-to-pronom" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -447,26 +456,18 @@ information they’re looking for when you do.</p>
 </ul></div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="priorities">Priorities<a class="anchor" aria-label="anchor" href="#priorities"></a></h2>
-<hr class="half-width"><p>Some signatures will also makes use of a priority over another file
-format which allows tools using PRONOM to enforce a single
-identification for a file, e.g. Scalabale Vector Graphics (SVG) (a
-format based on XML) has a priority over XML to prevent SVG being
-identified as XML when it can be identified more specifically.</p>
-<p>To that end, you will often see priorities over core file formats
-such as HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file
-format variants will be written on top of those.</p>
 </section><section><h2 class="section-heading" id="container-signatures">Container signatures<a class="anchor" aria-label="anchor" href="#container-signatures"></a></h2>
 <hr class="half-width"><p>Many of the techniques used for standard signatures and signature
 development can be applied to container files. Container files are
 formats built on top of technologies such as ZIP and OLE2 whose contents
 can be queried to provide more accurate identification.</p>
-<p>We will endeavor to follow up this resource with a resource
-containing all of the information from our previous workshop: PRONOM:
-What’s in the Box?</p>
+<p>Container signatures take some additional effort to research and
+test. We will endeavor to follow up this learning resource with a
+similar one containing all of the information from our previous
+workshop: <em><strong>PRONOM: What’s in the Box?</strong></em></p>
 <ul><li>
-<a href="https://linktr.ee/pronom.whats.in.the.box" class="external-link">More
-information</a>.</li>
+<a href="https://linktr.ee/pronom.whats.in.the.box" class="external-link">More information
+from that workshop</a>.</li>
 </ul></section><section><h2 class="section-heading" id="recording-your-progress">Recording your progress<a class="anchor" aria-label="anchor" href="#recording-your-progress"></a></h2>
 <hr class="half-width"><p>The <a href="https://github.com/digital-preservation/PRONOM_Research" class="external-link">PRONOM
 Research</a> repository is a great place to have discussions about file
@@ -495,7 +496,7 @@ own efforts.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul><li>Much of this effort is researching files and writing a signature but
-another chunk of effort is testing, calibration, and documentation.</li>
+another big part is testing, calibration, AND documentation.</li>
 </ul></div>
 </div>
 </div>

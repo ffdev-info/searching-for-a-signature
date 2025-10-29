@@ -1426,7 +1426,7 @@ know what those patterns mean.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do you recognize them? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>Microsoft Office</li>
@@ -1474,7 +1474,7 @@ research!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre class="binary"><code>48 65 6C 6C 6F 20 77 6F 72 6C 64</code></pre>
 </div>
@@ -1674,7 +1674,7 @@ editor.</div>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Suitable workshop files can also be found on the <a href="index.html#workshop-files">front page</a> of this site.</p>
 </div>
@@ -3228,16 +3228,27 @@ signatures?</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a>
+<section><h2 class="section-heading" id="priorities">Priorities<a class="anchor" aria-label="anchor" href="#priorities"></a>
+</h2>
+<hr class="half-width">
+<p>Signatures will also makes use of a priority over another file format
+which allows tools using PRONOM to enforce a single identification for a
+file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has a
+priority over XML to prevent SVG being identified as XML when it can be
+identified more specifically.</p>
+<p>To that end, you will often see priorities over core file formats
+such as HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file
+format variants will be written on top of those.</p>
+</section><section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a>
 </h2>
 <hr class="half-width">
 <p>When you’ve completed your efforts a complete PRONOM record is a
-combination of signature &amp; priority &amp; metadata.</p>
+combination of signature &amp; priorities &amp; metadata.</p>
 <!-- markdownlint-disable -->
 <figure><img src="./fig/md.png" alt="Image shows how a format identification is constructed in PRONOM by combining signature, priority, and metadta" class="figure mx-auto d-block"><div class="figcaption">Format identification result using PRONOM
 data.</div>
 </figure><!-- markdownlint-emable --><p>When you submit a new sigature to PRONOM you get a good feel for the
-information they’re looking for when you do.</p>
+information they are looking for when you do.</p>
 <div id="information-to-submit-to-pronom" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -3261,17 +3272,6 @@ information they’re looking for when you do.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="priorities">Priorities<a class="anchor" aria-label="anchor" href="#priorities"></a>
-</h2>
-<hr class="half-width">
-<p>Some signatures will also makes use of a priority over another file
-format which allows tools using PRONOM to enforce a single
-identification for a file, e.g. Scalabale Vector Graphics (SVG) (a
-format based on XML) has a priority over XML to prevent SVG being
-identified as XML when it can be identified more specifically.</p>
-<p>To that end, you will often see priorities over core file formats
-such as HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file
-format variants will be written on top of those.</p>
 </section><section><h2 class="section-heading" id="container-signatures">Container signatures<a class="anchor" aria-label="anchor" href="#container-signatures"></a>
 </h2>
 <hr class="half-width">
@@ -3279,13 +3279,14 @@ format variants will be written on top of those.</p>
 development can be applied to container files. Container files are
 formats built on top of technologies such as ZIP and OLE2 whose contents
 can be queried to provide more accurate identification.</p>
-<p>We will endeavor to follow up this resource with a resource
-containing all of the information from our previous workshop: PRONOM:
-What’s in the Box?</p>
+<p>Container signatures take some additional effort to research and
+test. We will endeavor to follow up this learning resource with a
+similar one containing all of the information from our previous
+workshop: <em><strong>PRONOM: What’s in the Box?</strong></em></p>
 <ul>
 <li>
-<a href="https://linktr.ee/pronom.whats.in.the.box" class="external-link">More
-information</a>.</li>
+<a href="https://linktr.ee/pronom.whats.in.the.box" class="external-link">More information
+from that workshop</a>.</li>
 </ul></section><section><h2 class="section-heading" id="recording-your-progress">Recording your progress<a class="anchor" aria-label="anchor" href="#recording-your-progress"></a>
 </h2>
 <hr class="half-width">
@@ -3319,7 +3320,7 @@ own efforts.</p>
 <div class="callout-content">
 <ul>
 <li>Much of this effort is researching files and writing a signature but
-another chunk of effort is testing, calibration, and documentation.</li>
+another big part is testing, calibration, AND documentation.</li>
 </ul>
 </div>
 </div>

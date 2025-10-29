@@ -28,5 +28,7 @@ are required by the site.
 
 `just workbench` will build and launch the tutorial on a local port.
 
+Running `just` on its own will show all available commands.
+
 [just-1]: https://github.com/casey/just
 [just-2]: https://doc.rust-lang.org/cargo/getting-started/installation.html

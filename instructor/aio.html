@@ -1454,7 +1454,7 @@ know what those patterns mean.</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Optional quiz </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>You can ask the room if they know what these byte sequences might
 be.</p>
@@ -1467,7 +1467,7 @@ be.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Do you recognize them? </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>Microsoft Office</li>
@@ -1515,7 +1515,7 @@ research!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <pre class="binary"><code>48 65 6C 6C 6F 20 77 6F 72 6C 64</code></pre>
 </div>
@@ -2678,7 +2678,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-008-plugging-it-in"><p>Content from <a href="008-plugging-it-in.html">Plugging it in</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/008-plugging-it-in.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -2718,6 +2718,22 @@ any links that you are not going to use.
 your preferred tool to test it against your files.</p>
 <p>For this workshop we have developed a method of doing this through
 your web-browser using Siegfried.</p>
+<div id="roy" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<span class="callout-header">Testimonial</span>
+<div id="roy" class="callout-inner">
+<h3 class="callout-title">Roy!</h3>
+<div class="callout-content">
+<p><em>Roy is a Siegfried companion tool and it enables us to compile
+signatures alongside an existing DROID signature file. Siegfried then
+allows us to run those signatures against our files.</em></p>
+<p>Visit <a href="https://ffdev.info" class="external-link">ffdev.info</a> to get access to an
+browser-based version of Roy, and Siegfried for this next step!</p>
+</div>
+</div>
+</div>
 <div id="wasm" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -2726,15 +2742,17 @@ your web-browser using Siegfried.</p>
 <div id="wasm" class="callout-inner">
 <h3 class="callout-title">WASM</h3>
 <div class="callout-content">
-<p>This online version of Siegfried uses Web Assembly (WASM) which means
-everything is loaded locally in your browser. With Siegfried running
-locally in your browser data is not transferred over the network to any
-other computer, it is sandboxed and kept local to your machine.</p>
+<p>This online version of Roy, and Siegfried uses Web Assembly (WASM)
+which means everything is loaded locally in your browser. With Siegfried
+running locally in your browser data is not transferred over the network
+to any other computer, it is <em>sandboxed</em> and kept local to your
+machine.</p>
 </div>
 </div>
 </div>
 <ol style="list-style-type: decimal">
-<li>Go to ffdev.info and look at the Siegfried tab.</li>
+<li>Go to <a href="https://ffdev.info" class="external-link">ffdev.info</a> and look at the
+Siegfried tab.</li>
 <li>Select “roy: load signature’ and navigate to a signature file on
 your hard disk. The signature file will be loaded into memory alongside
 Siegfried’s default signature.</li>
@@ -2819,8 +2837,7 @@ currently open profile.</li>
 you have no other existing profiles.</li>
 <li>You can now add files using ‘Add’ and attempt to identify these
 files against your new signature file.</li>
-<li>You can read move via DROID’s github: <a href="https://github.com/digital-preservation/droid" class="external-link uri">https://github.com/digital-preservation/droid</a>
-</li>
+<li>You can read move via DROID’s github: <a href="https://github.com/digital-preservation/droid" class="external-link">github.com/digital-preservation/droid</a>.</li>
 </ol>
 </div>
 <div class="section level3">
@@ -2836,8 +2853,7 @@ Windows or <code>~/.local/share/siegfried/</code> on Linux
 (configurations may vary).</li>
 <li>You can download the latest signature file from The National
 Archives: <a href="https://www.nationalarchives.gov.uk/aboutapps/pronom/droid-signature-files.htm" class="external-link">DROID
-signature files</a>
-</li>
+signature files</a>.</li>
 </ol>
 <div id="keeping-it-simple" class="callout">
 <div class="callout-square">
@@ -2966,7 +2982,7 @@ went.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>For iPRES we will look at going through the process of creating and
 submitting a signature for the Quite OK Image format as it isn’t yet in
@@ -3083,7 +3099,7 @@ it in DROID or Siegfried</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A solution will appear here shortly.</p>
 <!-- TODO provide a solution here that can be used to identify the three

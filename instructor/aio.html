@@ -485,7 +485,7 @@
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <ul>
 <li>Welcome, housekeeping.</li>
@@ -1611,7 +1611,7 @@ useful in your future signature development adventures!</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>Make a note to participants that keeping a separate HexEd.it tab open
 will be beneficial throughout the remainder of this workshop.</p>
@@ -2378,7 +2378,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2390,7 +2390,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2448,7 +2448,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -2888,7 +2888,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-009-doing-it-for-yourself"><p>Content from <a href="009-doing-it-for-yourself.html">Doing it for yourself</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/009-doing-it-for-yourself.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
@@ -2930,9 +2930,9 @@ format signatures and plugging them in, it is time to write one!</p>
 <p>If you are doing this in a workshop environment, follow this thread.
 If you are following along at home in a tutorial, then skip to the small
 exercise below to find a task that you can complete at home.</p>
-<div class="section level3">
-<h3 id="workshop-exercise">Workshop exercise<a class="anchor" aria-label="anchor" href="#workshop-exercise"></a>
-</h3>
+</section><section><h2 class="section-heading" id="workshop-exercise">Workshop exercise<a class="anchor" aria-label="anchor" href="#workshop-exercise"></a>
+</h2>
+<hr class="half-width">
 <ol style="list-style-type: decimal">
 <li>Split into groups.</li>
 <li>Work together to create a signature.</li>
@@ -2989,18 +2989,18 @@ available here: <a href="https://qoiformat.org" class="external-link uri">https:
 Below you will find a specification and some sample files. Take a look
 at these in any order you wish to determine what may provde to be a good
 file format signature for this new file format!</p>
-<div class="section level5">
-<h5 id="specification">Specification<a class="anchor" aria-label="anchor" href="#specification"></a>
-</h5>
+<div class="section level4">
+<h4 id="specification">Specification<a class="anchor" aria-label="anchor" href="#specification"></a>
+</h4>
 <ul>
 <li>
 <a href=".././files/qoi-specification.pdf">QOI Specification</a> also
 online <a href="https://qoiformat.org/qoi-specification.pdf" class="external-link">here</a>.</li>
 </ul>
 </div>
-<div class="section level5">
-<h5 id="sample-files">Sample files<a class="anchor" aria-label="anchor" href="#sample-files"></a>
-</h5>
+<div class="section level4">
+<h4 id="sample-files">Sample files<a class="anchor" aria-label="anchor" href="#sample-files"></a>
+</h4>
 <ul>
 <li>
 <a href=".././files/edgecase.qoi">Sample file 1</a>.</li>
@@ -3017,9 +3017,9 @@ online <a href="https://qoiformat.org/qoi-specification.pdf" class="external-lin
 </div>
 </div>
 </div>
-<div class="section level4">
-<h4 id="wrapping-up">Wrapping up<a class="anchor" aria-label="anchor" href="#wrapping-up"></a>
-</h4>
+<div class="section level3">
+<h3 id="wrapping-up">Wrapping up<a class="anchor" aria-label="anchor" href="#wrapping-up"></a>
+</h3>
 <p>If you have managed to successfully match QOI files using your own
 signature file, then start to make some notes about what you did. Think
 about what worked? What didn’t work? What questions you still have? And
@@ -3027,10 +3027,9 @@ anything else that might be relevant. We will revisit this next
 section!</p>
 <hr>
 </div>
-</div>
-<div class="section level3">
-<h3 id="local-exercise">Local exercise<a class="anchor" aria-label="anchor" href="#local-exercise"></a>
-</h3>
+</section><section><h2 class="section-heading" id="local-exercise">Local exercise<a class="anchor" aria-label="anchor" href="#local-exercise"></a>
+</h2>
+<hr class="half-width">
 <p>The following challenge is simply to try and write a DROID compatible
 signature file that can be used to identify three byte sequences
 designed for this tutorial. There are sample files available, and all
@@ -3056,9 +3055,9 @@ it in DROID or Siegfried</h3>
 <p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
 00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
-<div class="section level5">
-<h5 id="sample-files-1">Sample files<a class="anchor" aria-label="anchor" href="#sample-files-1"></a>
-</h5>
+<div class="section level4">
+<h4 id="sample-files-1">Sample files<a class="anchor" aria-label="anchor" href="#sample-files-1"></a>
+</h4>
 <ul>
 <li>
 <a href=".././files/ffid-exercise-1.file">Sample file 1</a>.</li>
@@ -3102,9 +3101,9 @@ that as well.</p>
 </div>
 </div>
 </div>
-<div class="section level4">
-<h4 id="wrapping-up-1">Wrapping up!<a class="anchor" aria-label="anchor" href="#wrapping-up-1"></a>
-</h4>
+<div class="section level3">
+<h3 id="wrapping-up-1">Wrapping up!<a class="anchor" aria-label="anchor" href="#wrapping-up-1"></a>
+</h3>
 <p>If you have managed to identify the three sample files using your own
 signature file, congratulations!</p>
 <p>If you’re still wrestling with it, take a look at the solution and
@@ -3140,10 +3139,9 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</div>
 </section></section><section id="aio-010-teaching-us-how"><p>Content from <a href="010-teaching-us-how.html">Teaching us how to do it!</a></p>
 <hr>
-<p>Last updated on 2025-10-26 |
+<p>Last updated on 2025-10-29 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/010-teaching-us-how.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -3196,9 +3194,9 @@ steps to improve your understanding. Well done on getting this far!</p>
 </div>
 </div>
 </div>
-<div class="section level3">
-<h3 id="teach-the-workshop">Teach the workshop<a class="anchor" aria-label="anchor" href="#teach-the-workshop"></a>
-</h3>
+</section><section><h2 class="section-heading" id="teach-the-workshop">Teach the workshop<a class="anchor" aria-label="anchor" href="#teach-the-workshop"></a>
+</h2>
+<hr class="half-width">
 <p>Following your efforts in the previous exercise can you describe to
 the group what you did and what you learned?</p>
 <ol style="list-style-type: decimal">
@@ -3212,11 +3210,9 @@ the group what you did and what you learned?</p>
 <li>what didn’t work?</li>
 <li>what questions you still have?</li>
 <li>is there anything else you’d like to share with the group?</li>
-</ol>
-</div>
-<div class="section level3">
-<h3 id="teach-locally">Teach locally<a class="anchor" aria-label="anchor" href="#teach-locally"></a>
-</h3>
+</ol></section><section><h2 class="section-heading" id="teach-locally">Teach locally<a class="anchor" aria-label="anchor" href="#teach-locally"></a>
+</h2>
+<hr class="half-width">
 <p>Teaching outside of a workshop environment is no small feat! If
 you’re happy where you are, then you are welcome to wrap up this
 tutorial with the final two episodes.</p>
@@ -3258,7 +3254,6 @@ forums.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
 </section></section><section id="aio-011-advanced"><p>Content from <a href="011-advanced.html">Advanced PRONOM</a></p>
 <hr>
 <p>Last updated on 2025-10-26 |

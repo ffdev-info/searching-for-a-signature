@@ -1,19 +1,19 @@
 ---
 title: "Advanced PRONOM"
-teaching: 0    # teaching time in minutes
+teaching: 5    # teaching time in minutes
 exercises: 0    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
 
 - What's left to learn?
-- What other considerations are there when making file format signatures?
+- What other considerations are there when documenting file format signatures?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Identify next steps.
+- Identify new learning objectives.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -90,6 +90,21 @@ file format research. This is useful as it provides them with a way to:
 * store sample files.
 
 It provides something to point to, and a way to keep track of your own efforts.
+
+<br>
+
+:::: callout
+
+### FAQ and Glossary
+
+Take a look at the [FAQ](../learners/faq.md) section of this site for
+quick answers to some of the questions you may have going forward.
+
+We also hope the [glossary](../learners/reference.md) will be useful
+in contunuing to demystify some of the terminology you will have
+come across today.
+
+::::
 
 <!-- TODO: new byteseek format... -->
 

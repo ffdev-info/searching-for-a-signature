@@ -169,7 +169,7 @@ The team at The National Archives have worked hard to create good resources
 for PRONOM research and development. The PRONOM in Practice guide is an
 important set of documents to follow up on after this tutorial.
 
-- [PRONOM in Practice documents](https://osf.io/2jbpe/files/osfstorage).
+- [PRONOM in Practice documents](https://osf.io/2jbpe/files/).
 - [PRONOM technical guide](https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf).
 
 ::::

@@ -109,10 +109,9 @@ open profile.
 have no other existing profiles.
 10. You can now add files using ‘Add’ and attempt to identify these files
 against your new signature file.
-11. You can read move via DROID’s github:
-[github.com/digital-preservation/droid][droid-1].
+11. You can read more in the [DROID user guide][droid-1].
 
-[droid-1]: https://github.com/digital-preservation/droid
+[droid-1]: https://cdn.nationalarchives.gov.uk/documents/information-management/droid-user-guide.pdf
 
 ### Siegfried
 

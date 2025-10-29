@@ -36,7 +36,7 @@ Hopefully you will have had a chance to read the pre-workshop
 reading materials. If you haven't had the opportunity, don't worry, we will
 do our best to introduce everything thoroughly as we go.
 
-Links to all materials can be found below and in the
+Links to all materials can be found [below](#pre-reading) and in the
 reference sections of this site.
 
 Please do not be afraid to ask questions!

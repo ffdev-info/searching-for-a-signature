@@ -20,7 +20,13 @@ exercises: 0    # exercise time in minutes
 ## The complete picture
 
 When you've completed your efforts a complete PRONOM record is a combination
-of byte sequence & metadata & priority.
+of signature & priority & metadata.
+
+<!-- markdownlint-disable -->
+
+![Format identification result using PRONOM data.](./fig/md.png){alt='Image shows how a format identification is constructed in PRONOM by combining signature, priority, and metadta'}
+
+<!-- markdownlint-emable -->
 
 When you submit a new sigature to PRONOM you get a good feel for the
 information they're looking for when you do.
@@ -93,7 +99,7 @@ It provides something to point to, and a way to keep track of your own efforts.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- 80% of the work is writing a signature but 20% is calibration, documentation,
-and testing.
+- Much of this effort is researching files and writing a signature but
+another chunk of effort is testing, calibration, and documentation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

@@ -17,10 +17,22 @@ exercises: 0    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Priorities
+
+Signatures will also makes use of a priority over another file format
+which allows tools using PRONOM to enforce a single identification for a
+file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has
+a priority over XML to prevent SVG being identified as XML when it can be
+identified more specifically.
+
+To that end, you will often see priorities over core file formats such as
+HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file format variants
+will be written on top of those.
+
 ## The complete picture
 
 When you've completed your efforts a complete PRONOM record is a combination
-of signature & priority & metadata.
+of signature & priorities & metadata.
 
 <!-- markdownlint-disable -->
 
@@ -29,7 +41,7 @@ of signature & priority & metadata.
 <!-- markdownlint-emable -->
 
 When you submit a new sigature to PRONOM you get a good feel for the
-information they're looking for when you do.
+information they are looking for when you do.
 
 :::: callout
 
@@ -48,18 +60,6 @@ information they're looking for when you do.
 
 ::::
 
-## Priorities
-
-Some signatures will also makes use of a priority over another file format
-which allows tools using PRONOM to enforce a single identification for a
-file, e.g. Scalabale Vector Graphics (SVG) (a format based on XML) has
-a priority over XML to prevent SVG being identified as XML when it can be
-identified more specifically.
-
-To that end, you will often see priorities over core file formats such as
-HTML, PDF, JPEG, TIFF, OLE2, and so on, as many other file format variants
-will be written on top of those.
-
 ## Container signatures
 
 Many of the techniques used for standard signatures and signature development
@@ -67,10 +67,14 @@ can be applied to container files. Container files are formats built on top
 of technologies such as ZIP and OLE2 whose contents can be queried to
 provide more accurate identification.
 
-We will endeavor to follow up this resource with a resource containing
-all of the information from our previous workshop: PRONOM: What's in the Box?
+Container signatures take some additional effort to research and test. We
+will endeavor to follow up this learning resource with a similar one
+containing all of the information from our previous workshop:
+_**PRONOM: What's in the Box?**_
 
-* [More information](https://linktr.ee/pronom.whats.in.the.box).
+* [More information from that workshop][box-1].
+
+[box-1]: https://linktr.ee/pronom.whats.in.the.box
 
 ## Recording your progress
 
@@ -100,6 +104,6 @@ It provides something to point to, and a way to keep track of your own efforts.
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 - Much of this effort is researching files and writing a signature but
-another chunk of effort is testing, calibration, and documentation.
+another big part is testing, calibration, AND documentation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

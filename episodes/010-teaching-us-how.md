@@ -33,7 +33,7 @@ See below for some ideas on what you might do at this point.
 
 ::::
 
-### Teach the workshop
+## Teach the workshop
 
 Following your efforts in the previous exercise can you describe to the
 group what you did and what you learned?
@@ -49,7 +49,7 @@ Evaluating your efforts:
 1. what questions you still have?
 1. is there anything else you'd like to share with the group?
 
-### Teach locally
+## Teach locally
 
 Teaching outside of a workshop environment is no small feat! If you're
 happy where you are, then you are welcome to wrap up this tutorial with

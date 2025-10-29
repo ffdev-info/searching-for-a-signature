@@ -127,6 +127,17 @@ You can take the sample file and view it in the hex editor for yourself.
 * Drag a file of your choosing into your Hex Editor
 * Tell us what you’ve observed!
 
+:::::: hint
+
+### Hint
+
+Suitable workshop files can also be found on the [front page][front-1] of this
+site.
+
+::::::
+
+[front-1]: ../index.md#workshop-files
+
 ::::
 
 <!--

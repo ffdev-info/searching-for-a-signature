@@ -1,5 +1,5 @@
 ---
-title: Glossary
+title: 'Glossary'
 ---
 
 <!--
@@ -7,7 +7,7 @@ title: Glossary
 Very cool site helped me convert this: https://tabletomarkdown.com/
 
 NB. if it looks terrible on your screen, turn wordwrap off. If we need to
-revisit this we can. We might not have time before the workshop.
+revisit this we can. We might not have time before the workshop...
 
 Source: https://docs.google.com/spreadsheets/d/1GKK6kyrpKDJTyVToUBQN7QSKwkXGJcgYnJ9hmEcxG8I/edit
 
@@ -101,3 +101,5 @@ Other concept
 : definition goes here...
 
 -->
+
+## FAAQ

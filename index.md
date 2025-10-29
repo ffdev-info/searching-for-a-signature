@@ -60,9 +60,9 @@ for the class. Some ideas:
 Lessons are listed as "Episodes". As you work through the sections you may
 also be interested in:
 
-* [FAQ](/faq.html).
-* [Glossary](/glossary.html).
-* [Additional resources](/additional.html).
+* [FAQ](faq.html)
+* [Glossary](reference.html#glossary)
+* [Additional resources](additional.html)
 
 You can keep these tabs open as you work through each episode.
 

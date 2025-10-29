@@ -79,7 +79,7 @@ teaching!
 
 :::: testimonial
 
-### With thanks to...
+### With thanks to
 
 * Francesca Mackenzie - Digital Archivist at The National Archives UK, who
 was part of the team for iPRES2024's workshop: _What's in the box? an

@@ -31,7 +31,11 @@ sequences and start to understand the format of the file.
 Opening a single file in a hex editor can be illuminating or seem like
 you just entered the Matrix.
 
+<!--markdownlint-disable-->
+
 ![What would Trinity do?](./fig/05-matrix.png){alt='image shows the hexadecimal representation of a JPEG file in a hex editor\'s user interface.'}
+
+<!--markdownlint-enable-->
 
 In this example we don’t really know much about the file as the
 extension is not known and there is no human readable text to help. So by
@@ -45,7 +49,11 @@ files with the same extension you can use them to compare.
 
 ## Comparing samples
 
+<!--markdownlint-disable-->
+
 ![Another JPEG for comparison.](./fig/06-example3.png){alt='image shows the hexadecimal representation of another JPEG file in a hex editor allowing us to identify differences in patterns.'}
+
+<!--markdownlint-enable-->
 
 With a second file we can start to see differences and similarities
 between them. The most noticeable is the first two bytes “FF D8”. This
@@ -72,16 +80,20 @@ disks, or create your own using trial versions of the software.
 Having a file format specification can be the most helpful in
 understanding a file format, but isn’t always available. In the case of the
 example files above, we can see in the
-[T.81 specification for compressed images](https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36),
+[T.81 specification for compressed images][tiff-1],
 the “FF D8” sequence is used as the start of image bytes for a JPEG file.
 The specification also gives us what should be at the end of the
 file as well, “FF D9”.
 
+[tiff-1]: https://www.w3.org/Graphics/JPEG/itu-t81.pdf#page=36
+
+<!--markdownlint-disable-->
+
 <!--
-
 ![Markers showing in the JPEG specification.](./fig/07-spec.png){alt='image shows the descriptions given to different markers in the JPEG specification. These act like keys we can use to make file format signatures consistent.'}
-
 -->
+
+<!--markdownlint-enable-->
 
 |  |  |  |
 | --- | --- | --- |
@@ -125,7 +137,8 @@ identification research.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-* The more samples from different versions of the format can ensure better identification.
+* The more samples from different versions of the format can ensure better
+identification.
 * Not all formats have available specifications
 * The more variations in samples, patterns emerge.
 

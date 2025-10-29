@@ -35,7 +35,11 @@ your future signature development adventures!
 
 * Find it at: [HexEd.it](https://HexEd.it)
 
+<!--markdownlint-disable-->
+
 ![screenshot of hexed.it's user interface.](./fig/01-hex.png){alt='image shows a screenshot of the https://hexed.it user interface in the web browser.'}
+
+<!--markdownlint-enable-->
 
 :::: instructor
 
@@ -85,14 +89,17 @@ files (note, this isn’t really any different from Notepad in this regard)
 
 ::::
 
-
 ## Using the Hex Editor
 
 ### Demoing ‘Hello World!’ text file
 
+<!--markdownlint-disable-->
+
 ![Hello World\! Plain\-text file.](./fig/02-hello.png){alt='image shows our plain\-text file as it would be viewed in a standard text editor, e.g. MS Notepad.'}
 
 ![Hello World\! Plain\-text file in hexadecimal.](./fig/03-plaintext.png){alt='image shows the hexadecimal representation of a plain\-text file in a hex editor\'s user interface.'}
+
+<!--markdownlint-enable-->
 
 :::: callout
 
@@ -100,13 +107,18 @@ files (note, this isn’t really any different from Notepad in this regard)
 
 You can take the sample file and view it in the hex editor for yourself.
 
-* [Hello World!.txt](./files/Hello%20World!.txt) (MD5: <code>44d63b2ec6c79739ce994597e1d66d84</code>)
+* [Hello World!.txt](./files/Hello%20World!.txt)
+(MD5: <code>44d63b2ec6c79739ce994597e1d66d84</code>)
 
 ::::
 
 ### Demoing PDF
 
+<!--markdownlint-disable-->
+
 ![A small part of a PDF file shown in a hex editor.](./fig/04-pdf.png){alt='image shows the hexadecimal representation of a PDF file in a hex editor\'s user interface.'}
+
+<!--markdownlint-enable-->
 
 :::: challenge
 

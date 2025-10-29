@@ -1,5 +1,5 @@
 ---
-default: true
+default: False
 
 # Exceptions, example given, MD045
 # MD045: false # allow image with no tag
@@ -7,14 +7,21 @@ default: true
 # Unordered list indentation
 MD007:
     # Spaces for indent
-    indent: 4
+    indent: 2
+# Unordered list style
+MD004: False
 # In-line HTML.
-MD033: false
-# List marker space - disabling due to conflicts with prettier
-MD030: false
+MD033:
+    allowed_elements:
+    - "br"
+    - "code"
+    - "img"
 # Line lengths
 MD013:
     line_length: 80
-    tables: false
+    tables: False
 # First line in a file should be a top-level heading
-MD041: false
+MD041: False
+# Punctuation in headers
+MD026:
+  punctuation: ".,;:。，；："

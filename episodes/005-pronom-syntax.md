@@ -30,25 +30,36 @@ Python
 
 ## Signature positions
 
-* BOF: Beginning Of File - the signature sequence starts at, or near the beginning of the file
-* EOF: End Of File - the signature sequence starts at, or near the end of the file
+* BOF: Beginning Of File - the signature sequence starts at, or near the
+beginning of the file
+* EOF: End Of File - the signature sequence starts at, or near the end of
+the file
 * Var: Variable - the signature sequence may be found anywhere within the file
-* Offset - the position, relative to the BOF, or EOF, where the sequence begins. 0 is default, meaning no offset. Since an offset of 0 means ‘starting from the first byte’, an offset of 4 means ‘starting from the 5th byte’, or ‘after the 4th byte’
-* Maximum Offset - A further offset, relative to the initial Offset value described above. The default is 0, meaning no further possible offset.
+* Offset - the position, relative to the BOF, or EOF, where the sequence
+begins. 0 is default, meaning no offset. Since an offset of 0 means ‘starting
+from the first byte’, an offset of 4 means ‘starting from the 5th byte’,
+or ‘after the 4th byte’
+* Maximum Offset - A further offset, relative to the initial Offset value
+described above. The default is 0, meaning no further possible offset.
 
 :::: callout
 
 ## Position and offset examples
 
-BOF, Offset 0, Maximum offset 0: The signature sequence starts at the very beginning of the file
+BOF, Offset 0, Maximum offset 0: The signature sequence starts at the very
+beginning of the file
 
-BOF, Offset 4, Maximum offset 0: The signature sequence starts at exactly position 0x04, the 5th byte
+BOF, Offset 4, Maximum offset 0: The signature sequence starts at exactly
+position 0x04, the 5th byte
 
-BOF, Offset 0, Maximum offset 4: The signature sequence may start anywhere within the first 5 bytes
+BOF, Offset 0, Maximum offset 4: The signature sequence may start anywhere
+within the first 5 bytes
 
-BOF, Offset 4, Maximum Offset 4: The signature sequence may start anywhere from byte 5 through to byte 9
+BOF, Offset 4, Maximum Offset 4: The signature sequence may start anywhere
+from byte 5 through to byte 9
 
-EOF, Offset 4, Maximum Offset 0: The signature sequence ends exactly 4 bytes from the end of the file
+EOF, Offset 4, Maximum Offset 0: The signature sequence ends exactly 4 bytes
+from the end of the file
 
 ::::
 
@@ -57,7 +68,8 @@ EOF, Offset 4, Maximum Offset 0: The signature sequence ends exactly 4 bytes fro
 ### Questions
 
 * Where can the byte sequence appear for BOF, Offset 16, Maximum offset 16?
-* What do you think happens if you add an offset to a variably-positioned sequence?
+* What do you think happens if you add an offset to a variably-positioned
+sequence?
 
 ::::
 
@@ -122,7 +134,8 @@ Most signatures will combine some or all of the above.
 
 #### Either/or
 
-**(hhhh|hhhh|hh)** = either/any or these byte values, e.g. <code>(0D|0A|0D0A)</code>
+**(hhhh|hhhh|hh)** = either/any or these byte values,
+e.g. <code>(0D|0A|0D0A)</code>
 
 #### Not
 
@@ -130,7 +143,7 @@ Most signatures will combine some or all of the above.
 
 ::::
 
-## Combining signatures and sequences.
+## Combining signatures and sequences
 
 * A Format can have many Signatures - matching any Signature will
 return a hit.

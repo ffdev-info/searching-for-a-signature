@@ -9,7 +9,6 @@ exercises: 0    # exercise time in minutes
 - How do we use a signature file?
 - Should I use DROID or Siegfried?
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
@@ -26,18 +25,31 @@ preferred tool to test it against your files.
 For this workshop we have developed a method of doing this through your
 web-browser using Siegfried.
 
+:::: testimonial
+
+### Roy!
+
+_Roy is a Siegfried companion tool and it enables us to compile signatures
+alongside an existing DROID signature file. Siegfried then allows us to
+run those signatures against our files._
+
+Visit [ffdev.info](https://ffdev.info) to get access to an browser-based
+version of Roy, and Siegfried for this next step!
+
+::::
+
 :::: callout
 
 ### WASM
 
-This online version of Siegfried uses Web Assembly (WASM) which means
+This online version of Roy, and Siegfried uses Web Assembly (WASM) which means
 everything is loaded locally in your browser. With Siegfried running
 locally in your browser data is not transferred over the network to any
-other computer, it is sandboxed and kept local to your machine.
+other computer, it is _sandboxed_ and kept local to your machine.
 
 ::::
 
-1. Go to ffdev.info and look at the Siegfried tab.
+1. Go to [ffdev.info](https://ffdev.info) and look at the Siegfried tab.
 2. Select “roy: load signature’ and navigate to a signature file on your
 hard disk. The signature file will be loaded into memory alongside
 Siegfried’s default signature.
@@ -97,7 +109,10 @@ open profile.
 have no other existing profiles.
 10. You can now add files using ‘Add’ and attempt to identify these files
 against your new signature file.
-11. You can read move via DROID’s github: https://github.com/digital-preservation/droid
+11. You can read move via DROID’s github:
+[github.com/digital-preservation/droid][droid-1].
+
+[droid-1]: https://github.com/digital-preservation/droid
 
 ### Siegfried
 
@@ -108,7 +123,9 @@ download the latest DROID signature file into the folder described in the
 error message by roy, e.g. `%userprofile%/siegfried/` on
 Windows or `~/.local/share/siegfried/` on Linux (configurations may vary).
 3. You can download the latest signature file from The National Archives:
-[DROID signature files](https://www.nationalarchives.gov.uk/aboutapps/pronom/droid-signature-files.htm)
+[DROID signature files][droid-2].
+
+[droid-2]: https://www.nationalarchives.gov.uk/aboutapps/pronom/droid-signature-files.htm
 
 :::: callout
 
@@ -130,7 +147,9 @@ as follows: `./roy build -extend </path/to/your/signature/file.xml>`.
 5. Given no errors you can now run siegfried against your own files and
 they should identify against your new signature file!
 6. For more information on building signatures with siegfried and roy,
-check out siegfried’s wiki: [roy: inspect and debug](https://github.com/richardlehane/siegfried/wiki/Inspect-and-Debug).
+check out siegfried’s wiki: [roy: inspect and debug][roy-1].
+
+[roy-1]: https://github.com/richardlehane/siegfried/wiki/Inspect-and-Debug
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

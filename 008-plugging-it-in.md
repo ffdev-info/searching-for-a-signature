@@ -84,7 +84,7 @@ getting forrmat identifications out of them.
 ### DROID
 
 1. With DROID installed you will find its configuration folder
-in `%userprofile%/.droid6/`  on Windows and `~/.droid6` on Linux.
+in `%userprofile%/.droid6/`  on Windows and `~/.droid6` on Linux and Mac.
 2. Signature files are stored in a folder called signature_files.
 3. Given your signature file created above, copy and paste it into
 this directory.

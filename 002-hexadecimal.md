@@ -45,6 +45,30 @@ to convert hexadecimal to decimal.
 
 <br>
 
+:::: challenge
+
+### Try it in your search engine
+
+If you use a search engine, what results do you get for the following
+queries?
+
+* `0xFF in decimal`
+* `42 in hexadecimal`
+* `82 in binary`
+* `0b1100 in decimal`
+
+:::::: solution
+
+### Search engines are your friend
+
+Search engines can conveniently do the work of converting from decimal to
+hexadecimal and back for you. You can also investigate binary numbers
+quickly and easily this way without having to work out the layout of bits.
+
+::::::
+
+::::
+
 :::: callout
 
 ### Zero to hero!
@@ -61,6 +85,10 @@ when we analyse digital records.
 We use the `0x` prefix to signify hexadecimal. When we document hex
 sequences like above `0xE4 0xB8 0x96` is also equivalent to `0xE4B896`. How
 you choose write this information depends on context.
+
+You also saw `0b` as a prefix. This is used to denote binary (base2),
+
+e.g. `0b1100` equals `0x0C` equals `12`.
 
 ::::
 

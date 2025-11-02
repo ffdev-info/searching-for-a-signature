@@ -28,7 +28,8 @@ exercises: 0    # exercise time in minutes
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | DEC  | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   | 13   | 14   | 15   |
 | HEX  | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | A    | B    | C    | D    | E    | F    |
-| DEX  | 16   | 17   | 18   | 19   | 20   | 21   | 22   | 23   | 24   | 25   | 26   | 27   | 28   | 29   | 30   | 31   |
+
+| DEC  | 16   | 17   | 18   | 19   | 20   | 21   | 22   | 23   | 24   | 25   | 26   | 27   | 28   | 29   | 30   | 31   |
 | HEX  | 10   | 11   | 12   | 13   | 14   | 15   | 16   | 17   | 18   | 19   | 1A   | 1B   | 1C   | 1D   | 1E   | 1F   |
 
 <br>
@@ -92,7 +93,7 @@ e.g. `0b1100` equals `0x0C` equals `12`.
 
 ::::
 
-* A single hexadecimal number is a convenient representation of 1-byte,
+* A pair of hexadecimal numbers is a convenient representation of 1-byte,
 i.e. 8 bits of binary which is the smallest and most convenient unit of
 data used in computer memory.
 
@@ -176,7 +177,7 @@ When you look at the table, think about your favorite (decimal) number.
 * In a file format, they translate to some information that a computer
 can understand, e.g. numbers 0x30 to 0x39 are (universally)
 the numbers 0 - 9.
-* In the olden days software devs only thought about english, and so
+* In the olden days software devs only thought about English, and so
 character encodings started life there, and then became more
 inclusive – today we have unicode
 * Looking at files from the early days can be tricky when doing digital
@@ -214,7 +215,7 @@ know what those patterns mean.
 
 <br>
 
-### World in Japanese in UTF-8
+### Hello World in Japanese in UTF-8
 
 <br>
 
@@ -244,6 +245,7 @@ know what those patterns mean.
 * `MM`
 * `GIF89a`
 * `PK`
+These are all 'Magic Numbers' - sequences that the format developers have chosen for quick identification of their file formats.
 
 :::: instructor
 

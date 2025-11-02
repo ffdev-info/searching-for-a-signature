@@ -1681,7 +1681,7 @@ editor.</div>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>Suitable workshop files can also be found on the <a href="index.html#workshop-files">front page</a> of this site.</p>
 </div>
@@ -2343,7 +2343,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>00</strong>DD<strong>00</strong>010203</p>
 </div>
@@ -2355,7 +2355,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2413,7 +2413,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -3204,7 +3204,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-011-advanced"><p>Content from <a href="011-advanced.html">Advanced PRONOM</a></p>
 <hr>
-<p>Last updated on 2025-10-29 |
+<p>Last updated on 2025-11-02 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/011-advanced.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3251,13 +3251,14 @@ format variants will be written on top of those.</p>
 </section><section><h2 class="section-heading" id="the-complete-picture">The complete picture<a class="anchor" aria-label="anchor" href="#the-complete-picture"></a>
 </h2>
 <hr class="half-width">
-<p>When you’ve completed your efforts a complete PRONOM record is a
-combination of signature &amp; priorities &amp; metadata.</p>
+<p>When you’ve completed your efforts, a complete PRONOM record is a
+combination of signature &amp; priorities &amp; descriptive information
+(metadata) about the file format.</p>
 <!-- markdownlint-disable -->
 <figure><img src="./fig/md.png" alt="Image shows how a format identification is constructed in PRONOM by combining signature, priority, and metadta" class="figure mx-auto d-block"><div class="figcaption">Format identification result using PRONOM
 data.</div>
-</figure><!-- markdownlint-emable --><p>When you submit a new sigature to PRONOM you get a good feel for the
-information they are looking for when you do.</p>
+</figure><!-- markdownlint-emable --><p>When you submit a new signature to PRONOM, you will get feel for the
+information they are looking for. The PRONOM team will help you.</p>
 <div id="information-to-submit-to-pronom" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -3278,6 +3279,11 @@ information they are looking for when you do.</p>
 <li>Relevant links, documentation, extra information</li>
 <li>Credit</li>
 </ul>
+<p>Of these, Format name is absolutely mandatory and the rest are nice
+to have, but the more information you can provide, the better! If you’ve
+created any file format signatures it will be useful to describe your
+thought process and links to any relevant documentation, such as format
+specifications.</p>
 </div>
 </div>
 </div>
@@ -3307,7 +3313,7 @@ ones.</p>
 repositories for file format research. This is useful as it provides
 them with a way to:</p>
 <ul>
-<li>record inforamation,</li>
+<li>record information,</li>
 <li>store sample signature files,</li>
 <li>store sample files.</li>
 </ul>
@@ -3345,8 +3351,8 @@ across today.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Much of this effort is researching files and writing a signature but
-another big part is testing, calibration, AND documentation.</li>
+<li>Much of this effort is researching files and writing a signature,
+but another big part is testing, calibration, AND documentation.</li>
 </ul>
 </div>
 </div>

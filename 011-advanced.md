@@ -31,8 +31,8 @@ will be written on top of those.
 
 ## The complete picture
 
-When you've completed your efforts a complete PRONOM record is a combination
-of signature & priorities & metadata.
+When you've completed your efforts, a complete PRONOM record is a combination
+of signature & priorities & descriptive information (metadata) about the file format.
 
 <!-- markdownlint-disable -->
 
@@ -40,8 +40,8 @@ of signature & priorities & metadata.
 
 <!-- markdownlint-emable -->
 
-When you submit a new sigature to PRONOM you get a good feel for the
-information they are looking for when you do.
+When you submit a new signature to PRONOM, you will get feel for the
+information they are looking for. The PRONOM team will help you.
 
 :::: callout
 
@@ -57,6 +57,11 @@ information they are looking for when you do.
 * File format identification signatures
 * Relevant links, documentation, extra information
 * Credit
+
+Of these, Format name is absolutely mandatory and the rest are nice to have,
+but the more information you can provide, the better! If you've created any file format signatures
+it will be useful to describe your thought process and links to any relevant documentation, such 
+as format specifications.
 
 ::::
 
@@ -85,7 +90,7 @@ working on, as well as request new entries or updated ones.
 Some researchers, such as Tyler, maintain their own GitHub repositories for
 file format research. This is useful as it provides them with a way to:
 
-* record inforamation,
+* record information,
 * store sample signature files,
 * store sample files.
 
@@ -118,7 +123,7 @@ come across today.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- Much of this effort is researching files and writing a signature but
+- Much of this effort is researching files and writing a signature, but
 another big part is testing, calibration, AND documentation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

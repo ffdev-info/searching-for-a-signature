@@ -28,6 +28,17 @@ a self-taught module and reference material.
 
 ::::
 
+
+:::: callout
+
+### A quick hello
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zzykaVoclMY?si=pKOgI0foITWVQcxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+::::
+
+
 :::: prereq
 
 ## Pre-workshop reading

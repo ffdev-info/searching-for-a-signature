@@ -40,7 +40,7 @@ Can you write a byte sequence that will match in DROID?
 
 ### One possible solution
 
-AABB**00**CC**FFFFFF**DD**00000000**010203
+AABB**00**CC**00**DD**00**010203
 
 ::::::
 
@@ -57,7 +57,7 @@ AABB**00**CC**FFFFFF**DD**00000000**010203
 * You can jot down byte-sequences in any notepad application you have
 available to you (even google docs!).
 
-* Byte sequences must have an even number of characters, i.e. one byte is
+* Hexadecimal byte sequences must have an even number of characters, i.e. one byte is
 always two characters.
 
 * You can copy and paste the bytes into a hex editor. As we’ve seen, these
@@ -158,7 +158,7 @@ in a repository called builder. You can find those at the link below.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- You can reverse engineer PRONOM signatures to debug existing files.
-- Reversing PRONOM syntax has other implications, e.g. skeleton files.
+- You can reverse engineer PRONOM signatures to investigate existing files by comparing the signature against what you observe in the hex editor.
+- Reversing PRONOM syntax has other uses, e.g. creating skeleton files.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

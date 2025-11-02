@@ -130,12 +130,12 @@ Windows or `~/.local/share/siegfried/` on Linux (configurations may vary).
 
 ### Keeping it simple
 
-This method allows us to test out signatures. We’re focusing on building a signature 
-file using just the DROID signature file here, however it is possible to 
-build a more comprehensive signature with roy. You can use a PRONOM download by 
-using `./roy harvest`, then by downloading the most recent container file to 
-the same siegfried folder above. See the siegfried documentation for more information on
-building signatures.
+This method allows us to test out signatures. We’re focusing on building
+a signature file using just the DROID signature file here, however it is
+possible to build a more comprehensive signature with roy. You can use a
+PRONOM download by using `./roy harvest`, then by downloading the most
+recent container file to the same siegfried folder above. See the siegfried
+documentation for more information on building signatures.
 
 ::::
 

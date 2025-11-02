@@ -58,13 +58,17 @@ the final two episodes.
 If you are keen, however, some ideas for you to share your efforts from
 this tutorial might be:
 
-1. Write a blog for the [Open Preservation Foundation](https://openpreservation.org/) or your own organization sharing your thoughts, e.g
-like [Andrea's here](https://openpreservation.org/blogs/making-the-switch-from-user-to-user-and-contributor-my-first-file-format-signature/).
+1. Write a blog for the [Open Preservation Foundation][opf-1] or your own
+organization sharing your thoughts, e.g
+like [Andrea's here](akb-1).
 1. Visit the show-and-tell section of the workshop's repisotory and share
 your thoughts!
 1. Organize a show-and-tell in your organization and share your
 experience with your colleagues, maybe even as a teaser for running
 this material as a workshop for yourself!
+
+[opf-1]: https://openpreservation.org/
+[akb-1]: https://openpreservation.org/blogs/making-the-switch-from-user-to-user-and-contributor-my-first-file-format-signature/
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

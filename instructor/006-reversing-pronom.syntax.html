@@ -380,7 +380,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Reversing PRONOM syntax</h1>
-        <p>Last updated on 2025-10-29 |
+        <p>Last updated on 2025-11-02 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/006-reversing-pronom.syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -445,7 +445,7 @@ patterns.</p></li>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
+<p>AABB<strong>00</strong>CC<strong>00</strong>DD<strong>00</strong>010203</p>
 </div>
 </div>
 </div>
@@ -464,8 +464,8 @@ patterns.</p></li>
 </div>
 <ul><li><p>You can jot down byte-sequences in any notepad application you
 have available to you (even google docs!).</p></li>
-<li><p>Byte sequences must have an even number of characters, i.e. one
-byte is always two characters.</p></li>
+<li><p>Hexadecimal byte sequences must have an even number of
+characters, i.e. one byte is always two characters.</p></li>
 <li><p>You can copy and paste the bytes into a hex editor. As we’ve
 seen, these are usually split into two panes, one for bytes and one for
 a representation of bytes in ASCII or another encoding.</p></li>
@@ -588,9 +588,10 @@ Lehane’s Builder</a></li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>You can reverse engineer PRONOM signatures to debug existing
-files.</li>
-<li>Reversing PRONOM syntax has other implications, e.g. skeleton
+<ul><li>You can reverse engineer PRONOM signatures to investigate existing
+files by comparing the signature against what you observe in the hex
+editor.</li>
+<li>Reversing PRONOM syntax has other uses, e.g. creating skeleton
 files.</li>
 </ul></div>
 </div>
@@ -657,7 +658,7 @@ any links that you are not going to use.
   "url": "https://ffdev-info.github.io/searching-for-a-signature/instructor/006-reversing-pronom.syntax.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/instructor/006-reversing-pronom.syntax.html",
   "dateCreated": "2025-11-02",
-  "dateModified": "2025-10-29",
+  "dateModified": "2025-11-02",
   "datePublished": "2025-11-02"
 }
 

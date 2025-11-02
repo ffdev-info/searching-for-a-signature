@@ -83,7 +83,7 @@ sequence?
 | Infinite wildcard: <code>**\***</code> | The following sequence will appear at any point further in the file | <code>A1B2C3D4*E5F6A7B8</code> |
 | Precise wildcard: <code>{**n**}</code> | The following sequence will appear after exactly the number of bytes specified | <code>A1B2C3D4{4}E5F6A7B8</code> |
 | Wildcard range: <code>{**m-n**}</code> | The following sequence will appear at some point between the number of bytes specified | <code>A1B2C3D4{4-8}E5F6A7B8</code> |
-| Either/Or: <code>(**a\|b**)</code> | The following sequence will be any of the sequences specified. Any number of sequences can be specified | <code>A1B2C3D4(0D|0A|0D0A)E5</code> |
+| Either/Or: <code>(**a\|b**)</code> | The following sequence will be any of the sequences specified. Any number of sequences can be specified | <code>A1B2C3D4(0D\|0A\|0D0A)E5</code> |
 | Byte range <code>[**a:b**]</code> | The next byte will be within the range specified | <code>A1B2C3D4[A4:B0]E5</code> |
 
 <!-- TABLE: END -->

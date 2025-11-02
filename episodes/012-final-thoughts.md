@@ -19,11 +19,11 @@ exercises: 0    # exercise time in minutes
 * Next time you have an unidentified file format:
   1. open it up in a hex editor, and,
   2. take a look.
-* Write a new signature and submit it to Pronom.
+* Write a new signature and submit it to PRONOM.
 * Share your knowledge with colleagues and support the next generation
 of file format researchers!!!
 * You can even use this template and build on it to tailor yours
-and your colleague's experiences.
+and your colleagues' experiences.
 
 :::: testimonial
 

@@ -97,7 +97,7 @@ file as well, “FF D9”.
 
 |  |  |  |
 | --- | --- | --- |
-| 0xFFDA | SOI | Start of image |
+| 0xFFD8 | SOI | Start of image |
 | 0xFFD9 | EOI | End of image |
 | 0xFFDA | SOS | Start of scan |
 | 0xFFDB | DQT | Define quantization table(s) |

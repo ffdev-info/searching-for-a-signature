@@ -30,7 +30,7 @@ exercises: 0    # exercise time in minutes
 
 ## Introducing HexEd.it
 
-HexEd.it is a web-brased hex-editor and should prove incredibly useful in
+HexEd.it is a web-based hex-editor and should prove incredibly useful in
 your future signature development adventures!
 
 * Find it at: [HexEd.it](https://HexEd.it)

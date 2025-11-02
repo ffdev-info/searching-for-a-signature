@@ -103,5 +103,6 @@ exploration of container-based file format identification_
 - All past and present PRONOM colleagues who work tirelessly on a never-ending
 shopping list of file formats and continue to dp their utmost to support
 the resource for the community.
+- Special thanks to Ross Spencer for putting together this resource.
 
 ::::

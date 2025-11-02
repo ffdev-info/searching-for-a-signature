@@ -170,7 +170,7 @@ video games to give me extra lives or gold!
 * Encourage ‘Safety First’ - it’s called an ‘editor’ for a reason, so to
 avoid the risk of corrupting your own originals, always work with a copy of
 your original files
-* Drag a Plain text file everybody has access to to demonstrate ASCII
+* Drag a Plain Text file everybody has access to to demonstrate ASCII
 representation. Drag a further file (PDF?) to demonstrate mixture of binary
 and ASCII data- with reference to PRONOM, highlight magic number,
 reinforcement of offset meaning. Demonstrate how easy it is to change

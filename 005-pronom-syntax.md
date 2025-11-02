@@ -184,7 +184,7 @@ important set of documents to follow up on after this tutorial.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- PRONOM syntax is a regular expression (regex).
+- PRONOM syntax is a form of regular expression (regex), although distinct from regex implementations in Java, Python etc.
 - PRONOM syntax can be combined in multiple ways.
 - Sometimes there is more than one way to write a signature.
 

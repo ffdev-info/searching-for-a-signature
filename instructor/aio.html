@@ -643,7 +643,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-002-hexadecimal"><p>Content from <a href="002-hexadecimal.html">Hexadecimal</a></p>
 <hr>
-<p>Last updated on 2025-10-30 |
+<p>Last updated on 2025-11-02 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/002-hexadecimal.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 5 minutes</p>
@@ -764,46 +764,12 @@ meaning.</li>
 <td>E</td>
 <td>F</td>
 </tr>
-<tr class="odd">
-<td>DEX</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-<td>20</td>
-<td>21</td>
-<td>22</td>
-<td>23</td>
-<td>24</td>
-<td>25</td>
-<td>26</td>
-<td>27</td>
-<td>28</td>
-<td>29</td>
-<td>30</td>
-<td>31</td>
-</tr>
-<tr class="even">
-<td>HEX</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-<td>13</td>
-<td>14</td>
-<td>15</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-<td>1A</td>
-<td>1B</td>
-<td>1C</td>
-<td>1D</td>
-<td>1E</td>
-<td>1F</td>
-</tr>
 </tbody>
 </table>
+<div class="line-block">DEC | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24
+| 25 | 26 | 27 | 28 | 29 | 30 | 31 |<br>
+HEX | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 1A | 1B | 1C |
+1D | 1E | 1F |</div>
 <p><br></p>
 <ul>
 <li>While you can learn to convert decimal to hexadecimal, you are more
@@ -881,7 +847,7 @@ binary (base2),</p>
 </div>
 </div>
 <ul>
-<li>A single hexadecimal number is a convenient representation of
+<li>A pair of hexadecimal numbers is a convenient representation of
 1-byte, i.e. 8 bits of binary which is the smallest and most convenient
 unit of data used in computer memory.</li>
 </ul>
@@ -1433,7 +1399,7 @@ represent?</li>
 <li>In a file format, they translate to some information that a computer
 can understand, e.g. numbers 0x30 to 0x39 are (universally) the numbers
 0 - 9.</li>
-<li>In the olden days software devs only thought about english, and so
+<li>In the olden days software devs only thought about English, and so
 character encodings started life there, and then became more inclusive –
 today we have unicode</li>
 <li>Looking at files from the early days can be tricky when doing
@@ -1463,7 +1429,7 @@ know what those patterns mean.</li>
 <p><br></p>
 </div>
 <div class="section level3">
-<h3 id="world-in-japanese-in-utf-8">World in Japanese in UTF-8<a class="anchor" aria-label="anchor" href="#world-in-japanese-in-utf-8"></a>
+<h3 id="hello-world-in-japanese-in-utf-8">Hello World in Japanese in UTF-8<a class="anchor" aria-label="anchor" href="#hello-world-in-japanese-in-utf-8"></a>
 </h3>
 <p><br></p>
 <p><code>0xE3 0x81 0x93</code> = こ</p>
@@ -1485,7 +1451,10 @@ know what those patterns mean.</li>
 <li><code>II</code></li>
 <li><code>MM</code></li>
 <li><code>GIF89a</code></li>
-<li><code>PK</code></li>
+<li>
+<code>PK</code> These are all ‘Magic Numbers’ - sequences that the
+format developers have chosen for quick identification of their file
+formats.</li>
 </ul>
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
@@ -2431,7 +2400,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2443,7 +2412,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2501,7 +2470,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -3033,7 +3002,7 @@ went.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>For iPRES we will look at going through the process of creating and
 submitting a signature for the Quite OK Image format as it isn’t yet in
@@ -3150,7 +3119,7 @@ it in DROID or Siegfried</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A solution will appear here shortly.</p>
 <!-- TODO provide a solution here that can be used to identify the three
@@ -3626,9 +3595,9 @@ enjoy!</li>
   "creativeWorkStatus": "active",
   "url": "https://ffdev-info.github.io/searching-for-a-signature/instructor/aio.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/instructor/aio.html",
-  "dateCreated": "2025-10-30",
-  "dateModified": "2025-10-30",
-  "datePublished": "2025-10-30"
+  "dateCreated": "2025-11-02",
+  "dateModified": "2025-11-02",
+  "datePublished": "2025-11-02"
 }
 
   </script><script>

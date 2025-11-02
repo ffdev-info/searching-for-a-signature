@@ -24,6 +24,8 @@ exercises: 0    # exercise time in minutes
 * Hexadecimal is a way of representing numbers.
 * Just as decimal is Base10, hexadecimal is just Base16.
 
+<!--markdownlint-disable-->
+
 |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | DEC  | 0    | 1    | 2    | 3    | 4    | 5    | 6    | 7    | 8    | 9    | 10   | 11   | 12   | 13   | 14   | 15   |
@@ -31,6 +33,8 @@ exercises: 0    # exercise time in minutes
 
 | DEC  | 16   | 17   | 18   | 19   | 20   | 21   | 22   | 23   | 24   | 25   | 26   | 27   | 28   | 29   | 30   | 31   |
 | HEX  | 10   | 11   | 12   | 13   | 14   | 15   | 16   | 17   | 18   | 19   | 1A   | 1B   | 1C   | 1D   | 1E   | 1F   |
+
+<!--markdownlint-enable-->
 
 <br>
 
@@ -111,7 +115,7 @@ single byte,
 
 ::::
 
-### ASCII table
+### ASCII lookup table
 
 * That might feel like a lot, but before we have to convert numbers every
 which way, we have another tool at our disposal, a lookup table which is
@@ -233,7 +237,6 @@ know what those patterns mean.
 
 `0xE7 0x95 0x8C` = 界
 
-
 <!-- NB. I found this site useful: https://www.compart.com/en/unicode/ for
      whatever reason it has a lot of info.
 -->
@@ -245,7 +248,8 @@ know what those patterns mean.
 * `MM`
 * `GIF89a`
 * `PK`
-These are all 'Magic Numbers' - sequences that the format developers have chosen for quick identification of their file formats.
+These are all 'Magic Numbers' - sequences that the format developers have
+chosen for quick identification of their file formats.
 
 :::: instructor
 
@@ -293,8 +297,6 @@ Write down the hexadecimal sequence for "Hello world".
 
 ::::
 
-
-
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -307,7 +309,8 @@ Write down the hexadecimal sequence for "Hello world".
 
 * Hexadecimal is a number system.
 * Hexadecimal makes it easier to understand “binary”.
-* Hexadecimal is mapped to signals and characters that have meaning to a computer.
+* Hexadecimal is mapped to signals and characters that have meaning to
+a computer.
 * Hexadecimal can take on arbitrary meaning through “encodings”.
 * Hexadecimal is the foundation for a PRONOM signature!
 

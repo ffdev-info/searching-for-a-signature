@@ -39,7 +39,7 @@ below to find a task that you can complete at home.
 ### You can do it!
 
 Many of us have been developing file format signatures for years now and so
-if you're new to this you will likely have questions. Your mentors 
+if you're new to this you will likely have questions. Your mentors
 are available to help guide your efforts. There will also be
 an opportunity at the end to discuss how things went.
 

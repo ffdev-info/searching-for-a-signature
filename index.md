@@ -21,27 +21,30 @@ more interactive workshop activities and sharing.
 
 :::: callout
 
-### Take it offline!
+## Take it offline!
 
 This course has been designed as a workshop but it can also be used as
 a self-taught module and reference material.
 
 ::::
 
+<!--markdownlint-disable-->
+
+## A few brief words
 
 :::: callout
 
-### A quick hello
+## A quick hello
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zzykaVoclMY?si=pKOgI0foITWVQcxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
 ::::
 
+## Preparation
 
 :::: prereq
 
-## Pre-workshop reading
+### Pre-workshop reading
 
 Hopefully you will have had a chance to read the pre-workshop
 reading materials. If you haven't had the opportunity, don't worry, we will
@@ -54,9 +57,11 @@ Please do not be afraid to ask questions!
 
 ::::
 
+<!--markdownlint-enable-->
+
 :::: instructor
 
-## Icebreaker
+### Icebreaker
 
 At the end of this introduction you should introduce an icebreaker
 for the class. Some ideas:
@@ -71,9 +76,9 @@ for the class. Some ideas:
 Lessons are listed as "Episodes". As you work through the sections you may
 also be interested in:
 
-* [FAQ](faq.html)
-* [Glossary](reference.html#glossary)
-* [Additional resources](additional.html)
+- [FAQ](faq.html)
+- [Glossary](reference.html#glossary)
+- [Additional resources](additional.html)
 
 You can keep these tabs open as you work through each episode.
 
@@ -92,10 +97,10 @@ teaching!
 
 ### With thanks to
 
-* Francesca Mackenzie - Digital Archivist at The National Archives UK, who
+- Francesca Mackenzie - Digital Archivist at The National Archives UK, who
 was part of the team for iPRES2024's workshop: _What's in the box? an
 exploration of container-based file format identification_
-* All past and present PRONOM colleagues who work tirelessly on a never-ending
+- All past and present PRONOM colleagues who work tirelessly on a never-ending
 shopping list of file formats and continue to dp their utmost to support
 the resource for the community.
 

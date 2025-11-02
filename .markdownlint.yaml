@@ -16,6 +16,7 @@ MD033:
     - "br"
     - "code"
     - "img"
+    - "iframe"
 # Line lengths
 MD013:
     line_length: 80

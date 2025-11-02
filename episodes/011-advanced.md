@@ -60,7 +60,7 @@ information they are looking for. The PRONOM team will help you.
 
 Of these, Format name is absolutely mandatory and the rest are nice to have,
 but the more information you can provide, the better! If you've created any file format signatures
-it will be useful to describe your thought process and links to any relevant documentation, such 
+it will be useful to describe your thought process and links to any relevant documentation, such
 as format specifications.
 
 ::::

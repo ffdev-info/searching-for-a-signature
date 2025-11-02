@@ -130,11 +130,17 @@ PRONOM!
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-* Know what you've got...
-* How we try to identify file formats.
-* Use and contribute to PRONOM!
-* It isn't just the beginning of your PRONOM journey, it's the beginning
+By the end of this workshop, you should be able to:
+
+* Investigate a file format and find patterns
+* Express patterns in PRONOM syntax
+* Create a signature file
+* Use your signature file locally
+* Contribute signatures to PRONOM
+<br>
+It isn't just the beginning of your PRONOM journey, it's the beginning
 of your digital forensics journey!
-* Enjoy!
+<br>
+Enjoy!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

@@ -75,7 +75,7 @@ One limitation of the WASM build of Siegfried and Roy is that it doesn't work
 in Firefox and Safari because of differing levels of support for the
 HTML File Picker.
 
-It should work in Chrome, Edge, Opera, and a handfule of other browsers.
+It should work in Chrome, Edge, Opera, and a handful of other browsers.
 
 If you experience any difficulties, check out Mozilla's resource on
 [browser compatibility][mozilla-1].

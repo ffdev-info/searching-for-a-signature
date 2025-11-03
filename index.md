@@ -13,8 +13,8 @@ Kia ora, and welcome to Searching for a Signature: A File Format
 Identification Workshop. This workshop loosely follows the concept
 of **See one**, **Do one**, **Teach one**. Depending on how much time
 you have for your workshop the balance between teaching and student
-engagement may vary. We recommend around 1.5 hours for teaching
-(including some engagement and interaction) and an additional 45 minutes for
+engagement may vary. We recommend around 2 hours for teaching
+(including some engagement and interaction) and an additional 45-60 minutes for
 more interactive workshop activities and sharing.
 
 <br><br>

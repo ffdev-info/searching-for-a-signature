@@ -479,62 +479,62 @@ variably-positioned sequence?</li>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="most-common-syntax">Most common syntax<a class="anchor" aria-label="anchor" href="#most-common-syntax"></a></h2>
-<hr class="half-width"><!-- TABLE: START --><table class="table"><colgroup><col width="33%"><col width="33%"><col width="33%"></colgroup><thead><tr class="header"><th>Syntax element</th>
+<hr class="half-width"><!-- TABLE: START --><table class="table"><colgroup><col width="33%"><col width="33%"><col width="33%"></colgroup><thead><tr><th>Syntax element</th>
 <th>Intended use</th>
 <th>Example</th>
-</tr></thead><tbody><tr class="odd"><td>Literal sequence</td>
+</tr></thead><tbody><tr><td>Literal sequence</td>
 <td>Just a plain signature sequence that appears as-is</td>
 <td><code>A1B2C3D4</code></td>
-</tr><tr class="even"><td>Infinite wildcard: <code><strong>*</strong></code>
+</tr><tr><td>Infinite wildcard: <code><strong>*</strong></code>
 </td>
 <td>The following sequence will appear at any point further in the
 file</td>
 <td><code>A1B2C3D4*E5F6A7B8</code></td>
-</tr><tr class="odd"><td>Precise wildcard: <code>{<strong>n</strong>}</code>
+</tr><tr><td>Precise wildcard: <code>{<strong>n</strong>}</code>
 </td>
 <td>The following sequence will appear after exactly the number of bytes
 specified</td>
 <td><code>A1B2C3D4{4}E5F6A7B8</code></td>
-</tr><tr class="even"><td>Wildcard range: <code>{<strong>m-n</strong>}</code>
+</tr><tr><td>Wildcard range: <code>{<strong>m-n</strong>}</code>
 </td>
 <td>The following sequence will appear at some point between the number
 of bytes specified</td>
 <td><code>A1B2C3D4{4-8}E5F6A7B8</code></td>
-</tr><tr class="odd"><td>Either/Or: <code>(<strong>a|b</strong>)</code>
+</tr><tr><td>Either/Or: <code>(<strong>a|b</strong>)</code>
 </td>
 <td>The following sequence will be any of the sequences specified. Any
 number of sequences can be specified</td>
 <td><code>A1B2C3D4(0D|0A|0D0A)E5</code></td>
-</tr><tr class="even"><td>Byte range <code>[<strong>a:b</strong>]</code>
+</tr><tr><td>Byte range <code>[<strong>a:b</strong>]</code>
 </td>
 <td>The next byte will be within the range specified</td>
 <td><code>A1B2C3D4[A4:B0]E5</code></td>
 </tr></tbody></table><!-- TABLE: END --><p>Most signatures will combine some or all of the above.</p>
 </section><section><h2 class="section-heading" id="less-common-syntax">Less common syntax<a class="anchor" aria-label="anchor" href="#less-common-syntax"></a></h2>
-<hr class="half-width"><!-- TABLE: START --><table class="table"><colgroup><col width="33%"><col width="33%"><col width="33%"></colgroup><thead><tr class="header"><th>Syntax element</th>
+<hr class="half-width"><!-- TABLE: START --><table class="table"><colgroup><col width="33%"><col width="33%"><col width="33%"></colgroup><thead><tr><th>Syntax element</th>
 <th>Intended use</th>
 <th>Example</th>
-</tr></thead><tbody><tr class="odd"><td>NOT sequence: <code>[!<strong>a</strong>]</code>
+</tr></thead><tbody><tr><td>NOT sequence: <code>[!<strong>a</strong>]</code>
 </td>
 <td>The following byte value is not this byte</td>
 <td><code>A1B2C3D4[!E5]F6</code></td>
-</tr><tr class="even"><td>Wildcard with infinite range:
+</tr><tr><td>Wildcard with infinite range:
 <code>{<strong>m-*</strong>}</code>
 </td>
 <td>The following sequence will appear minimally after the first value
 specified, but otherwise anywhere else in the file</td>
 <td><code>A1B2C3D4{4-*}E5F6A7B8</code></td>
-</tr><tr class="odd"><td>Single wildcard: <code><strong>??</strong></code>
+</tr><tr><td>Single wildcard: <code><strong>??</strong></code>
 </td>
 <td>The following byte may have any value. This is functionally
 equivalent to <code>{1}</code>
 </td>
 <td><code>A1B2C3D4??E5F6A7B8</code></td>
-</tr><tr class="even"><td>NOT Byte range <code>[!<strong>a:b</strong>]</code>
+</tr><tr><td>NOT Byte range <code>[!<strong>a:b</strong>]</code>
 </td>
 <td>The next byte will not be within the range specified</td>
 <td><code>A1B2C3D4[!A4:B0]E5</code></td>
-</tr><tr class="odd"><td>Wildcards at a beginning of a BOF sequence, or end of an EOF
+</tr><tr><td>Wildcards at a beginning of a BOF sequence, or end of an EOF
 sequence</td>
 <td>This is functionally equivalent to specifying Offset/Maximum Offset,
 however this is not recommended</td>
@@ -709,7 +709,7 @@ any links that you are not going to use.
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/instructor/005-pronom-syntax.html",
   "dateCreated": "2026-01-26",
   "dateModified": "2025-11-02",
-  "datePublished": "2026-04-28"
+  "datePublished": "2026-05-05"
 }
 
   </script><script>

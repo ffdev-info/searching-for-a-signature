@@ -96,6 +96,59 @@ file format research. This is useful as it provides them with a way to:
 
 It provides something to point to, and a way to keep track of your own efforts.
 
+## Just Solve It: File Formats, and COPTR
+
+Two complementary resources to this work are the Just Solve It wiki by
+Archive Team:
+
+* [Just Solve It: File Formats][JSI-1]
+
+[JSI-1]: http://fileformats.archiveteam.org/wiki/Main_Page
+
+And COPTR (Community-Owned digital Preservation Tool Registry) by the
+Open Preservation Foundation:
+
+* [COPTR](https://coptr.digipres.org/Main_Page)
+
+As you research your file formats, you might find more information about them
+that doesn't sit easily on the PRONOM website. The community can benefit
+from this information as well.
+
+### Just Solve It: File Formats
+
+The Just Solve It wiki primarily captures information about file formats.
+
+Information you might record here are other details about them, including:
+
+* links to specifications,
+* links to more sample files,
+* links to Wikidata records,
+* software,
+* and so on...
+
+### COPTR
+
+COPTR on the other hand records information about software that can help
+us preserve different aspects of files and file formats.
+
+If there are software packages connected to your format that also
+serve some sort of preservation purpose, e.g. provide metadata extract, then
+you might want to add these to COPTR's wiki as well.
+
+<br>
+
+:::: testimonial
+
+One way that both the <b>Just Solve It</b> and <b>COPTR</b> wikis benefit
+the community is that they are easily editable and can help us maximize the
+information we collect about our respective preservation challenges. They
+allow the community to benefit from this knowledge immediately while the
+PRONOM team takes the time to test and verify signature-related information
+and add those resources to PRONOM. They can also help us to record details
+early on while we still don't have a PRONOM signature ready to submit.
+
+::::
+
 <br>
 
 :::: callout
@@ -125,5 +178,10 @@ come across today.
 
 - Much of this effort is researching files and writing a signature, but
 another big part is testing, calibration, AND documentation.
+- The Just Solve It and COPTR wikis are complimentary resources that can
+be used as landing zones as we collect information early on about file format
+signatures or as we develop them.
+- The FAQ and Glossary are available for quick reference whenever you need
+them in your signature development journey.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

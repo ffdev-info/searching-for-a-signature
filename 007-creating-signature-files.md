@@ -31,11 +31,33 @@ way tools like DROID or Siegfried can use to match the byte sequence within
 a file or group of files. This pattern is written to an XML structure which
 records the sequence, offsets, and descriptive information about the file.
 
-<!--markdownlint-disable-->
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile" Version="1788353362" DateCreated="2026-09-02T12:49:22+00:00">
+  <InternalSignatureCollection>
 
-![A look at the XML used in a DROID signature file.](./fig/08-xml.png){alt='image shows the XML used to define a signature file used by DROID. It contains a lot of information used by previous DROIDs to optimize pattern matching.'}
+    <InternalSignature ID="1" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="0" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>FFD8</Sequence>
+          <DefaultShift>3</DefaultShift>
+          <Shift Byte="FF">2</Shift>
+          <Shift Byte="D8">1</Shift>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
 
-<!--markdownlint-enable-->
+  </InternalSignatureCollection>
+  <FileFormatCollection>
+
+    <FileFormat ID="1" Name="Example JPG signature" PUID="dev/1" Version="1.0" MIMEType="image/jpeg">
+      <InternalSignatureID>1</InternalSignatureID>
+      <Extension>jpg</Extension>
+    </FileFormat>
+  </FileFormatCollection>
+
+</FFSignatureFile>
+```
 
 A Signature file consists of two parts, the byte signature and the file
 format information. The signature will have an ID which is then referenced

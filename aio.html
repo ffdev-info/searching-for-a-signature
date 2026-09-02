@@ -1723,7 +1723,7 @@ editor.</div>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Suitable workshop files can also be found on the <a href="index.html#workshop-files">front page</a> of this site.</p>
 </div>
@@ -2329,10 +2329,17 @@ technical guide</a>.</li>
 <div id="real-example" class="callout-inner">
 <h3 class="callout-title">Real example</h3>
 <div class="callout-content">
-<p>Here is a real-world signature example taken from PRONOM. * Position
-type: Absolute from BOF * Offset: 0 * Value:
-<code>FFD8FFE0{2}4A464946000100(00|01|02)</code> * Position type:
-Absolute from EOF * Offset: 0 * Maximum Offset: 65536 * Value: FFD9</p>
+<p>Here is a real-world signature example taken from PRONOM:</p>
+<ul>
+<li>Position type: Absolute from BOF</li>
+<li>Offset: 0</li>
+<li>Value: <code>FFD8FFE0{2}4A464946000100(00|01|02)</code>
+</li>
+<li>Position type: Absolute from EOF</li>
+<li>Offset: 0</li>
+<li>Maximum Offset: 65536</li>
+<li>Value: FFD9</li>
+</ul>
 <p><a href="https://www.nationalarchives.gov.uk/PRONOM/fmt/42" class="external-link">fmt/42 -
 JPEG 1.00</a>.</p>
 <p>What are some features of this signature that you can spot?</p>

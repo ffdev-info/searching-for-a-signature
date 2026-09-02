@@ -251,7 +251,8 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#signature-positions">Signature positions</a></li>
+        <ul><li><a href="#signature-syntax-conventions">Signature syntax conventions</a></li>
+<li><a href="#signature-positions">Signature positions</a></li>
 <li><a href="#most-common-syntax">Most common syntax</a></li>
 <li><a href="#less-common-syntax">Less common syntax</a></li>
 <li><a href="#pronom-simplified-cheatsheet">PRONOM Simplified Cheatsheet</a></li>
@@ -383,7 +384,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introducing PRONOM syntax</h1>
-        <p>Last updated on 2025-11-02 |
+        <p>Last updated on 2026-09-02 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/005-pronom-syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -425,12 +426,18 @@
 identification signatures</li>
 <li>Needs to articulate specific byte patterns, at specific
 locations.</li>
-<li>Byte patterns use hexadecimal notation</li>
 <li>Syntax has overlap with ‘Regular Expressions’ (RegEx) but is
 distinct from RegEx implementations in common code languages such as
 Java or Python</li>
 <li>Highly flexible!</li>
-</ul><section><h2 class="section-heading" id="signature-positions">Signature positions<a class="anchor" aria-label="anchor" href="#signature-positions"></a></h2>
+</ul><section><h2 class="section-heading" id="signature-syntax-conventions">Signature syntax conventions<a class="anchor" aria-label="anchor" href="#signature-syntax-conventions"></a></h2>
+<hr class="half-width"><ul><li>Byte patterns use hexadecimal notation (but they don’t use a ‘0x’
+prefix!)</li>
+<li>Byte patterns can’t use space characters: use ‘ABCD’, not ‘AB
+CD’</li>
+<li>Use upper case symbols in signature sequences: ‘AB12CD34’, not
+‘ab12cd34’</li>
+</ul></section><section><h2 class="section-heading" id="signature-positions">Signature positions<a class="anchor" aria-label="anchor" href="#signature-positions"></a></h2>
 <hr class="half-width"><ul><li>BOF: Beginning Of File - the signature sequence starts at, or near
 the beginning of the file</li>
 <li>EOF: End Of File - the signature sequence starts at, or near the end
@@ -462,6 +469,8 @@ anywhere within the first 5 bytes</p>
 anywhere from byte 5 through to byte 9</p>
 <p>EOF, Offset 4, Maximum Offset 0: The signature sequence ends exactly
 4 bytes from the end of the file</p>
+<p>EOF, Offset 4, Maximum Offset 4: The signature sequence may end
+anywhere from 4 bytes to 8 bytes from the end of the file</p>
 </div>
 </div>
 </div>
@@ -477,7 +486,21 @@ anywhere from byte 5 through to byte 9</p>
 offset 16?</li>
 <li>What do you think happens if you add an offset to a
 variably-positioned sequence?</li>
+</ul><div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<ul><li>Anywhere from byte 17 to byte 33</li>
+<li>It might not break FFID tools but it might confuse others as to what
+is intended to be expressed</li>
 </ul></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="most-common-syntax">Most common syntax<a class="anchor" aria-label="anchor" href="#most-common-syntax"></a></h2>
@@ -511,7 +534,7 @@ number of sequences can be specified</td>
 </td>
 <td>The next byte will be within the range specified</td>
 <td><code>A1B2C3D4[A4:B0]E5</code></td>
-</tr></tbody></table><!-- TABLE: END --><p>Most signatures will combine some or all of the above.</p>
+</tr></tbody></table><!-- TABLE: END --><p>Most signature sequences will combine some or all of the above.</p>
 </section><section><h2 class="section-heading" id="less-common-syntax">Less common syntax<a class="anchor" aria-label="anchor" href="#less-common-syntax"></a></h2>
 <hr class="half-width"><!-- TABLE: START --><table class="table"><colgroup><col width="33%"><col width="33%"><col width="33%"></colgroup><thead><tr><th>Syntax element</th>
 <th>Intended use</th>
@@ -597,11 +620,11 @@ sequences. All sequences within a Signature must match to return a
 hit.</li>
 <li>Signature sequences must be logically positioned differently, so you
 couldn’t have two BOF sequences with offset 0, maximum offset 0, but if
-two signatures had BOF, offset 0, maximum offset 128, then both
-sequences must appear within the first 128 bytes</li>
+two sequences had BOF, offset 0, maximum offset 128, then both sequences
+must appear within the first 128 bytes</li>
 <li>Most commonly, a signature sequence will only have a BOF sequence -
 this is fine!</li>
-<li>By wary with purely Variable-positioned sequences - in isolation
+<li>Be wary with purely Variable-positioned sequences - in isolation
 they will cause the whole of your files to be scanned, so it’s always
 best to include either a BOF or EOF as an ‘anchor’</li>
 </ul><p><br></p>
@@ -624,6 +647,42 @@ documents</a>.</li>
 <a href="https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf" class="external-link">PRONOM
 technical guide</a>.</li>
 </ul></div>
+</div>
+</div>
+<div id="real-example" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="real-example" class="callout-inner">
+<h3 class="callout-title">Real example</h3>
+<div class="callout-content">
+<p>Here is a real-world signature example taken from PRONOM. * Position
+type: Absolute from BOF * Offset: 0 * Value:
+<code>FFD8FFE0{2}4A464946000100(00|01|02)</code> * Position type:
+Absolute from EOF * Offset: 0 * Maximum Offset: 65536 * Value: FFD9</p>
+<p><a href="https://www.nationalarchives.gov.uk/PRONOM/fmt/42" class="external-link">fmt/42 -
+JPEG 1.00</a>.</p>
+<p>What are some features of this signature that you can spot?</p>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<ul><li>There are two sequences, both BOF and EOF</li>
+<li>The EOF sequence has an offset range, so the sequence can be found
+anywhere within the last 65,536 bytes of the file</li>
+<li>The BOF sequence has a specific wildcard <code>{2}</code>
+</li>
+<li>and a three-choice either/or block <code>(00|01|02)</code>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
@@ -710,7 +769,7 @@ any links that you are not going to use.
   "url": "https://ffdev-info.github.io/searching-for-a-signature/instructor/005-pronom-syntax.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/instructor/005-pronom-syntax.html",
   "dateCreated": "2026-09-02",
-  "dateModified": "2025-11-02",
+  "dateModified": "2026-09-02",
   "datePublished": "2026-09-02"
 }
 

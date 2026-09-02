@@ -101,3 +101,10 @@ profiles:
 # sandpaper and varnish versions) should live
 
 url: https://ffdev-info.github.io/searching-for-a-signature/
+
+lang: "en"
+languages:
+  default: "English"
+  #other:
+  #  - lang: "Deutsch"
+  #    url: "https://example-training.github.io/shell-novice-de"

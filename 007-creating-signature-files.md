@@ -68,12 +68,6 @@ wants to do that, let’s look at the
 [amazing tool Ross Spencer wrote](https://ffdev.info/) to help with
 signature creation.
 
-<!--markdownlint-disable-->
-
-![The Signature Development Utility](./fig/09-sigdev.png){alt='image shows the user interface of the signature development utility.'}
-
-<!--markdownlint-enable-->
-
 ## Signature development utility
 
 The signature development utility will take the sequence you want
@@ -88,6 +82,13 @@ it is commonly used.
 Add your sequence and anchor it at the beginning of the file or end
 of file, then add any offsets if needed. You can always add additional
 sequences to add more accuracy to the signature.
+
+<!--markdownlint-disable-->
+
+![The Signature Development Utility](./fig/09-sigdev.png){alt='image shows the user interface of the signature development utility.'}
+
+<!--markdownlint-enable-->
+
 <br><br>
 Pressing the “Create Signature” button will generate an XML file
 based on your information and immediately download to your computer.

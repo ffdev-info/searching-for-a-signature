@@ -618,7 +618,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-002-hexadecimal"><p>Content from <a href="002-hexadecimal.html">Hexadecimal</a></p>
 <hr>
-<p>Last updated on 2025-11-02 |
+<p>Last updated on 2026-09-02 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/002-hexadecimal.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -658,7 +658,10 @@ meaning.</li>
 <hr class="half-width">
 <ul>
 <li>Hexadecimal is a way of representing numbers.</li>
-<li>Just as decimal is Base10, hexadecimal is just Base16.</li>
+<li>Hexadecimal uses 16 symbols (0-9 and A-F) compared to the 10 symbols
+(0-9) familiar in the decimal number system.</li>
+<li>Just as decimal is otherwerise known as Base10, hexadecimal is just
+Base16.</li>
 </ul>
 <!--markdownlint-disable--><table class="table">
 <colgroup>
@@ -781,7 +784,8 @@ meaning.</li>
 <!--markdownlint-enable--><p><br></p>
 <ul>
 <li>While you can learn to convert decimal to hexadecimal, you are more
-likely to convert hexadecimal to decimal.</li>
+likely to convert hexadecimal to decimal when looking at file
+formats.</li>
 </ul>
 <pre class="text"><code>0x00 = (16 x 0 = 0) + (1 x 0 = 1) = 0
 0x01 = (16 x 0 = 0) + (1 x 1 = 1) = 1
@@ -848,7 +852,7 @@ document hex sequences like above <code>0xE4 0xB8 0x96</code> is also
 equivalent to <code>0xE4B896</code>. How you choose write this
 information depends on context.</p>
 <p>You also saw <code>0b</code> as a prefix. This is used to denote
-binary (base2),</p>
+binary (Base2),</p>
 <p>e.g. <code>0b1100</code> equals <code>0x0C</code> equals
 <code>12</code>.</p>
 </div>
@@ -867,14 +871,16 @@ unit of data used in computer memory.</li>
 <div id="binary" class="callout-inner">
 <h3 class="callout-title">Binary</h3>
 <div class="callout-content">
-<p>We won’t go into binary here, but if you ever want to look at the
-binary representation of a number, modern search engines can do the
-conversion for you if you ask: 255 in binary (just as you can ask: 255
-in hexadecimal.</p>
 <ul>
-<li>0 (b00000000) is the smallest number you can represent in binary in
-a single byte,</li>
-<li>255 (b11111111) is the largest possible value.</li>
+<li><p>Binary uses 2 symbols, 0 and 1.</p></li>
+<li><p>Binary can otherwise be referred to as Base2. We won’t explore
+binary in detail here, but if you ever want to look at the binary
+representation of a number, modern search engines can do the conversion
+for you if you ask: 255 in binary (just as you can ask: 255 in
+hexadecimal.</p></li>
+<li><p>0 (b00000000) is the smallest number you can represent in binary
+in a single byte,</p></li>
+<li><p>255 (b11111111) is the largest possible value.</p></li>
 </ul>
 </div>
 </div>
@@ -1717,7 +1723,7 @@ editor.</div>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
 <div class="accordion-body">
 <p>Suitable workshop files can also be found on the <a href="index.html#workshop-files">front page</a> of this site.</p>
 </div>
@@ -2379,7 +2385,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>00</strong>DD<strong>00</strong>010203</p>
 </div>
@@ -2391,7 +2397,7 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
 </div>
@@ -2449,7 +2455,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -3118,7 +3124,7 @@ it in DROID or Siegfried</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A solution will appear here shortly.</p>
 <!-- TODO provide a solution here that can be used to identify the three

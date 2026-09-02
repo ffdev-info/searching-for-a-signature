@@ -79,6 +79,7 @@ EOF, Offset 4, Maximum Offset 4: The signature sequence may end anywhere from
 * What do you think happens if you add an offset to a variably-positioned
 sequence?
 
+
 :::::: solution
 
 * Anywhere from byte 17 to byte 33
@@ -190,9 +191,11 @@ important set of documents to follow up on after this tutorial.
 ::::
 
 :::: discussion
+
 ## Real example
 
-Here is a real-world signature example taken from PRONOM.
+Here is a real-world signature example taken from PRONOM:
+
 * Position type: Absolute from BOF
 * Offset: 0
 * Value: <code>FFD8FFE0{2}4A464946000100(00|01|02)</code>
@@ -204,6 +207,7 @@ Here is a real-world signature example taken from PRONOM.
 [fmt/42 - JPEG 1.00](https://www.nationalarchives.gov.uk/PRONOM/fmt/42).
 
 What are some features of this signature that you can spot?
+
 
 :::::: solution
 

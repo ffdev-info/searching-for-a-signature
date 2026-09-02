@@ -91,12 +91,21 @@ sequences to add more accuracy to the signature.
 <br><br>
 Pressing the “Create Signature” button will generate an XML file
 based on your information and immediately download to your computer.
-This can then be moved to your .droid6 folder or imported in the
-DROID Application.
+
+You can now enable this signature file in tools like DROID and Siegfried.
+We'll cover this in the next section.
 
 <!--markdownlint-disable-->
 
-![You're ready to run your signature file against real files!](./fig/10-droid.png){alt='image shows DROID user interface and where you would navigate to so that you can upload a new signature file.'}
+![](./fig/10-droid.png){alt='image shows DROID user interface and where you would navigate to so that you can upload a new signature file.'}
+
+<br>
+
+:::: checklist
+
+Now you're ready to run your signature file against real files!
+
+::::
 
 <!--markdownlint-emable-->
 

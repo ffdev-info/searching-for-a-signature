@@ -461,9 +461,7 @@ referenced in the file format information tag, connecting the two.</p>
 <p>This file can be created from scratch using any text editor, but
 nobody wants to do that, let’s look at the <a href="https://ffdev.info/" class="external-link">amazing tool Ross Spencer wrote</a> to help
 with signature creation.</p>
-<!--markdownlint-disable-->
-<figure><img src="./fig/09-sigdev.png" alt="image shows the user interface of the signature development utility." class="figure mx-auto d-block"><div class="figcaption">The Signature Development Utility</div>
-</figure><!--markdownlint-enable--></section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a></h2>
+</section><section><h2 class="section-heading" id="signature-development-utility">Signature development utility<a class="anchor" aria-label="anchor" href="#signature-development-utility"></a></h2>
 <hr class="half-width"><p>The signature development utility will take the sequence you want to
 use and generate the XML needed by tools like DROID to use. Use a name
 which is specific to the format. If you know the version of the format
@@ -474,9 +472,12 @@ have a mime-type, some official, others not so official, add the type
 here if it is commonly used. <br><br> Add your sequence and anchor it at
 the beginning of the file or end of file, then add any offsets if
 needed. You can always add additional sequences to add more accuracy to
-the signature. <br><br> Pressing the “Create Signature” button will
-generate an XML file based on your information and immediately download
-to your computer.</p>
+the signature.</p>
+<!--markdownlint-disable-->
+<figure><img src="./fig/09-sigdev.png" alt="image shows the user interface of the signature development utility." class="figure mx-auto d-block"><div class="figcaption">The Signature Development Utility</div>
+</figure><!--markdownlint-enable--><p><br><br> Pressing the “Create Signature” button will generate an XML
+file based on your information and immediately download to your
+computer.</p>
 <p>You can now enable this signature file in tools like DROID and
 Siegfried. We’ll cover this in the next section.</p>
 <!--markdownlint-disable-->

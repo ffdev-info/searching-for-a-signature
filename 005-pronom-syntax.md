@@ -22,11 +22,16 @@ exercises: 0    # exercise time in minutes
 * PRONOM needs syntax to enable the expression of format identification
 signatures
 * Needs to articulate specific byte patterns, at specific locations.
-* Byte patterns use hexadecimal notation
 * Syntax has overlap with ‘Regular Expressions’ (RegEx) but is distinct from
 RegEx implementations in common code languages such as Java or
 Python
 * Highly flexible!
+
+## Signature syntax conventions
+
+* Byte patterns use hexadecimal notation (but they don't use a '0x' prefix!)
+* Byte patterns can't use space characters: use 'ABCD', not 'AB CD'
+* Use upper case symbols in signature sequences: 'AB12CD34', not 'ab12cd34' 
 
 ## Signature positions
 
@@ -61,6 +66,9 @@ from byte 5 through to byte 9
 EOF, Offset 4, Maximum Offset 0: The signature sequence ends exactly 4 bytes
 from the end of the file
 
+EOF, Offset 4, Maximum Offset 4: The signature sequence may end anywhere from
+4 bytes to 8 bytes from the end of the file
+
 ::::
 
 :::: discussion
@@ -70,6 +78,13 @@ from the end of the file
 * Where can the byte sequence appear for BOF, Offset 16, Maximum offset 16?
 * What do you think happens if you add an offset to a variably-positioned
 sequence?
+
+:::::: solution
+
+* Anywhere from byte 17 to byte 33
+* It might not break FFID tools but it might confuse others as to what is
+intended to be expressed
+::::::
 
 ::::
 
@@ -88,7 +103,7 @@ sequence?
 
 <!-- TABLE: END -->
 
-Most signatures will combine some or all of the above.
+Most signature sequences will combine some or all of the above.
 
 ## Less common syntax
 
@@ -151,11 +166,11 @@ return a hit.
 All sequences within a Signature must match to return a hit.
 * Signature sequences must be logically positioned differently, so you
 couldn’t have two BOF sequences with offset 0, maximum offset 0, but if
-two signatures had BOF, offset 0, maximum offset 128, then both sequences
+two sequences had BOF, offset 0, maximum offset 128, then both sequences
 must appear within the first 128 bytes
 * Most commonly, a signature sequence will only have a BOF sequence -
 this is fine!
-* By wary with purely Variable-positioned sequences - in isolation they
+* Be wary with purely Variable-positioned sequences - in isolation they
 will cause the whole of your files to be scanned, so it’s always best to
 include either a BOF or EOF as an ‘anchor’
 
@@ -171,6 +186,34 @@ important set of documents to follow up on after this tutorial.
 
 - [PRONOM in Practice documents](https://osf.io/2jbpe/files/).
 - [PRONOM technical guide](https://www.nationalarchives.gov.uk/aboutapps/fileformat/pdf/automatic_format_identification.pdf).
+
+::::
+
+:::: discussion
+## Real example
+
+Here is a real-world signature example taken from PRONOM.
+* Position type: Absolute from BOF
+* Offset: 0
+* Value: <code>FFD8FFE0{2}4A464946000100(00|01|02)</code>
+* Position type: Absolute from EOF
+* Offset: 0
+* Maximum Offset: 65536
+* Value: FFD9
+
+[fmt/42 - JPEG 1.00](https://www.nationalarchives.gov.uk/PRONOM/fmt/42).
+
+What are some features of this signature that you can spot?
+
+:::::: solution
+
+* There are two sequences, both BOF and EOF
+* The EOF sequence has an offset range, so the sequence can be found
+anywhere within the last 65,536 bytes of the file
+* The BOF sequence has a specific wildcard <code>{2}</code>
+* and a three-choice either/or block <code>(00|01|02)</code>
+
+::::::
 
 ::::
 

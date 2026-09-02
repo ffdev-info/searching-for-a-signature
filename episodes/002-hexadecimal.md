@@ -22,7 +22,9 @@ exercises: 0    # exercise time in minutes
 ## Introduction to hexadecimal
 
 * Hexadecimal is a way of representing numbers.
-* Just as decimal is Base10, hexadecimal is just Base16.
+* Hexadecimal uses 16 symbols (0-9 and A-F) compared to the 10 symbols (0-9)
+familiar in the decimal number system.
+* Just as decimal is otherwerise known as Base10, hexadecimal is just Base16.
 
 <!--markdownlint-disable-->
 
@@ -38,7 +40,7 @@ exercises: 0    # exercise time in minutes
 <br>
 
 * While you can learn to convert decimal to hexadecimal, you are more likely
-to convert hexadecimal to decimal.
+to convert hexadecimal to decimal when looking at file formats.
 
 ```text
 0x00 = (16 x 0 = 0) + (1 x 0 = 1) = 0
@@ -90,7 +92,7 @@ We use the `0x` prefix to signify hexadecimal. When we document hex
 sequences like above `0xE4 0xB8 0x96` is also equivalent to `0xE4B896`. How
 you choose write this information depends on context.
 
-You also saw `0b` as a prefix. This is used to denote binary (base2),
+You also saw `0b` as a prefix. This is used to denote binary (Base2),
 
 e.g. `0b1100` equals `0x0C` equals `12`.
 
@@ -104,7 +106,9 @@ data used in computer memory.
 
 ### Binary
 
-We won’t go into binary here, but if you ever want to look at the binary
+* Binary uses 2 symbols, 0 and 1.
+* Binary can otherwise be referred to as Base2.
+We won’t explore binary in detail here, but if you ever want to look at the binary
 representation of a number, modern search engines can do the conversion
 for you if you ask: 255 in binary (just as you can ask: 255 in hexadecimal.
 

@@ -39,6 +39,21 @@ your future signature development adventures!
 
 ![screenshot of hexed.it's user interface.](./fig/01-hex.png){alt='image shows a screenshot of the https://hexed.it user interface in the web browser.'}
 
+:::: caution
+
+## Always be careful when uploading files to pages on the web.
+
+<b>Hexed.it</b> has been selected as a client-based hexadecimal browser
+meaning that all processing is done in the browser and nothing is sent to
+any other computers, i.e. the server.
+
+You can confirm its status by checking the tool's user manual
+under **"? Help"** on the hexed.it website. You can also use airplane mode
+while using the page to confirm that it still functions as expected.
+
+::::
+
+
 <!--markdownlint-enable-->
 
 :::: instructor
@@ -82,7 +97,7 @@ than ASCII, such as EBCDIC
 
 ### Safety first!
 
-* A Hex Editor allows for the direct manipulation of data within digital
+* A (local) hex editor allows for the direct manipulation of data within digital
 files (note, this isn’t really any different from Notepad in this regard)
 * Possible to make mistakes and accidentally save over your data
 * Therefore: Always work on a copy of your data, never the original data

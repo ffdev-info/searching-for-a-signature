@@ -3,7 +3,7 @@ site: 'Searching for a signature: A FFID workshop'
 title: 'Welcome!'
 ---
 
-<img src="https://github.com/ffdev-info/searching-for-a-signature/blob/main/images/qr.png?raw=true"
+<img src="https://github.com/ffdev-info/searching-for-a-signature/blob/main/images/qr-dark.png?raw=true"
      alt="image of a QR code that can be used to access this resource"
      class="figure mx-auto d-block dark-filter"
      width="150" height="150" style="float: right; margin: auto;"

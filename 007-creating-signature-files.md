@@ -70,7 +70,7 @@ signature creation.
 
 <!--markdownlint-disable-->
 
-![The Signature Development Utility.](./fig/09-sigdev.png){alt='image shows the user interface of the signature development utility.'}
+![The Signature Development Utility](./fig/09-sigdev.png){alt='image shows the user interface of the signature development utility.'}
 
 <!--markdownlint-enable-->
 

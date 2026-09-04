@@ -384,7 +384,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introducing PRONOM syntax</h1>
-        <p>Last updated on 2026-09-02 |
+        <p>Last updated on 2026-09-04 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/005-pronom-syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -472,32 +472,32 @@ anywhere from 4 bytes to 8 bytes from the end of the file</p>
 </div>
 </div>
 </div>
-<div id="questions" class="callout discussion">
+<div id="challenge1" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="questions" class="callout-inner">
-<h3 class="callout-title">Questions</h3>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <ul><li>Where can the byte sequence appear for BOF, Offset 16, Maximum
 offset 16?</li>
 <li>What do you think happens if you add an offset to a
 variably-positioned sequence?</li>
-</ul><div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+</ul></div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>Anywhere from byte 17 to byte 33</li>
 <li>It might not break FFID tools but it might confuse others as to what
 is intended to be expressed</li>
 </ul></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -647,13 +647,13 @@ technical guide</a>.</li>
 </ul></div>
 </div>
 </div>
-<div id="real-example" class="callout discussion">
+<div id="challenge2" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<span class="callout-header">Discussion</span>
-<div id="real-example" class="callout-inner">
-<h3 class="callout-title">Real example</h3>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <p>Here is a real-world signature example taken from PRONOM:</p>
 <ul><li>Position type: Absolute from BOF</li>
@@ -667,12 +667,15 @@ technical guide</a>.</li>
 </ul><p><a href="https://www.nationalarchives.gov.uk/PRONOM/fmt/42" class="external-link">fmt/42 -
 JPEG 1.00</a>.</p>
 <p>What are some features of this signature that you can spot?</p>
+</div>
+</div>
+</div>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>There are two sequences, both BOF and EOF</li>
 <li>The EOF sequence has an offset range, so the sequence can be found
@@ -682,9 +685,6 @@ anywhere within the last 65,536 bytes of the file</li>
 <li>and a three-choice either/or block <code>(00|01|02)</code>
 </li>
 </ul></div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -771,9 +771,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://ffdev-info.github.io/searching-for-a-signature/005-pronom-syntax.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/005-pronom-syntax.html",
-  "dateCreated": "2026-09-02",
-  "dateModified": "2026-09-02",
-  "datePublished": "2026-09-02"
+  "dateCreated": "2026-09-04",
+  "dateModified": "2026-09-04",
+  "datePublished": "2026-09-04"
 }
 
   </script><script>

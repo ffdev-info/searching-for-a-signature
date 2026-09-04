@@ -381,7 +381,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Doing it for yourself</h1>
-        <p>Last updated on 2025-11-02 |
+        <p>Last updated on 2026-09-04 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/009-doing-it-for-yourself.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -524,15 +524,25 @@ it in DROID or Siegfried</h3>
      with longer/shorter sequences
 -->
 <!--markdownlint-disable-->
-<p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
-00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
-<p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
-00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
-<p>56 45 52 53 49 <strong>00</strong> 4E <strong>00 00 00 00 00 00
-00</strong> 43 48 41 52 53 45 54 <strong>00 00 00 00 00 00 00 00 00 00
-00 00 00 00 00 00 00 00 00 00</strong> 43 4F 4C 55 4D 4E 53</p>
+<p>56 45 52 53 49 <strong>01</strong> 4E 00 00 <strong>32 30 30
+32</strong> 00 00 00 00 00 43 48 41 52 53 45 54 00 00 <strong>61 73 63
+69 69</strong> 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <strong>25 45
+4F 46</strong></p>
+<p>56 45 52 53 49 <strong>02</strong> 4E 00 00 <strong>32 30 30
+32</strong> 00 00 00 00 00 43 48 41 52 53 45 54 00 00 <strong>75 74 66
+2D 38</strong> 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <strong>25 45
+4F 46</strong></p>
+<p>56 45 52 53 49 <strong>03</strong> 4E 00 00 <strong>32 30 30
+32</strong> 00 00 00 00 00 43 48 41 52 53 45 54 00 00 <strong>75 74 66
+2D 38</strong> 00 00 00 00 00 00 00 00 00 00 00 00 00 00 <strong>25 45
+4F 46</strong></p>
+<!--
+56 45 52 53 49 01 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 61 73 63 69 69 00 00 00 00 01 00 00 00 00 00 00 00 00 00 25 45 4F 46
+
+56 45 52 53 49 02 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 75 74 66 2D 38 00 00 00 00 02 02 00 00 00 00 00 00 00 00 00 25 45 4F 46
+
+56 45 52 53 49 03 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 75 74 66 2D 38 00 00 00 00 03 03 03 00 00 00 00 00 00 00 00 25 45 4F 46
+-->
 <!--markdownlint-enable-->
 <div class="section level4">
 <h4 id="sample-files">Sample files<a class="anchor" aria-label="anchor" href="#sample-files"></a></h4>
@@ -546,17 +556,84 @@ it in DROID or Siegfried</h3>
 </div>
 </div>
 </div>
+<div id="accordionHint1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
+  <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
+</button>
+<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div class="accordion-body">
+<p>There are a number of consistent pattterns you can probably use to
+identify this bytestream (file), there are no wrong answers on such a
+small sample so don’t worry. In real world research we will try and find
+a reasonable number of samples with enough variance to test the
+<em>hypothesis</em> that are our signature files.</p>
+</div>
+</div>
+</div>
+</div>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+  <h4 class="accordion-header" id="headingSolution1"> solution </h4>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>A solution will appear here shortly.</p>
+<div class="section level3">
+<h3 id="one-possible-solution">One possible solution<a class="anchor" aria-label="anchor" href="#one-possible-solution"></a></h3>
+<p>56 45 52 53 49 <strong>(01|02|03)</strong> 4E 00 00 32 30 30 32 00 00
+00 00 00 43 48 41 52 53 45 54 00 00 <strong>(61 73 63 69 69|75 74 66 2D
+38)</strong> 00 00 00 00 <strong>{0-10}</strong> 00 00 00 00 00 00 00 00
+00 00 25 45 4F 46</p>
+<ul><li>
+<strong>(01|02|03)</strong> - we see versions change here so we use
+option syntax, this could also be a lexicographic check or a check for a
+single byte.</li>
+<li>
+<strong>(61 73 63 69 69|75 74 66 2D 38)</strong> - two character
+encodings are listed across three files so we choose between one or the
+other.</li>
+<li>
+<strong>{0-10}</strong> - there’s some arbitrary length information
+here where the files are otherwise the same. We don’t know how much this
+will vary so to be safe we’ve elected for zero to 10 bytes, but this
+could easily be limited to three, or changed to be a full variable
+length wildcard.</li>
+</ul><p><br></p>
+</div>
+<div class="section level3">
+<h3 id="formatted-for-the-signature-development-utility">Formatted for the signature development utility<a class="anchor" aria-label="anchor" href="#formatted-for-the-signature-development-utility"></a></h3>
+<pre class="text"><code>5645525349(01|02|03)4E0000323030320000000000434841525345540000(6173636969|7574662D38)0000 0000{0-10}0000000000000000000025454F46</code></pre>
+<p><br></p>
+</div>
+<div class="section level3">
+<h3 id="as-xml-for-testing-with-droidsiegfried">As XML for testing with DROID/Siegfried<a class="anchor" aria-label="anchor" href="#as-xml-for-testing-with-droidsiegfried"></a></h3>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">XML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode xml" tabindex="0"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">&lt;?xml</span> <span class="ot">version=</span><span class="st">"1.0"</span> <span class="ot">encoding=</span><span class="st">"UTF-8"</span><span class="fu">?&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a>&lt;<span class="kw">FFSignatureFile</span> <span class="ot">xmlns=</span><span class="st">"http://www.nationalarchives.gov.uk/pronom/SignatureFile"</span> <span class="ot">Version=</span><span class="st">"1788520000"</span> <span class="ot">DateCreated=</span><span class="st">"2026-09-04T11:06:40+00:00"</span>&gt;</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>  &lt;<span class="kw">InternalSignatureCollection</span>&gt;</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a>    &lt;<span class="kw">InternalSignature</span> <span class="ot">ID=</span><span class="st">"1"</span> <span class="ot">Specificity=</span><span class="st">"Specific"</span>&gt;</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a>      &lt;<span class="kw">ByteSequence</span> <span class="ot">Reference=</span><span class="st">"BOFoffset"</span>&gt;</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a>        &lt;<span class="kw">SubSequence</span> <span class="ot">MinFragLength=</span><span class="st">"6"</span> <span class="ot">Position=</span><span class="st">"1"</span> <span class="ot">SubSeqMaxOffset=</span><span class="st">"0"</span> <span class="ot">SubSeqMinOffset=</span><span class="st">"0"</span>&gt;</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1" aria-label="code-block-2-7"></a>          &lt;<span class="kw">Sequence</span>&gt;5645525349(01|02|03)4E0000323030320000000000434841525345540000(6173636969|7574662D38)0000 0000{0-10}0000000000000000000025454F46&lt;/<span class="kw">Sequence</span>&gt;</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1" aria-label="code-block-2-8"></a>        &lt;/<span class="kw">SubSequence</span>&gt;</span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1" aria-label="code-block-2-9"></a>      &lt;/<span class="kw">ByteSequence</span>&gt;</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1" aria-label="code-block-2-10"></a>    &lt;/<span class="kw">InternalSignature</span>&gt;</span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1" aria-label="code-block-2-11"></a>  &lt;/<span class="kw">InternalSignatureCollection</span>&gt;</span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1" aria-label="code-block-2-12"></a>  &lt;<span class="kw">FileFormatCollection</span>&gt;</span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1" aria-label="code-block-2-13"></a>    &lt;<span class="kw">FileFormat</span> <span class="ot">ID=</span><span class="st">"1"</span> <span class="ot">Name=</span><span class="st">"FFDEV Workshop Signature"</span> <span class="ot">PUID=</span><span class="st">"ffdev/1"</span> <span class="ot">Version=</span><span class="st">"1.0"</span> <span class="ot">MIMEType=</span><span class="st">"application/octet-stream"</span>&gt;</span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1" aria-label="code-block-2-14"></a>      &lt;<span class="kw">InternalSignatureID</span>&gt;1&lt;/<span class="kw">InternalSignatureID</span>&gt;</span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1" aria-label="code-block-2-15"></a>      &lt;<span class="kw">Extension</span>&gt;file&lt;/<span class="kw">Extension</span>&gt;</span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1" aria-label="code-block-2-16"></a>    &lt;/<span class="kw">FileFormat</span>&gt;</span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1" aria-label="code-block-2-17"></a>  &lt;/<span class="kw">FileFormatCollection</span>&gt;</span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1" aria-label="code-block-2-18"></a>&lt;/<span class="kw">FFSignatureFile</span>&gt;</span></code></pre>
+</div>
 <!-- TODO provide a solution here that can be used to identify the three
      bytstreams provided.
 -->
+</div>
 </div>
 </div>
 </div>
@@ -672,7 +749,7 @@ any links that you are not going to use.
   "url": "https://ffdev-info.github.io/searching-for-a-signature/instructor/009-doing-it-for-yourself.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/instructor/009-doing-it-for-yourself.html",
   "dateCreated": "2026-09-04",
-  "dateModified": "2025-11-02",
+  "dateModified": "2026-09-04",
   "datePublished": "2026-09-04"
 }
 

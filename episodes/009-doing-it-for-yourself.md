@@ -113,11 +113,19 @@ do is match all three!
 
 <!--markdownlint-disable-->
 
-56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
+56 45 52 53 49 **01** 4E 00 00 **32 30 30 32** 00 00 00 00 00 43 48 41 52 53 45 54 00 00 **61 73 63 69 69** 00 00 00 00 00 00 00 00 00 00 00 00 00 00 **25 45 4F 46**
 
-56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
+56 45 52 53 49 **02** 4E 00 00 **32 30 30 32** 00 00 00 00 00 43 48 41 52 53 45 54 00 00 **75 74 66 2D 38** 00 00 00 00 00 00 00 00 00 00 00 00 00 00 **25 45 4F 46**
 
-56 45 52 53 49 **00** 4E **00 00 00 00 00 00 00** 43 48 41 52 53 45 54 **00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00** 43 4F 4C 55 4D 4E 53
+56 45 52 53 49 **03** 4E 00 00 **32 30 30 32** 00 00 00 00 00 43 48 41 52 53 45 54 00 00 **75 74 66 2D 38** 00 00 00 00 00 00 00 00 00 00 00 00 00 00 **25 45 4F 46**
+
+<!--
+56 45 52 53 49 01 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 61 73 63 69 69 00 00 00 00 01 00 00 00 00 00 00 00 00 00 25 45 4F 46
+
+56 45 52 53 49 02 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 75 74 66 2D 38 00 00 00 00 02 02 00 00 00 00 00 00 00 00 00 25 45 4F 46
+
+56 45 52 53 49 03 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 75 74 66 2D 38 00 00 00 00 03 03 03 00 00 00 00 00 00 00 00 25 45 4F 46
+-->
 
 <!--markdownlint-enable-->
 
@@ -127,9 +135,64 @@ do is match all three!
 - [Sample file 2](./files/ffid-exercise-2.file).
 - [Sample file 3](./files/ffid-exercise-3.file).
 
+:::::: hint
+
+There are a number of consistent pattterns you can probably use to identify
+this bytestream (file), there are no wrong answers on such a small sample so
+don't worry. In real world research we will try and find a reasonable number
+of samples with enough variance to test the _hypothesis_ that are our
+signature files.
+
+::::::
+
 :::::: solution
 
-A solution will appear here shortly.
+## solution
+
+### One possible solution
+
+56 45 52 53 49 **(01|02|03)** 4E 00 00 32 30 30 32 00 00 00 00 00 43 48 41 52 53 45 54 00 00 **(61 73 63 69 69|75 74 66 2D 38)** 00 00 00 00 **{0-10}** 00 00 00 00 00 00 00 00 00 00 25 45 4F 46
+
+* **(01|02|03)** - we see versions change here so we use option syntax, this
+could also be a lexicographic check or a check for a single byte.
+* **(61 73 63 69 69|75 74 66 2D 38)** - two character encodings are listed
+across three files so we choose between one or the other.
+* **{0-10}** - there's some arbitrary length information here where the files
+are otherwise the same. We don't know how much this will vary so to be safe
+we've elected for zero to 10 bytes, but this could easily be limited to three,
+or changed to be a full variable length wildcard.
+
+<br>
+
+### Formatted for the signature development utility
+
+```text
+5645525349(01|02|03)4E0000323030320000000000434841525345540000(6173636969|7574662D38)0000 0000{0-10}0000000000000000000025454F46
+```
+<br>
+
+### As XML for testing with DROID/Siegfried
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile" Version="1788520000" DateCreated="2026-09-04T11:06:40+00:00">
+  <InternalSignatureCollection>
+    <InternalSignature ID="1" Specificity="Specific">
+      <ByteSequence Reference="BOFoffset">
+        <SubSequence MinFragLength="6" Position="1" SubSeqMaxOffset="0" SubSeqMinOffset="0">
+          <Sequence>5645525349(01|02|03)4E0000323030320000000000434841525345540000(6173636969|7574662D38)0000 0000{0-10}0000000000000000000025454F46</Sequence>
+        </SubSequence>
+      </ByteSequence>
+    </InternalSignature>
+  </InternalSignatureCollection>
+  <FileFormatCollection>
+    <FileFormat ID="1" Name="FFDEV Workshop Signature" PUID="ffdev/1" Version="1.0" MIMEType="application/octet-stream">
+      <InternalSignatureID>1</InternalSignatureID>
+      <Extension>file</Extension>
+    </FileFormat>
+  </FileFormatCollection>
+</FFSignatureFile>
+```
 
 <!-- TODO provide a solution here that can be used to identify the three
      bytstreams provided.

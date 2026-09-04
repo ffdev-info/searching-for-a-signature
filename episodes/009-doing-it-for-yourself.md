@@ -147,7 +147,7 @@ signature files.
 
 :::::: solution
 
-## solution
+## Solution
 
 ### One possible solution
 

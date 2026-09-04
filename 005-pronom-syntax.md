@@ -31,7 +31,7 @@ Python
 
 * Byte patterns use hexadecimal notation (but they don't use a '0x' prefix!)
 * Byte patterns can't use space characters: use 'ABCD', not 'AB CD'
-* Use upper case symbols in signature sequences: 'AB12CD34', not 'ab12cd34' 
+* Use upper case symbols in signature sequences: 'AB12CD34', not 'ab12cd34'
 
 ## Signature positions
 
@@ -71,14 +71,11 @@ EOF, Offset 4, Maximum Offset 4: The signature sequence may end anywhere from
 
 ::::
 
-:::: discussion
-
-### Questions
+:::: challenge
 
 * Where can the byte sequence appear for BOF, Offset 16, Maximum offset 16?
 * What do you think happens if you add an offset to a variably-positioned
 sequence?
-
 
 :::::: solution
 
@@ -190,9 +187,7 @@ important set of documents to follow up on after this tutorial.
 
 ::::
 
-:::: discussion
-
-## Real example
+:::: challenge
 
 Here is a real-world signature example taken from PRONOM:
 
@@ -207,7 +202,6 @@ Here is a real-world signature example taken from PRONOM:
 [fmt/42 - JPEG 1.00](https://www.nationalarchives.gov.uk/PRONOM/fmt/42).
 
 What are some features of this signature that you can spot?
-
 
 :::::: solution
 

@@ -487,10 +487,19 @@ better identification.</li>
 </ul></section><section id="005-pronom-syntax"><h2 class="section-heading"><a href="005-pronom-syntax.html">Introducing PRONOM syntax</a></h2>
 <hr class="half-width">
 <ul>
+<li>A PRONOM file format (PUID) can be associated with more than one
+signature, but only needs to match one full signature to return a
+positive hit</li>
+<li>A signature can consist of multiple sequences, and all sequences
+must match to return a positive hit</li>
 <li>PRONOM syntax is a form of regular expression (regex), although
 distinct from regex implementations in Java, Python etc.</li>
-<li>PRONOM syntax can be combined in multiple ways.</li>
-<li>Sometimes there is more than one way to write a signature.</li>
+<li>PRONOM sequences can be anchored relative to the beginning of the
+file (BOF), the end of the file (EOF), or anywhere within the file
+(Variable), however it is best practice to include at least one BOF or
+EOF anchor to avoid unnecessary full scans of files</li>
+<li>PRONOM syntax can be combined in multiple ways</li>
+<li>Sometimes there is more than one way to write a signature</li>
 </ul></section><section id="006-reversing-pronom.syntax"><h2 class="section-heading"><a href="006-reversing-pronom.syntax.html">Reversing PRONOM syntax</a></h2>
 <hr class="half-width">
 <ul>

@@ -485,7 +485,7 @@
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <ul>
 <li>Welcome, housekeeping.</li>
@@ -2070,10 +2070,10 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-005-pronom-syntax"><p>Content from <a href="005-pronom-syntax.html">Introducing PRONOM syntax</a></p>
 <hr>
-<p>Last updated on 2026-09-04 |
+<p>Last updated on 2026-09-08 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/005-pronom-syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 15 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2097,25 +2097,41 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Write our first PRONOM compliant signatures.</li>
-<li>Learn what a “BOF” is.</li>
+<li>Understand how PRONOM-based identification works</li>
+<li>Write our first PRONOM compliant signatures</li>
+<li>Learn what a “BOF” is</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
+<section><h2 class="section-heading" id="introduction-to-pronom-syntax">Introduction to PRONOM syntax<a class="anchor" aria-label="anchor" href="#introduction-to-pronom-syntax"></a>
+</h2>
+<hr class="half-width">
 <ul>
 <li>PRONOM needs syntax to enable the expression of format
 identification signatures</li>
 <li>Needs to articulate specific byte patterns, at specific
-locations.</li>
+locations</li>
 <li>Syntax has overlap with ‘Regular Expressions’ (RegEx) but is
 distinct from RegEx implementations in common code languages such as
 Java or Python</li>
 <li>Highly flexible!</li>
-</ul>
-<section><h2 class="section-heading" id="signature-syntax-conventions">Signature syntax conventions<a class="anchor" aria-label="anchor" href="#signature-syntax-conventions"></a>
+</ul></section><section><h2 class="section-heading" id="signatures-and-sequences">Signatures and sequences<a class="anchor" aria-label="anchor" href="#signatures-and-sequences"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>Every File Format in PRONOM has a PRONOM Unique ID (PUID)</li>
+<li>A PUID can be associated with one or more signatures</li>
+<li>A PUID without any signatures will only identify based on its format
+extension</li>
+<li>A File Format ID tool will return a hit if <em>any</em> signature
+fully matches</li>
+<li>A signature consists of one or more ‘sequences’</li>
+<li>All sequences for a given signature need to match to return a
+hit</li>
+</ul></section><section><h2 class="section-heading" id="signature-syntax-conventions">Signature syntax conventions<a class="anchor" aria-label="anchor" href="#signature-syntax-conventions"></a>
 </h2>
 <hr class="half-width">
 <ul>
@@ -2177,9 +2193,15 @@ anywhere from 4 bytes to 8 bytes from the end of the file</p>
 <ul>
 <li>Where can the byte sequence appear for BOF, Offset 16, Maximum
 offset 16?</li>
-<li>What do you think happens if you add an offset to a
-variably-positioned sequence?</li>
+<li>Given a file wholly consisting of the bytes <code>AABBCCDD</code>,
+which 2 of these PRONOM byte sequences would match?</li>
 </ul>
+<ol style="list-style-type: decimal">
+<li>BOF, Offset 0, Maximum Offset 4: AABBCCEE</li>
+<li>BOF, Offset 2, Maximum Offset 0: CCDD</li>
+<li>EOF, Offset 0, Maximum Offset 0: EE</li>
+<li>Variable: BBCC</li>
+</ol>
 </div>
 </div>
 </div>
@@ -2192,8 +2214,8 @@ variably-positioned sequence?</li>
 <div class="accordion-body">
 <ul>
 <li>Anywhere from byte 17 to byte 33</li>
-<li>It might not break FFID tools but it might confuse others as to what
-is intended to be expressed</li>
+<li>2 &amp; 4. The file doesn’t contain the bytes 0xEE, which appears in
+the target sequences of both 1 &amp; 3.</li>
 </ul>
 </div>
 </div>
@@ -2324,9 +2346,9 @@ however this is not recommended</td>
 <div class="section level4">
 <h4 id="offset-markers">Offset markers<a class="anchor" aria-label="anchor" href="#offset-markers"></a>
 </h4>
-<p><strong>BOF</strong> = Beginning of File.</p>
-<p><strong>EOF</strong> = End of File. Var = Variable (anywhere in the
-file)</p>
+<p><strong>BOF</strong> = Beginning of File</p>
+<p><strong>EOF</strong> = End of File</p>
+<p><strong>Var</strong> = Variable (anywhere in the file)</p>
 <p><strong>Offset/Max Offset</strong> = Exact or positional range in
 which a signature starts</p>
 </div>
@@ -2341,6 +2363,8 @@ e.g. <code>AB??C3</code></p>
 e.g. <code>A2{5}F3</code></p>
 <p><strong>{n-n}</strong> = range of wildcard bytes,
 e.g. <code>4D{0-12}E4</code></p>
+<p>**{n-*}** = wildcard bytes with specified minimum range,
+e.g. <code>FF{4-*}A0</code></p>
 </div>
 <div class="section level4">
 <h4 id="byte-range">Byte range<a class="anchor" aria-label="anchor" href="#byte-range"></a>
@@ -2363,19 +2387,23 @@ e.g. <code>ABCD[!01]E1</code></p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="combining-signatures-and-sequences">Combining signatures and sequences<a class="anchor" aria-label="anchor" href="#combining-signatures-and-sequences"></a>
+</section><section><h2 class="section-heading" id="combining-sequences">Combining sequences<a class="anchor" aria-label="anchor" href="#combining-sequences"></a>
 </h2>
 <hr class="half-width">
 <ul>
-<li>A Format can have many Signatures - matching any Signature will
-return a hit.</li>
+<li>As described earlier, a format can have many Signatures - matching
+any Signature will return a hit</li>
 <li>A Signature may consist of any number of BOF, EOF, and Var
 sequences. All sequences within a Signature must match to return a
-hit.</li>
+hit</li>
+<li>Any BOF, EOF, or Variable sequence can include any syntax elements
+described above</li>
 <li>Signature sequences must be logically positioned differently, so you
-couldn’t have two BOF sequences with offset 0, maximum offset 0, but if
-two sequences had BOF, offset 0, maximum offset 128, then both sequences
-must appear within the first 128 bytes</li>
+couldn’t have two BOF sequences with offset 0, maximum offset 0
+specifying distinct values because a single file could never hold two
+distinct sequences at the same position, but if two sequences had BOF,
+offset 0, maximum offset 128, then both sequences must appear within the
+first 128 bytes</li>
 <li>Most commonly, a signature sequence will only have a BOF sequence -
 this is fine!</li>
 <li>Be wary with purely Variable-positioned sequences - in isolation
@@ -2465,10 +2493,19 @@ anywhere within the last 65,536 bytes of the file</li>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
+<li>A PRONOM file format (PUID) can be associated with more than one
+signature, but only needs to match one full signature to return a
+positive hit</li>
+<li>A signature can consist of multiple sequences, and all sequences
+must match to return a positive hit</li>
 <li>PRONOM syntax is a form of regular expression (regex), although
 distinct from regex implementations in Java, Python etc.</li>
-<li>PRONOM syntax can be combined in multiple ways.</li>
-<li>Sometimes there is more than one way to write a signature.</li>
+<li>PRONOM sequences can be anchored relative to the beginning of the
+file (BOF), the end of the file (EOF), or anywhere within the file
+(Variable), however it is best practice to include at least one BOF or
+EOF anchor to avoid unnecessary full scans of files</li>
+<li>PRONOM syntax can be combined in multiple ways</li>
+<li>Sometimes there is more than one way to write a signature</li>
 </ul>
 </div>
 </div>
@@ -3204,7 +3241,7 @@ opportunity at the end to discuss how things went.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>For iPRES we will look at going through the process of creating and
 submitting a signature for the Quite OK Image format as it isn’t yet in
@@ -3331,7 +3368,7 @@ it in DROID or Siegfried</h3>
 <button class="accordion-button hint-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHint1" aria-expanded="false" aria-controls="collapseHint1">
   <h4 class="accordion-header" id="headingHint1"> Give me a hint </h4>
 </button>
-<div id="collapseHint1" class="accordion-collapse collapse" aria-labelledby="headingHint1" data-bs-parent="#accordionHint1">
+<div id="collapseHint1" class="accordion-collapse collapse" data-bs-parent="#accordionHint1" aria-labelledby="headingHint1">
 <div class="accordion-body">
 <p>There are a number of consistent pattterns you can probably use to
 identify this bytestream (file), there are no wrong answers on such a
@@ -3347,7 +3384,7 @@ a reasonable number of samples with enough variance to test the
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="one-possible-solution">One possible solution<a class="anchor" aria-label="anchor" href="#one-possible-solution"></a>

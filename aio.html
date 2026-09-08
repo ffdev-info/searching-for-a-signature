@@ -1574,13 +1574,11 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>Introducing the Hex Editor</li>
 <li>What is a Hex Editor?</li>
 <li>Why use a Hex Editor?</li>
-<li>How do I understand the layout</li>
-<li>How can I keep my data safe when using a hex editor</li>
+<li>How do I understand the layout?</li>
+<li>How can I keep my data safe when using a Hex Editor?</li>
 <li>How do I use a Hex Editor?</li>
-<li>Can I use a hex editor now?</li>
 </ul>
 </div>
 </div>
@@ -1590,13 +1588,12 @@ any links that you are not going to use.
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Get everybody onto a Hex Editor</li>
+<li>Introduce Hex Editors</li>
 <li>Understand how they work</li>
 <li>Understand what they’re used for</li>
 <li>Understand what I’m seeing</li>
 <li>Highlight and reinforce good, safe practice</li>
-<li>Hands-on demo</li>
-<li>Reinforce by doing</li>
+<li>Get hands-on</li>
 </ul>
 </div>
 </div>
@@ -1606,7 +1603,7 @@ any links that you are not going to use.
 <section><h2 class="section-heading" id="introducing-hexed-it">Introducing HexEd.it<a class="anchor" aria-label="anchor" href="#introducing-hexed-it"></a>
 </h2>
 <hr class="half-width">
-<p>HexEd.it is a web-based hex-editor and should prove incredibly useful
+<p>HexEd.it is a web-based Hex Editor and should prove incredibly useful
 in your future signature development adventures!</p>
 <ul>
 <li>Find it at: <a href="https://HexEd.it" class="external-link">HexEd.it</a>
@@ -1638,10 +1635,10 @@ expected.</p>
 </h2>
 <hr class="half-width">
 <ul>
-<li>Bytecode representation of digital file</li>
-<li>Typically displays Hexadecimal, and ASCII/ANSI representations of
-data</li>
-<li>Enables direct editing of data values</li>
+<li>Byte-level representation of digital file</li>
+<li>Typically displays both Hexadecimal, and ASCII/ANSI representations
+of data</li>
+<li>Enables direct editing of data values (This can be dangerous!)</li>
 </ul></section><section><h2 class="section-heading" id="why-use-a-hex-editor">Why use a Hex Editor?<a class="anchor" aria-label="anchor" href="#why-use-a-hex-editor"></a>
 </h2>
 <hr class="half-width">
@@ -1663,7 +1660,9 @@ byte; Offset 0x4000 is the 16,385th byte!</li>
 byte)</li>
 <li>ASCII view shows text interpretation of data</li>
 <li>Text on ASCII side may appear ‘scrambled’ - this suggests binary
-encoded data</li>
+encoded data, and some bytes, known as control characters, don’t
+translate to ASCII at all! These instead might be represented as a blank
+space or a dot glyph.</li>
 <li>Some Hex Editors (like this one) can suggest different
 interpretations of blocks of data</li>
 <li>Some Hex Editors allow for text interpretations (character sets)
@@ -1791,7 +1790,7 @@ Files used in this section:
 <ul>
 <li>HexEd.it is an online Hex Editor. HxD is a popular desktop
 alternative</li>
-<li>Hex Editors display a ‘Bytecode’ representation of file - both
+<li>Hex Editors display a byte-level representation of file - both
 Hexadecimal and ‘ASCII’</li>
 <li>The ASCII view can be limiting because not every byte translates
 directly to a human-meaningful character. E.g. 0x00-1F control
@@ -2133,7 +2132,7 @@ variably-positioned sequence?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Anywhere from byte 17 to byte 33</li>
@@ -2381,7 +2380,7 @@ JPEG 1.00</a>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul>
 <li>There are two sequences, both BOF and EOF</li>

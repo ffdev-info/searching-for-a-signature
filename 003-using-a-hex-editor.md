@@ -6,31 +6,28 @@ exercises: 5    # exercise time in minutes
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-* Introducing the Hex Editor
 * What is a Hex Editor?
 * Why use a Hex Editor?
-* How do I understand the layout
-* How can I keep my data safe when using a hex editor
+* How do I understand the layout?
+* How can I keep my data safe when using a Hex Editor?
 * How do I use a Hex Editor?
-* Can I use a hex editor now?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-* Get everybody onto a Hex Editor
+* Introduce Hex Editors
 * Understand how they work
 * Understand what they’re used for
 * Understand what I’m seeing
 * Highlight and reinforce good, safe practice
-* Hands-on demo
-* Reinforce by doing
+* Get hands-on
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introducing HexEd.it
 
-HexEd.it is a web-based hex-editor and should prove incredibly useful in
+HexEd.it is a web-based Hex Editor and should prove incredibly useful in
 your future signature development adventures!
 
 * Find it at: [HexEd.it](https://HexEd.it)
@@ -65,9 +62,9 @@ be beneficial throughout the remainder of this workshop.
 
 ## What is a Hex Editor?
 
-* Bytecode representation of digital file
-* Typically displays Hexadecimal, and ASCII/ANSI representations of data
-* Enables direct editing of data values
+* Byte-level representation of digital file
+* Typically displays both Hexadecimal, and ASCII/ANSI representations of data
+* Enables direct editing of data values (This can be dangerous!)
 
 ## Why use a Hex Editor?
 
@@ -85,7 +82,8 @@ Offset 0x4000 is the 16,385th byte\!
 * Hexadecimal view shows binary data represented as bytes (8 bits per byte)
 * ASCII view shows text interpretation of data
 * Text on ASCII side may appear ‘scrambled’ \- this suggests binary encoded
-data
+data, and some bytes, known as control characters, don't translate to ASCII at all!
+These instead might be represented as a blank space or a dot glyph.
 * Some Hex Editors (like this one) can suggest different interpretations of
 blocks of data
 * Some Hex Editors allow for text interpretations (character sets) other
@@ -183,7 +181,7 @@ Files used in this section:
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 * HexEd.it is an online Hex Editor. HxD is a popular desktop alternative
-* Hex Editors display a ‘Bytecode’ representation of file - both Hexadecimal and ‘ASCII’
+* Hex Editors display a byte-level representation of file - both Hexadecimal and ‘ASCII’
 * The ASCII view can be limiting because not every byte translates directly to a
 human-meaningful character. E.g. 0x00-1F control characters are usually represented
 as periods (dots) or spaces

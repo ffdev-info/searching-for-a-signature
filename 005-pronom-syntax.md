@@ -1,7 +1,7 @@
 ---
 title: "Introducing PRONOM syntax"
 teaching: 10    # teaching time in minutes
-exercises: 0    # exercise time in minutes
+exercises: 5    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
@@ -14,18 +14,29 @@ exercises: 0    # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Write our first PRONOM compliant signatures.
-- Learn what a "BOF" is.
+- Understand how PRONOM-based identification works
+- Write our first PRONOM compliant signatures
+- Learn what a "BOF" is
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Introduction to PRONOM syntax
 * PRONOM needs syntax to enable the expression of format identification
 signatures
-* Needs to articulate specific byte patterns, at specific locations.
+* Needs to articulate specific byte patterns, at specific locations
 * Syntax has overlap with ‘Regular Expressions’ (RegEx) but is distinct from
 RegEx implementations in common code languages such as Java or
 Python
 * Highly flexible!
+
+## Signatures and sequences
+
+* Every File Format in PRONOM has a PRONOM Unique ID (PUID)
+* A PUID can be associated with one or more signatures
+* A PUID without any signatures will only identify based on its format extension
+* A File Format ID tool will return a hit if _any_ signature fully matches
+* A signature consists of one or more 'sequences'
+* All sequences for a given signature need to match to return a hit
 
 ## Signature syntax conventions
 
@@ -74,14 +85,18 @@ EOF, Offset 4, Maximum Offset 4: The signature sequence may end anywhere from
 :::: challenge
 
 * Where can the byte sequence appear for BOF, Offset 16, Maximum offset 16?
-* What do you think happens if you add an offset to a variably-positioned
-sequence?
+* Given a file wholly consisting of the bytes <code>AABBCCDD</code>,
+which 2 of these PRONOM byte sequences would match?
+1. BOF, Offset 0, Maximum Offset 4: AABBCCEE
+2. BOF, Offset 2, Maximum Offset 0: CCDD
+3. EOF, Offset 0, Maximum Offset 0: EE
+4. Variable: BBCC
 
 :::::: solution
 
 * Anywhere from byte 17 to byte 33
-* It might not break FFID tools but it might confuse others as to what is
-intended to be expressed
+* 2 & 4. The file doesn't contain the bytes 0xEE, which appears in the target sequences of both 1 & 3.
+
 ::::::
 
 ::::
@@ -125,9 +140,11 @@ Most signature sequences will combine some or all of the above.
 
 #### Offset markers
 
-**BOF** = Beginning of File.
+**BOF** = Beginning of File
 
-**EOF** = End of File. Var = Variable (anywhere in the file)
+**EOF** = End of File
+
+**Var** = Variable (anywhere in the file)
 
 **Offset/Max Offset** = Exact or positional range in which a signature starts
 
@@ -140,6 +157,8 @@ Most signature sequences will combine some or all of the above.
 **{n}** = specific number of wildcard bytes, e.g. <code>A2{5}F3</code>
 
 **{n-n}** = range of wildcard bytes, e.g. <code>4D{0-12}E4</code>
+
+**{n-*}** = wildcard bytes with specified minimum range, e.g. <code>FF{4-*}A0</code>
 
 #### Byte range
 
@@ -156,15 +175,17 @@ e.g. <code>(0D|0A|0D0A)</code>
 
 ::::
 
-## Combining signatures and sequences
+## Combining sequences
 
-* A Format can have many Signatures - matching any Signature will
-return a hit.
+* As described earlier, a format can have many Signatures - matching any Signature will
+return a hit
 * A Signature may consist of any number of BOF, EOF, and Var sequences.
-All sequences within a Signature must match to return a hit.
+All sequences within a Signature must match to return a hit
+* Any BOF, EOF, or Variable sequence can include any syntax elements described above
 * Signature sequences must be logically positioned differently, so you
-couldn’t have two BOF sequences with offset 0, maximum offset 0, but if
-two sequences had BOF, offset 0, maximum offset 128, then both sequences
+couldn’t have two BOF sequences with offset 0, maximum offset 0 specifying distinct values
+because a single file could never hold two distinct sequences at the same position,
+but if two sequences had BOF, offset 0, maximum offset 128, then both sequences
 must appear within the first 128 bytes
 * Most commonly, a signature sequence will only have a BOF sequence -
 this is fine!
@@ -225,9 +246,17 @@ anywhere within the last 65,536 bytes of the file
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
+- A PRONOM file format (PUID) can be associated with more than one signature,
+but only needs to match one full signature to return a positive hit
+- A signature can consist of multiple sequences, and all sequences must match
+to return a positive hit
 - PRONOM syntax is a form of regular expression (regex), although distinct from
 regex implementations in Java, Python etc.
-- PRONOM syntax can be combined in multiple ways.
-- Sometimes there is more than one way to write a signature.
+- PRONOM sequences can be anchored relative to the beginning of the file (BOF),
+the end of the file (EOF), or anywhere within the file (Variable), however it
+is best practice to include at least one BOF or EOF anchor to avoid unnecessary full
+scans of files
+- PRONOM syntax can be combined in multiple ways
+- Sometimes there is more than one way to write a signature
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

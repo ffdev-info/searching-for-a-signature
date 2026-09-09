@@ -5,13 +5,14 @@
 # ensuring that the author list and other fields remain accurate.
 
 cff-version: 1.2.0
-title: Searching for a signature: A file format identification workshop
-message: >-
+title: "Searching for a signature: A file format identification workshop"
+message:
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
   re-use, adapt, or expand on the content in your own
   training material.
 type: dataset
+version: iPRES2026
 authors:
   - given-names: David
     family-names: Clipsham
@@ -21,7 +22,9 @@ authors:
     family-names: Ranade
   - given-names: Ross
     family-names: Spencer
-abstract: >-
+  - given-names: Francesca
+    family-names: Mackenzie
+abstract:
   File format identification is generally accepted as a key digital
   preservation activity as it enables preservation practitioners to
   understand, manage, and mitigate format-related risks and challenges.

@@ -62,8 +62,10 @@ and successfully identified your files using Siegfried.
 
 :::: instructor
 
-Trainers can skip or summarize the next section which runs through doing the
-same locally, i.e. for a locally installed DROID or Siegfried.
+If there is time, you can explain how to activate a custom
+signature file with local tooling, i.e. DROID and/or Siegfried using the
+information below. You can also skip it or summarize it for the class
+as you prefer. FIDO is not yet included in the guide.
 
 ::::
 
@@ -84,7 +86,7 @@ If you experience any difficulties, check out Mozilla's resource on
 
 ::::
 
-## Doing it locally
+## Plugging it in with local tools
 
 You may want to avail yourself on how to do this using your local tools.
 We go into this in detail below for DROID and Siegfried.

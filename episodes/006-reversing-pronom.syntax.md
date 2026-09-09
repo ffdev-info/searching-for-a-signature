@@ -54,11 +54,18 @@ AABB**00**CC**FFFFFF**DD**00000000**010203
 
 ::::
 
+* Hexadecimal byte sequences must have an even number of characters, i.e.
+one byte is always two characters.
+
 * You can jot down byte-sequences in any notepad application you have
 available to you (even google docs!).
 
-* Hexadecimal byte sequences must have an even number of characters, i.e.
-one byte is always two characters.
+* Editors that use [monospace fonts][mono-1] such as Roboto, Consolas,
+or "Source Code Pro" work well because every character used occupies
+the same amount of horizontal space making it easy to compare uneven
+sequences and lines.
+
+[mono-1]: https://en.wikipedia.org/wiki/Monospaced_font
 
 * You can copy and paste the bytes into a hex editor. As we’ve seen, these
 are usually split into two panes, one for bytes and one for a

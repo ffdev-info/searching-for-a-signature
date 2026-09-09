@@ -101,7 +101,7 @@ getting forrmat identifications out of them.
 ### DROID
 
 1. With DROID installed you will find its configuration folder
-in `%userprofile%/.droid6/`  on Windows and `~/.droid6` on Linux and Mac. Folders may be hidden.
+in `%userprofile%/.droid6/`  on Windows and `~/.droid6` on Linux and Mac.
 2. Signature files are stored in a folder called signature_files.
 3. Given your signature file created above, copy and paste it into
 this directory.
@@ -137,7 +137,7 @@ been created.
 2. Attempt to run roy build -nocontainer -noreports. If this fails,
 download the latest DROID signature file into the folder described in the
 error message by roy, e.g. `%userprofile%/siegfried/` on
-Windows or `~/.local/share/siegfried/` on Linux and Mac (configurations may vary).
+Windows or `~/.local/share/siegfried/` on Linux (configurations may vary).
 3. You can download the latest signature file from The National Archives:
 [DROID signature files][droid-2].
 

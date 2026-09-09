@@ -1,30 +1,64 @@
 ---
-title: "Hexadecimal"
+title: "Talking with Computers"
 teaching: 5    # teaching time in minutes
 exercises: 0    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
 
-* What is hexadecimal?
-* Why is it important?
-* What are the basics of hexadecimal we need to understand?
+* How do computers understand information?
+* What are encodings?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-* Learn what hexadecimal is.
-* Learn how to construct a hexadecimal sequence with arbitrary meaning.
+* Learn the process of how computers store data to becoming human readable on your screen
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction to hexadecimal
+## Let's start at the beginning
 
-* Hexadecimal is a way of representing numbers.
-* Hexadecimal uses 16 symbols (0-9 and A-F) compared to the 10 symbols (0-9)
-familiar in the decimal number system.
-* Just as decimal is otherwerise known as Base10, hexadecimal is just Base16.
+Computers are built from billions of tiny electronic switches called transistors.
+
+Like a light switch or a lightbulb, each transistor has two possible states:
+
+* On
+* Off
+ 
+To make these states easier to work with, we represent them as:
+* On = 1
+* Off = 0
+These 1s and 0s are called **binary digits**, or **bits**. A single bit can only store one of two values: 0 or 1
+
+### What is behind your computer data?
+
+* Computers combine the bits together, representing letters, numbers, images, sound, video, software and the information you see on a screen
+* We call 8 of these bits grouped together a **byte**: 01001001
+* This is the data that computers are interpreting
+* These are the 0 and 1s that you can see when a spy is breaking into a computer in an action movie
+
+### Solving the communication barrier
+
+* Computers communicate using numbers, while humans communicate using text, letters and images
+* Computers ultimately store everything as binary
+* To allow text to be stored on a computer, we use an encoding
+* An encoding acts as a translation table between characters and numbers
+
+For example, the letter I:
+| ASCII  | HEX   | Binary   |
+|   I    | 73    | 01001001 |
+
+## Why hexadecimal?
+Although computers use binary, humans find long strings of 1s and 0s difficult to read.
+For example:01001001
+is not particularly memorable. Hexadecimal provides a shorter way of representing the same data.
+The binary value: 01001001
+can also be written as: 49
+
+
+
+
 
 <!--markdownlint-disable-->
 

@@ -87,6 +87,8 @@ window and its ASCII interpretation on the right.
 
 ::::
 
+![Example skeleton file in a hexed.it](./fig/06-hexedit-skeleton.png){alt='image shows a skeleton file in a hex editor and the hex editor\s layout and various panes'}
+
 :::: challenge
 
 Create a skeleton file using the bytes `5A5854617065211A01` and run it

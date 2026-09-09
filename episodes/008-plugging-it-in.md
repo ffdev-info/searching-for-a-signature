@@ -49,7 +49,7 @@ other computer, it is _sandboxed_ and kept local to your machine.
 
 ::::
 
-1. Go to [ffdev.info](https://ffdev.info) and look at the Siegfried tab.
+1. Go to [ffdev.info](https://ffdev.info) and look at the "_Try It Out!_" tab.
 2. Select “roy: load signature’ and navigate to a signature file on your
 hard disk. The signature file will be loaded into memory alongside
 Siegfried’s default signature.

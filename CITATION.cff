@@ -7,23 +7,30 @@
 cff-version: 1.2.0
 title: "Searching for a signature: A file format identification workshop"
 message:
-  Please cite this lesson using the information in this file
-  when you refer to it in publications, and/or if you
-  re-use, adapt, or expand on the content in your own
-  training material.
+  Please cite this lesson using the information in this file when you 
+  refer to it in publications and/or if you reuse, adapt, or expand 
+  on the content in your own training material. NB. 2025.11.03.0001 
+  of this workshop was created for iPRES2025; 2026.09.21.0001 of this 
+  workshop was created for iPRES2026. Please look at the commit history 
+  for incremental improvements during and after those time periods.
 type: dataset
-version: iPRES2026
+version: 2026.09.21.0001
 authors:
   - given-names: David
     family-names: Clipsham
+    orcid: "https://orcid.org/0009-0006-2611-8877"
   - given-names: Tyler
     family-names: Thorsted
+    orcid: "https://orcid.org/0000-0003-0292-0962"
   - given-names: Sonia
     family-names: Ranade
+    orcid: "https://orcid.org/
   - given-names: Ross
     family-names: Spencer
+    orcid: "https://orcid.org/0000-0002-5144-9794"
   - given-names: Francesca
     family-names: Mackenzie
+    orcid: "https://orcid.org/0000-0002-1863-7662"
 abstract:
   File format identification is generally accepted as a key digital
   preservation activity as it enables preservation practitioners to
@@ -34,3 +41,4 @@ abstract:
   to cater to different learning styles with a selection of interactive
   activities.
 license: CC-BY-4.0
+repository-code: https://github.com/ffdev-info/searching-for-a-signature/

@@ -45,9 +45,9 @@ information they are looking for. The PRONOM team will help you.
 
 ### Where to submit a signature to PRONOM
 
-The PRONOM team prefers to receive submissions via GitHub, though if you aren't comfortable creating a GitHub account then they can also receive information via email.
+The PRONOM team prefers to receive submissions via GitHub, though if you aren't comfortable creating a GitHub account then they can also receive information via email at pronom@nationalarchives.gov.uk.
 
-[Visit this site for more information on submitting via PRONOM](https://github.com/nationalarchives/pronom) 
+[Visit this site for more information on submitting to PRONOM via GitHub](https://github.com/nationalarchives/pronom) 
 
 :::: callout
 

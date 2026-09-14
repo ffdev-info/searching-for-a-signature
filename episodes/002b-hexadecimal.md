@@ -1,14 +1,14 @@
 ---
 title: "Hexadecimal"
-teaching: 5    # teaching time in minutes
+teaching: 7    # teaching time in minutes
 exercises: 0    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions
 
 * What is hexadecimal?
-* Why is it important?
-* What are the basics of hexadecimal we need to understand?
+* What are the basics of hexadecimal?
+* Why is hexadecimal important to look at files?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -112,9 +112,7 @@ We won’t explore binary in detail here, but if you ever want to look at the bi
 representation of a number, modern search engines can do the conversion
 for you if you ask: 255 in binary (just as you can ask: 255 in hexadecimal.
 
-* 0 (b00000000) is the smallest number you can represent in binary in a
-single byte,
-* 255 (b11111111) is the largest possible value.
+
 
 ::::
 
@@ -179,70 +177,17 @@ When you look at the table, think about your favorite (decimal) number.
      and https://www.rapidtables.com/code/text/ascii-table.html
 -->
 
-## Encodings
+## Magic Numbers
 
-* In a file format, they translate to some information that a computer
-can understand, e.g. numbers 0x30 to 0x39 are (universally)
-the numbers 0 - 9.
-* In the olden days software devs only thought about English, and so
-character encodings started life there, and then became more
-inclusive – today we have unicode
-* Looking at files from the early days can be tricky when doing digital
-forensics but file format signature development asks two things:
+To do file format research we look at the structure of the files in hex
 
-1. That we understand the samples we have are the same format.
-2. That we can find patterns in these files, even if we don’t always
-know what those patterns mean.
+* Files have reoccurring byte patterns within them that show us what they are
+* Computers read bytes to render on your screen in a similar way to how we might read a letter. A pre-known structure that helps disseminate the information.
 
-<br>
+<!--markdownlint-disable-->
+![Humans and computers both read by structure and position.](./fig/002b-01-reading-files.png){alt='on the left, a handwritten letter annotated to show the page number, addressee, main message, sender and sign-off; on the right, a photograph of a pig alongside the same file shown as hexadecimal, annotated to show the magic bytes, the image header and the pixel specifications.'}
+<!--markdownlint-enable-->
 
-### Example Māori macrons in UTF-8
-
-<br>
-
-`0xC4 0x81` = ā
-
-`0xC4 0x93` = ē
-
-`0xC4 0xAB` = ī
-
-`0xC5 0x8D` = ō
-
-`0xC5 0xAB` = ū
-
-`0xC4 0x80` = Ā
-
-`0xC4 0x92` = Ē
-
-`0xC4 0xAA` = Ī
-
-`0xC5 0x8C` = Ō
-
-`0xC5 0xAA` = Ū
-
-<br>
-
-### Hello World in Japanese in UTF-8
-
-<br>
-
-`0xE3 0x81 0x93` = こ
-
-`0xE3 0x82 0x93` = ん
-
-`0xE3 0x81 0xAB` = に
-
-`0xE3 0x81 0xA1` = ち
-
-`0xE3 0x81 0xAF` = は
-
-`0xE4 0xB8 0x96` = 世
-
-`0xE7 0x95 0x8C` = 界
-
-<!-- NB. I found this site useful: https://www.compart.com/en/unicode/ for
-     whatever reason it has a lot of info.
--->
 
 ## Famous Byte sequences
 

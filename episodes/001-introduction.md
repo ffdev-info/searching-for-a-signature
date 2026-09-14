@@ -34,13 +34,19 @@ exercises: 0    # exercise time in minutes
 
 If you don't know what you have then how are you supposed to take care of it! 
 
-This applies to most caretaking roles,imagine you own a farm and you tried to feed the cows chicken food. You would not have a very successful farm.
+This applies to most caretaking roles, imagine you own a farm and you tried to feed the cows chicken food. You would not have a very successful farm.
 
-[insert picture] 
+<!--markdownlint-disable-->
+![Humans and computers both read by structure and position.](./fig/001-02-cow-with-chicken-food.png){alt='a cow with a large bag of chicken feed'}
+<!--markdownlint-enable-->
 
 File formats, software and storage technologies develop at a frighteningly fast rate. 
 
-[insert picture]
+Computers have changed beyond recognition in a single working lifetime.
+<!--markdownlint-disable-->
+![From a machine that filled a room to one that fits on a desk.](./fig/001-02-digital-moves-fast.png){alt='two photographs side by side: the Colossus computer of the Second World War filling an entire room, and a librarian using a desktop IBM computer in 1987.'}
+<!--markdownlint-enable-->
+<br>
 
 * Knowing what you’ve got is a basic first step for managing digital
 information - whether that’s records management, managing digital

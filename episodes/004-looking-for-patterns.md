@@ -70,10 +70,7 @@ the version of the software which created it.
 
 ## Creating samples
 
-Being able to create sample files using original software or finding
-samples specific to a certain version of software is a big help in
-determining identification. Look for tutorials, sample files on installer
-disks, or create your own using trial versions of the software.
+Finding additional samples helps increase signature accuracy, but another option to increase your sample set is by creating sample files using original software, or trial versions of original software. Creating samples from original software also increases ability be version specific, if needed, in the signature. Also, look for tutorials and sample files on installer disks.
 
 ## Referencing the specification
 

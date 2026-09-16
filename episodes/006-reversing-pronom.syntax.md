@@ -32,7 +32,7 @@ outline digital file that triggers a signature’s patterns.
 
 Given the sequence:
 
-AABB??CC{1-10}DD*010203
+AABB??CC{4-10}DD*010203
 
 Can you write a byte sequence that will match in DROID?
 
@@ -40,7 +40,10 @@ Can you write a byte sequence that will match in DROID?
 
 ### One possible solution
 
-AABB**00**CC**00**DD**00**010203
+```
+AABB**00**CC**00000000**DD**00**010203
+      ↑       ↑ ↑ ↑ ↑       ↑
+```
 
 ::::::
 
@@ -48,7 +51,10 @@ AABB**00**CC**00**DD**00**010203
 
 ### Another possible solution
 
-AABB**00**CC**FFFFFF**DD**00000000**010203
+```
+AABB**00**CC**BA5EBA11F00D**DD**00000000**010203
+      ↑       ↑ ↑ ↑ ↑ ↑ ↑       ↑ ↑ ↑ ↑
+```
 
 ::::::
 
@@ -84,6 +90,8 @@ as “hexadecimal values”.
 4. You will see the bytes from the solution in the left hand side of the
 window and its ASCII interpretation on the right.
 5. You can then elect to download and name the file via ‘Save As’.
+6. (Optionally) verify the content on disk with a local hex editor or a new
+   hexed.it window.
 
 ::::
 
@@ -157,6 +165,19 @@ in a repository called builder. You can find those at the link below.
 
 ::::
 
+:::: testimonial
+
+### Additional reading
+
+#### Generation of a Skeleton Corpus of Digital Objects for the Validation and Evaluation of Format Identification Tools and Signatures
+
+Describes the purpose of a skeleton corpus in more detail and examines their
+strengths and weaknesses (2013).
+
+* [@ International Journal of Digital Curation](https://ijdc.net/ijdc/article/view/8.1.120)
+
+::::
+
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -167,8 +188,13 @@ in a repository called builder. You can find those at the link below.
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- You can reverse engineer PRONOM signatures to investigate existing files
-by comparing the signature against what you observe in the hex editor.
+- A file you have created by reversing a PRONOM signature is called a skeleton
+file
+- You can reverse engineer PRONOM signatures to investigate existing patterns
+and existing files
+- By comparing sequences in skeleton files and seeing how they align with
+known files in the hex editor you can understand if a pattern should match
+if it is not always obvious, e.g. due to complexity
 - Reversing PRONOM syntax has other uses, e.g. creating skeleton files.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

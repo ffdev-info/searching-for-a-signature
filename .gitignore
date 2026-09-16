@@ -51,3 +51,4 @@ po/*~
 
 # Custom ignores.
 NOTES
+venv

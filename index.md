@@ -9,7 +9,7 @@ title: 'Welcome!'
      width="150" height="150" style="float: right; margin: auto;"
 />
 
-Kia ora, and welcome to Searching for a Signature: A File Format
+Kia ora, velkommen, and welcome to Searching for a Signature: A File Format
 Identification Workshop. This workshop loosely follows the concept
 of **See one**, **Do one**, **Teach one**. Depending on how much time
 you have for your workshop the balance between teaching and student
@@ -87,12 +87,10 @@ teaching!
 
 ### With thanks to
 
-- Francesca Mackenzie - Digital Archivist at The National Archives UK, who
-was part of the team for iPRES2024's workshop: _What's in the box? an
-exploration of container-based file format identification_
 - All past and present PRONOM colleagues who work tirelessly on a never-ending
-shopping list of file formats and continue to dp their utmost to support
+shopping list of file formats and continue to do their utmost to support
 the resource for the community.
-- Special thanks to Ross Spencer for putting together this resource.
+- The iPres organizers and approval committees and the conference centre hosts
+and support team for facilitating this workshop!
 
 ::::

@@ -23,10 +23,12 @@ thing.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::: instructor
+
 This is the high level overview, before anybody gets thrown into hex.
 Hexadecimal turns up here as one of three ways of saying the same thing, and
 that is all it needs to do. Conversion comes next, so if somebody asks, tell
 them it is five minutes away.
+
 ::::
 
 ## How do we analyse file formats
@@ -45,17 +47,24 @@ Like a light switch, each transistor has two possible states:
 
 * On
 * Off
+
+<br>
  
 To make these states easier to work with, we represent them as:
+
 * On = 1
 * Off = 0
+
 These 1s and 0s are called **binary digits**, or **bits**. A single bit can only store one of two values: 0 or 1
 
 These are usually what you can see when a spy is breaking into a computer in an action movie
 
 <!--markdownlint-disable-->
+
 ![A photograph is also a long row of bytes.](./fig/002a-01-binary.png){alt='a picture of a computer screen with lots of 0s and 1s on the screen'}
+
 <!--markdownlint-enable-->
+
 <br>
 
 ### What is behind your computer data?
@@ -64,18 +73,37 @@ These are usually what you can see when a spy is breaking into a computer in an 
 * We call 8 of these bits grouped together a **byte**: 01001001
 * This is the data that computers are interpreting
 * Based on the order of the 0s and 1s in a byte they represent a single number
-* There are 255 variations of 0s and 1s that can be stored in a byte 
+* There are 255 variations of 0s and 1s that can be stored in a byte
 * 0 (b00000000) is the smallest number you can represent in binary in a single byte,
 * 255 (b11111111) is the largest possible value.
-s
-<!--markdownlint-disable-->
-![A photograph is also a long row of bytes.](./fig/002a-02-photo-to-hex.png){alt='a photograph of a dog beside an arrow pointing to the same file opened in a hex editor, showing its contents as hexadecimal and decoded text.'}
-<!--markdownlint-enable-->
+
 <br>
+
+<!--markdownlint-disable-->
+
+<!--
+-![A photograph is also a long row of bytes.](./fig/002a-02-photo-to-hex.png){alt='a photograph of a dog beside an arrow pointing to the same file opened in a hex editor, showing its contents as hexadecimal and decoded text.'}
+-->
+
+|   |   |   |
+|---|:-:|---|
+| ![A photograph is also a long row of bytes.](./fig/002a-01-photo-to-hex-01.png){alt='a photograph of a dog'}  | ![](./fig/002a-01-photo-to-hex-02.png){alt='image of a green arrow pointing leftwards.'} </center> |  ![A photograph is also a long row of bytes.](./fig/002a-01-photo-to-hex-03.png){alt='the same image file of a dog opened in a hex editor, showing its contents as hexadecimal and decoded text.'}  |
+
+<!--markdownlint-enable-->
+
 The dog and the hex are the same file. One of them is what your software
 renders for you. The other is what is actually sitting on the disk.
 Everything we do from here happens on the right hand side.
+
+<br>
+
 :::: discussion
+
+TODO...
+
+::::
+
+<br>
 
 ### Solving the communication barrier
 
@@ -92,7 +120,9 @@ is not particularly memorable. Hexadecimal provides a shorter way of representin
 The binary value: 01001001  can also be written as: 49
 
 For example, the letter I:
+
 | ASCII  | HEX   | Binary   |
+|--------|-------|----------|
 |   I    | 73    | 01001001 |
 
 ## Encodings
@@ -102,29 +132,43 @@ It doesn't. Nothing in a byte is a letter. To store text on a computer we
 use an encoding, and an encoding acts as a translation table between
 characters and numbers. We agreed that 73 means `I`, and everything that
 reads the file agrees too.
-Character	Decimal	Hexadecimal	Binary
-`I`	73	`49`	`01001001`
+
+| Character | Decimal | Hexadecimal | Binary     |
+| --------- | ------- | ----------- | ---------- |
+| `I`       |   73	  | `49`        | `01001001` |
+
 All four columns are saying the same thing.
+
 The table we're using here is ASCII. It covers the English alphabet, the
 digits, some punctuation and a handful of control codes, and that is all it
 covers. In the olden days software developers only thought about English, so
-that was fine. It was not fine for most of the planet. Where do you put `ā`,
-or `世`?
+that was fine. It was not fine for most of the planet.
+
+## Where do you get 'ā', or '世'?
+
 Today we have Unicode, and encodings like UTF-8 that store those
 characters using more than one byte each. We'll see what that looks like in
 the next episode.
+
 :::: callout
-When the agreement breaks down
+
+## When the agreement breaks down
+
 A file written with one encoding and read back with a different one is not
 broken. Its bytes are fine. They are just being looked up in the wrong
 table.
+<br><br>
 That is where `â€™` and `Ã¤` come from, and why a name with a macron in it
 can arrive in your catalogue looking like nonsense.
+
 ::::
 
+<br>
 
 <!--markdownlint-disable-->
+
 ![The same sentence spoken in binary, in hexadecimal, and in English.](./fig/002a-03-three-languages.png){alt='three cartoon faces with speech bubbles: the first speaks a long string of binary digits, the second speaks pairs of hexadecimal numbers, the third says I speak English.'}
+
 <!--markdownlint-enable-->
 
 <br>
@@ -177,9 +221,13 @@ can arrive in your catalogue looking like nonsense.
      whatever reason it has a lot of info.
 -->
 
+<br>
+
 ::::::::::::::::::::::::::::::::::::: keypoints
+
 * Computers store everything as bits: switches that are either on or off.
 * 8 bits make a byte, and a byte holds one of 256 values.
 * Binary, hexadecimal and encodings such as UTF-8 or ASCII are three ways of writing the same thing.
 * Hexadecimal is the one we work with in file format analysis.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::

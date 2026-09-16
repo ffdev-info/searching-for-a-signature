@@ -185,7 +185,25 @@ To do file format research we look at the structure of the files in hex
 * Computers read bytes to render on your screen in a similar way to how we might read a letter. A pre-known structure that helps disseminate the information.
 
 <!--markdownlint-disable-->
-![Humans and computers both read by structure and position.](./fig/002b-01-reading-files.png){alt='on the left, a handwritten letter annotated to show the page number, addressee, main message, sender and sign-off; on the right, a photograph of a pig alongside the same file shown as hexadecimal, annotated to show the magic bytes, the image header and the pixel specifications.'}
+
+<!--
+![Humans and computers both read by structure and position.](./fig/002a-04-reading-files.png){alt='on the left, a handwritten letter annotated to show the page number, addressee, main message, sender and sign-off; on the right, a photograph of a pig alongside the same file shown as hexadecimal, annotated to show the magic bytes, the image header and the pixel specifications.'}
+-->
+
+<br>
+
+|     |
+| :-: |
+| ![How humans read a file](./fig/002a-04-reading-files-01.png){alt='a handwritten letter annotated to show the page number, addressee, main message, sender and sign-off'} |
+| How humans read a file |
+
+<br>
+
+|     |     |     |
+| --- | :-: | --- |
+| ![How computers view a file](./fig/002a-04-reading-files-02.png){alt='a photograph of a pig, showing its contents as hexadecimal and decoded text.'} | ![](./fig/002a-04-reading-files-04.png){alt='image of a blue arrow pointing rightwards'} | ![How computers view a file](./fig/002a-04-reading-files-03.png){alt='the same image file of a pig shown as hexadecimal, annotated to show the magic bytes, the image header and the pixel specifications'} |
+| How computers read a file |    |
+
 <!--markdownlint-enable-->
 
 

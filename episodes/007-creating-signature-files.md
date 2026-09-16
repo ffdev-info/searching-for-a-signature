@@ -1,6 +1,6 @@
 ---
 title: "Creating signature files"
-teaching: 5    # teaching time in minutes
+teaching: 15    # teaching time in minutes
 exercises: 0    # exercise time in minutes
 ---
 
@@ -93,8 +93,18 @@ sequences to add more accuracy to the signature.
 Pressing the “Create Signature” button will generate an XML file
 based on your information and immediately download to your computer.
 
+:::: instructor
+
+At this point it is a good idea to navigate to the signature development
+utility and try this out.
+
+Save the content and then inspect it in a hex editor and point out some of
+the structure that we have discussed previously.
+
+::::
+
 You can now enable this signature file in tools like DROID and Siegfried.
-We'll cover this in the next section.
+We'll help you do this in the next section.
 
 <!--markdownlint-disable-->
 

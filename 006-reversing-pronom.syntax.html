@@ -124,7 +124,7 @@
     <a id="search-button" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div><!--/div.container-fluid -->
 </nav><aside class="col-md-12 lesson-progress"><div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">46%</div>
+    <div class="progress-bar incubator" role="progressbar" style="width: 39%" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">39%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -388,7 +388,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Reversing PRONOM syntax</h1>
-        <p>Last updated on 2026-09-09 |
+        <p>Last updated on 2026-09-16 |
 
         <a href="https://github.com/ffdev-info/searching-for-a-signature/edit/main/episodes/006-reversing-pronom.syntax.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -439,7 +439,7 @@ patterns.</p></li>
 <h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <p>Given the sequence:</p>
-<p>AABB??CC{1-10}DD*010203</p>
+<p>AABB??CC{4-10}DD*010203</p>
 <p>Can you write a byte sequence that will match in DROID?</p>
 </div>
 </div>
@@ -449,9 +449,10 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> One possible solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>AABB<strong>00</strong>CC<strong>00</strong>DD<strong>00</strong>010203</p>
+<pre><code>AABB**00**CC**00000000**DD**00**010203
+      ↑       ↑ ↑ ↑ ↑       ↑</code></pre>
 </div>
 </div>
 </div>
@@ -461,9 +462,10 @@ patterns.</p></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Another possible solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>AABB<strong>00</strong>CC<strong>FFFFFF</strong>DD<strong>00000000</strong>010203</p>
+<pre><code>AABB**00**CC**BA5EBA11F00D**DD**00000000**010203
+      ↑       ↑ ↑ ↑ ↑ ↑ ↑       ↑ ↑ ↑ ↑</code></pre>
 </div>
 </div>
 </div>
@@ -497,6 +499,8 @@ interpreted as “hexadecimal values”.</li>
 <li>You will see the bytes from the solution in the left hand side of
 the window and its ASCII interpretation on the right.</li>
 <li>You can then elect to download and name the file via ‘Save As’.</li>
+<li>(Optionally) verify the content on disk with a local hex editor or a
+new hexed.it window.</li>
 </ol></div>
 </div>
 </div>
@@ -520,7 +524,7 @@ Siegfried, what PUID do you get?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>fmt/1000 ZX Tape Format</p>
 </div>
@@ -586,6 +590,24 @@ Lehane’s Builder</a></li>
 </ul></div>
 </div>
 </div>
+<div id="additional-reading" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<span class="callout-header">Testimonial</span>
+<div id="additional-reading" class="callout-inner">
+<h3 class="callout-title">Additional reading</h3>
+<div class="section level4 callout-content">
+<h4 id="generation-of-a-skeleton-corpus-of-digital-objects-for-the-validation-and-evaluation-of-format-identification-tools-and-signatures">Generation of a Skeleton Corpus of Digital Objects for the
+Validation and Evaluation of Format Identification Tools and
+Signatures<a class="anchor" aria-label="anchor" href="#generation-of-a-skeleton-corpus-of-digital-objects-for-the-validation-and-evaluation-of-format-identification-tools-and-signatures"></a></h4>
+<p>Describes the purpose of a skeleton corpus in more detail and
+examines their strengths and weaknesses (2013).</p>
+<ul><li><a href="https://ijdc.net/ijdc/article/view/8.1.120" class="external-link">@ International
+Journal of Digital Curation</a></li>
+</ul></div>
+</div>
+</div>
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that
      here and using this comment as a separator to make it easy to read
@@ -599,9 +621,13 @@ Lehane’s Builder</a></li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>You can reverse engineer PRONOM signatures to investigate existing
-files by comparing the signature against what you observe in the hex
-editor.</li>
+<ul><li>A file you have created by reversing a PRONOM signature is called a
+skeleton file</li>
+<li>You can reverse engineer PRONOM signatures to investigate existing
+patterns and existing files</li>
+<li>By comparing sequences in skeleton files and seeing how they align
+with known files in the hex editor you can understand if a pattern
+should match if it is not always obvious, e.g. due to complexity</li>
 <li>Reversing PRONOM syntax has other uses, e.g. creating skeleton
 files.</li>
 </ul></div>
@@ -671,7 +697,7 @@ any links that you are not going to use.
   "url": "https://ffdev-info.github.io/searching-for-a-signature/006-reversing-pronom.syntax.html",
   "identifier": "https://ffdev-info.github.io/searching-for-a-signature/006-reversing-pronom.syntax.html",
   "dateCreated": "2026-09-16",
-  "dateModified": "2026-09-09",
+  "dateModified": "2026-09-16",
   "datePublished": "2026-09-16"
 }
 

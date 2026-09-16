@@ -43,6 +43,12 @@ of signature & priorities & descriptive information (metadata) about the file fo
 When you submit a new signature to PRONOM, you will get feel for the
 information they are looking for. The PRONOM team will help you.
 
+### Where to submit a signature to PRONOM
+
+The PRONOM team prefers to receive submissions via GitHub, though if you aren't comfortable creating a GitHub account then they can also receive information via email at pronom@nationalarchives.gov.uk.
+
+[Visit this site for more information on submitting to PRONOM via GitHub](https://github.com/nationalarchives/pronom)
+
 :::: callout
 
 ### Information to submit to PRONOM
@@ -54,7 +60,7 @@ information they are looking for. The PRONOM team will help you.
 * Description
 * Format type
 * Vendor
-* File format identification signatures
+* File format identification signatures (preferably the sequences by themselves, the xml is only a nice addition for testing)
 * Relevant links, documentation, extra information
 * Credit
 

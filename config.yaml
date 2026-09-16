@@ -70,7 +70,8 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes:
 - 001-introduction.md
-- 002-hexadecimal.md
+- 002a-talking-with-computers.md
+- 002b-hexadecimal.md
 - 003-using-a-hex-editor.md
 - 004-looking-for-patterns.md
 - 005-pronom-syntax.md

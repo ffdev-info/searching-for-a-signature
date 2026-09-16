@@ -32,6 +32,31 @@ exercises: 0    # exercise time in minutes
 
 ## Know what you’ve got (Why are we interested in identifying file formats?)
 
+If you don't know what you have then how are you supposed to take care of it!
+
+This applies to most caretaking roles, imagine you own a farm and you tried to feed the cows chicken food. You would not have a very successful farm.
+
+<!--markdownlint-disable-->
+
+![humans and computers both read by structure and position](./fig/001-02-cow-with-chicken-food.png){alt='a cow with a large bag of chicken feed'}
+
+<!--markdownlint-enable-->
+
+File formats, software and storage technologies develop at a frighteningly fast rate.
+
+Computers have changed beyond recognition in a single working lifetime.
+
+<!--markdownlint-disable-->
+
+|   |   |
+|---|---|
+| ![from a machine that filled a room to one that fits on a desk](./fig/001-02-digital-moves-fast-01.png){alt='the Colossus computer of the Second World War filling an entire room'} <br> <b>From a machine that covered an entire room...</b> | ![from a machine that filled a room to one that fits on a desk](./fig/001-02-digital-moves-fast-02.png){alt='a librarian using a desktop IBM computer in 1987.'} <br> <b>To one that fits on your desk in less than forty years</b> |
+| <sub>HW 225/26, Colossus computer WWII. Copyright The National Archives</sub> | <sub>A librarian at The National Library of Medicine using an IBM computer to access PDQ, 1987. Photo by National Cancer Institute on Unsplash</sub> |
+
+<!--markdownlint-enable-->
+
+<br>
+
 * Knowing what you’ve got is a basic first step for managing digital
 information - whether that’s records management, managing digital
 continuity or Digital Preservation
@@ -49,9 +74,9 @@ do we have?) can be important.
 
 ## How can we identify file formats?
 
-* There’s not one single method
+* There’s not one single method, but often there are a few clues
 
-### What tool was used?
+### The tools used to make it
 
 * You may simply know what tools or software were used to create your
 digital records (e.g. you know what camera was used by a project or what
@@ -66,12 +91,15 @@ don’t usually tell us about specific versions.
 
 ### Looking inside the files
 
-* We need to look inside the digital files, at the precise sequence of
-codes in the file. Sometimes the file format is plainly stated inside the
-file. More often we will be looking for characteristic patterns that point
+* To be more certain of a correct identification we need to look inside the digital files, at the precise sequence of
+codes within the file. Sometimes the file format is stated within the file itself or will be part of a set of patterns point
 us towards an identification. These patterns are known as file format
 signatures. The starts and ends of files are good places to look for
 these patterns.
+
+## Analysing Files
+
+* The encoding inside file formats can point us towards how they can be identified, by looking for reoccuring sequences or characteristic patterns. More often we will be looking for characteristic patterns that
 * Some file formats have a formal specification - like a set of rules
 detailing how these files should be constructed. Only files that conform
 to the specification are ‘valid’ examples of that file format. If we have
@@ -98,27 +126,32 @@ identifications.
 
 ## PRONOM
 
-* These file format signatures are useful to all of us. We have a central
-registry of signatures - this is PRONOM.
-* PRONOM is hosted and managed by The UK National Archives for the benefit
-of the whole digital preservation community. It’s free to use.
+PRONOM is a file format registry, a database of file format information. It has over 2000 different entries (that's over 2000 different file formats). Each entry includes identification charactersitics of the format which can include these internal characteristics and patterns found within the files.
+
+* These file format signatures are useful to all of us. PRONOM is used within many file format identification tools such as DROID and Seigfried.
 * PRONOM is used by people and also by software tools to help us identify the
 file formats in our digital collections.
-* The National Archives didn’t research or create all the signatures in
-PRONOM. Since the start of the digital age, there have been a huge number of
-file formats in use. No one institution could possibly research them all. The
-file format signatures in PRONOM have been contributed by researchers from
-across the global digital preservation community. It’s a shared resource,
-created by the community for the community.
+
+### A Short History of PRONOM
+
+PRONOM is maintained and hosted by The National Archives, UK but is the result of over 20 years of research and contribution from 100s of individuals and institutions across the world. It is a free shared resource, created by the digital preservation community for the digital preservation community.
+
+[insert picture of global map]
+
+### Be Aware
+
+* PRONOM is created by humans, and humans can make mistakes.
 * PRONOM is not comprehensive, far from it. Although the most common file
 formats are covered, at some point in your digital preservation work you
 will encounter a file format that doesn’t have a signature in PRONOM. Or
 you may find that a signature exists, but it doesn’t work well for the files
 in your collection.
-* This is when you will embark on researching and creating a new signature -
-which is what we’re going to look at in the following sections.
-* Once you’ve created a new file format signature, please contribute it to
-PRONOM!
+
+## Today
+
+We will be embarking on researching and creating a new signature and then adding it to PRONOM!
+
+
 
 <!-- NB. Keypoints should appear at the end of the markdown file. Aesthetically
      it looks like it's better with an additional newline so adding that

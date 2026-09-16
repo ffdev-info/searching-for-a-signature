@@ -32,20 +32,29 @@ exercises: 0    # exercise time in minutes
 
 ## Know what you’ve got (Why are we interested in identifying file formats?)
 
-If you don't know what you have then how are you supposed to take care of it! 
+If you don't know what you have then how are you supposed to take care of it!
 
 This applies to most caretaking roles, imagine you own a farm and you tried to feed the cows chicken food. You would not have a very successful farm.
 
 <!--markdownlint-disable-->
-![Humans and computers both read by structure and position.](./fig/001-02-cow-with-chicken-food.png){alt='a cow with a large bag of chicken feed'}
+
+![humans and computers both read by structure and position](./fig/001-02-cow-with-chicken-food.png){alt='a cow with a large bag of chicken feed'}
+
 <!--markdownlint-enable-->
 
-File formats, software and storage technologies develop at a frighteningly fast rate. 
+File formats, software and storage technologies develop at a frighteningly fast rate.
 
 Computers have changed beyond recognition in a single working lifetime.
+
 <!--markdownlint-disable-->
-![From a machine that filled a room to one that fits on a desk.](./fig/001-02-digital-moves-fast.png){alt='two photographs side by side: the Colossus computer of the Second World War filling an entire room, and a librarian using a desktop IBM computer in 1987.'}
+
+|   |   |
+|---|---|
+| ![from a machine that filled a room to one that fits on a desk](./fig/001-02-digital-moves-fast-01.png){alt='the Colossus computer of the Second World War filling an entire room'} <br> <b>From a machine that covered an entire room...</b> | ![from a machine that filled a room to one that fits on a desk](./fig/001-02-digital-moves-fast-02.png){alt='a librarian using a desktop IBM computer in 1987.'} <br> <b>To one that fits on your desk in less than forty years</b> |
+| <sub>HW 225/26, Colossus computer WWII. Copyright The National Archives</sub> | <sub>A librarian at The National Library of Medicine using an IBM computer to access PDQ, 1987. Photo by National Cancer Institute on Unsplash</sub> |
+
 <!--markdownlint-enable-->
+
 <br>
 
 * Knowing what you’ve got is a basic first step for managing digital
@@ -90,7 +99,7 @@ these patterns.
 
 ## Analysing Files
 
-* The encoding inside file formats can point us towards how they can be identified, by looking for reoccuring sequences or characteristic patterns. More often we will be looking for characteristic patterns that 
+* The encoding inside file formats can point us towards how they can be identified, by looking for reoccuring sequences or characteristic patterns. More often we will be looking for characteristic patterns that
 * Some file formats have a formal specification - like a set of rules
 detailing how these files should be constructed. Only files that conform
 to the specification are ‘valid’ examples of that file format. If we have

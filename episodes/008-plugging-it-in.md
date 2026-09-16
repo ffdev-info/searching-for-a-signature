@@ -36,6 +36,20 @@ run those signatures against our files._
 Visit [ffdev.info](https://ffdev.info) to get access to an browser-based
 version of Roy, and Siegfried for this next step!
 
+:::::: spoiler
+
+## IT for Archivists
+
+Visit Richard's [IT For Archivists](https://www.itforarchivists.com/siegfried/)
+for the full version of Siegfried and all his other diigtal preservation tools.
+
+|     |
+| --- |
+| ![Siegfried at work at IT For Archivists](./fig/siegfried.png){alt='Image of Siegfried from IT for Archivists'} |
+| Image of Siegfried at work at IT for Archivists |
+
+::::::
+
 ::::
 
 :::: callout

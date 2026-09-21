@@ -172,7 +172,6 @@ By the end of this workshop, you should be able to:
 * Contribute signatures to PRONOM
 
 <br>
-
 It isn't just the beginning of your PRONOM journey, it's the beginning
 of your digital forensics journey!
 

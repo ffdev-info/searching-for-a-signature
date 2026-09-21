@@ -22,7 +22,18 @@ exercises: 0    # exercise time in minutes
 
 You now have a sequence you think will work with your format and
 understand the syntax needed. How do we get that sequence into something
-DROID or Sigfried can use?
+DROID or Siegfried can use?
+
+:::: testimonial
+
+## We 💜 Fido
+
+We're not forgetting Fido! It just uses a slightly different approach to
+allow us to use our new signatures and so it's not yet included in the
+tutorial. We can add this in future or can happily take a submission 
+(pull-request) to add it to the information below.
+
+::::
 
 ## What is a signature file?
 

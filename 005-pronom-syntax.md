@@ -158,7 +158,7 @@ Most signature sequences will combine some or all of the above.
 
 **{n-n}** = range of wildcard bytes, e.g. <code>4D{0-12}E4</code>
 
-**{n-*}** = wildcard bytes with specified minimum range, e.g. <code>FF{4-*}A0</code>
+**{n-\*}** = wildcard bytes with specified minimum range, e.g. <code>FF{4-*}A0</code>
 
 #### Byte range
 

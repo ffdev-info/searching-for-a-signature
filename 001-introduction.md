@@ -170,10 +170,14 @@ By the end of this workshop, you should be able to:
 * Create a signature file
 * Use your signature file locally
 * Contribute signatures to PRONOM
+
 <br>
+
 It isn't just the beginning of your PRONOM journey, it's the beginning
 of your digital forensics journey!
+
 <br>
+
 Enjoy!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::

@@ -1,6 +1,6 @@
 ---
 title: "Introducing PRONOM syntax"
-teaching: 10    # teaching time in minutes
+teaching: 20    # teaching time in minutes
 exercises: 5    # exercise time in minutes
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Teaching us how to do it!"
 teaching: 2    # teaching time in minutes
-exercises: 8    # exercise time in minutes
+exercises: 13    # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions

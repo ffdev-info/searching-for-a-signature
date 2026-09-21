@@ -133,7 +133,7 @@ Today we have Unicode, and encodings like UTF-8 that store those
 characters using more than one byte each. We'll see what that looks like in
 the next episode.
 
-:::: callout
+:::: discussion
 
 Do you have a favourite letter/ number/ symbol/ emoji? Try looking up your favourite in hex or binary.
 

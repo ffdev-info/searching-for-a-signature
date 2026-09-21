@@ -86,7 +86,7 @@ when we analyse digital records.
 
 :::: callout
 
-### What does 0x mean?
+### What does `0x` mean?
 
 We use the `0x` prefix to signify hexadecimal. When we document hex
 sequences like above `0xE4 0xB8 0x96` is also equivalent to `0xE4B896`. How

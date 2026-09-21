@@ -41,6 +41,8 @@ Can you write a byte sequence that will match in DROID?
 ### One possible solution
 
 ```
+AABB00CC00000000DD00010203
+
 AABB  00  CC  00000000  DD  00  010203
       ↑       ↑ ↑ ↑ ↑       ↑
 ```
@@ -52,6 +54,8 @@ AABB  00  CC  00000000  DD  00  010203
 ### Another possible solution
 
 ```
+AABB00CCBA5EBA11F00DDD00000000010203
+
 AABB  00  CC  BA5EBA11F00D  DD  00000000  010203
       ↑       ↑ ↑ ↑ ↑ ↑ ↑       ↑ ↑ ↑ ↑
 ```

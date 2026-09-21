@@ -95,16 +95,6 @@ The dog and the hex are the same file. One of them is what your software
 renders for you. The other is what is actually sitting on the disk.
 Everything we do from here happens on the right hand side.
 
-<br>
-
-:::: discussion
-
-TODO...
-
-::::
-
-<br>
-
 ### Solving the communication barrier
 
 * Computers combine the bits together, representing letters, numbers,

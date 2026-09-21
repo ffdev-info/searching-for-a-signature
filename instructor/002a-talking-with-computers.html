@@ -480,7 +480,7 @@ screen</li>
 <li>This is the data that computers are interpreting</li>
 <li>Based on the order of the 0s and 1s in a byte they represent a
 single number</li>
-<li>There are 255 variations of 0s and 1s that can be stored in a
+<li>There are 256 variations of 0s and 1s that can be stored in a
 byte</li>
 <li>0 (b00000000) is the smallest number you can represent in binary in
 a single byte,</li>
@@ -512,14 +512,7 @@ options than the decimal counting system we are used to.</li>
 difficult to read. For <a href="example:01001001" class="uri">example:01001001</a> is not particularly memorable.
 Hexadecimal provides a shorter way of representing the same data. The
 binary value: 01001001 can also be written as: 49</p>
-<p>For example, the letter I:</p>
-<table class="table"><thead><tr><th>ASCII</th>
-<th>HEX</th>
-<th>Binary</th>
-</tr></thead><tbody><tr><td>I</td>
-<td>73</td>
-<td>01001001</td>
-</tr></tbody></table></section><section><h2 class="section-heading" id="encodings">Encodings<a class="anchor" aria-label="anchor" href="#encodings"></a></h2>
+</section><section><h2 class="section-heading" id="encodings">Encodings<a class="anchor" aria-label="anchor" href="#encodings"></a></h2>
 <hr class="half-width"><p>So if a byte is only ever a number, where does the letter
 <code>I</code> live? It doesn’t. Nothing in a byte is a letter. To store
 text on a computer we use an encoding, and an encoding acts as a
@@ -542,19 +535,23 @@ English, so that was fine. It was not fine for most of the planet.</p>
 <hr class="half-width"><p>Today we have Unicode, and encodings like UTF-8 that store those
 characters using more than one byte each. We’ll see what that looks like
 in the next episode.</p>
-<div id="when-the-agreement-breaks-down" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div id="when-the-agreement-breaks-down" class="callout-inner">
-<h3 class="callout-title">When the agreement breaks down</h3>
+<div class="callout-inner">
 <div class="callout-content">
-<p>A file written with one encoding and read back with a different one
-is not broken. Its bytes are fine. They are just being looked up in the
-wrong table. <br><br> That is where <code>â€™</code> and <code>Ã¤</code>
-come from, and why a name with a macron in it can arrive in your
-catalogue looking like nonsense.</p>
+<p>Do you have a favourite letter/ number/ symbol/ emoji? Try looking up
+your favourite in hex or binary.</p>
+<div class="section level2">
+<h2 id="when-the-agreement-breaks-down">When the agreement breaks down<a class="anchor" aria-label="anchor" href="#when-the-agreement-breaks-down"></a></h2>
+<p>There are many different encodings. A file written with one encoding
+and read back with a different one is not broken. Its bytes are fine.
+They are just being looked up in the wrong table. <br><br> That is where
+<code>â€™</code> and <code>Ã¤</code> come from, and why a name with a
+macron in it can arrive in your catalogue looking like nonsense.</p>
+</div>
 </div>
 </div>
 </div>

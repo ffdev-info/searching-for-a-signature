@@ -73,7 +73,7 @@ These are usually what you can see when a spy is breaking into a computer in an 
 * We call 8 of these bits grouped together a **byte**: 01001001
 * This is the data that computers are interpreting
 * Based on the order of the 0s and 1s in a byte they represent a single number
-* There are 255 variations of 0s and 1s that can be stored in a byte
+* There are 256 variations of 0s and 1s that can be stored in a byte
 * 0 (b00000000) is the smallest number you can represent in binary in a single byte,
 * 255 (b11111111) is the largest possible value.
 
@@ -105,15 +105,8 @@ images, sound, video, software and the information you see on a screen.
 ## Why hexadecimal?
 
 Although computers use binary, humans find long strings of 1s and 0s difficult to read.
-For example:01001001
-is not particularly memorable. Hexadecimal provides a shorter way of representing the same data.
+For example:01001001 is not particularly memorable. Hexadecimal provides a shorter way of representing the same data.
 The binary value: 01001001  can also be written as: 49
-
-For example, the letter I:
-
-| ASCII  | HEX   | Binary   |
-|--------|-------|----------|
-|   I    | 73    | 01001001 |
 
 ## Encodings
 
@@ -142,9 +135,11 @@ the next episode.
 
 :::: callout
 
+Do you have a favourite letter/ number/ symbol/ emoji? Try looking up your favourite in hex or binary.
+
 ## When the agreement breaks down
 
-A file written with one encoding and read back with a different one is not
+There are many different encodings. A file written with one encoding and read back with a different one is not
 broken. Its bytes are fine. They are just being looked up in the wrong
 table.
 <br><br>

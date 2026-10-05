@@ -63,12 +63,12 @@ other computer, it is _sandboxed_ and kept local to your machine.
 
 ::::
 
-1. Go to [ffdev.info](https://ffdev.info) and look at the Siegfried tab.
-2. Select “roy: load signature’ and navigate to a signature file on your
+1. Go to [ffdev.info](https://ffdev.info) and look at the “Try it Out!” tab.
+2. Go down to “Run Siegfried and Roy”, select “roy: load signature’ and navigate to a signature file on your
 hard disk. The signature file will be loaded into memory alongside
 Siegfried’s default signature.
 3. Now click “Siegfried: File ID” and select your test files
-(or signature file) and click okay.
+and click okay.
 4. Siegfried will attempt to identify your file and should display a
 result matching your signature file’s metadata.
 5. Congratulations, you’ve managed to create your first signature file
